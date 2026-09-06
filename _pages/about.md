@@ -211,6 +211,7 @@ redirect_from:
   </div>
 </div>
 
+<div class="home-footer-grid">
 <div id="service" class="home-section home-service">
   <h2><i class="fas fa-hands-helping"></i> Academic Service</h2>
   <div class="service-list">
@@ -220,6 +221,7 @@ redirect_from:
         <span class="service-badge service-badge--golden">ICML Golden Reviewer</span>
         <span class="service-badge">NeurIPS</span>
         <span class="service-badge">ICLR</span>
+        <span class="service-badge">AAAI</span>
         <span class="service-badge">TMLR</span>
       </div>
     </div>
@@ -236,6 +238,7 @@ redirect_from:
     <a class="contact-email" href="mailto:kuanzhang2004@163.com"><i class="fas fa-paper-plane"></i> kuanzhang2004@163.com</a>
     <a class="contact-email" href="mailto:kuanzhang2004@gmail.com"><i class="fas fa-paper-plane"></i> kuanzhang2004@gmail.com</a>
   </div>
+</div>
 </div>
 
 {% include pub-filter-script.html %}
