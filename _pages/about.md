@@ -10,7 +10,7 @@ redirect_from:
 <div id="about" class="home-section home-about">
   <h2><i class="fas fa-user-circle"></i> About Me</h2>
   <div class="home-about-content">
-    <p>I am a Ph.D. Candidate at <strong>Tsinghua University</strong>.</p>
+    <p>I am a Ph.D. Candidate at the <strong>College of AI, Tsinghua University</strong>.</p>
     <p>My research focuses on <strong>general game agents</strong> and <strong>general game world models</strong>. I am now working with <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a> at THUSI-Lab on building agents that can play and reason across diverse games, and I am currently a <strong>Research Intern at miHoYo (HoYoverse)</strong>.</p>
     <p class="home-about-previous"><strong>Previous:</strong> B.Eng. in Software Engineering at Beijing Institute of Technology (BIT); <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a> with <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&hl=zh-CN" target="_blank">Prof. Chengliang Chai</a> — label noise learning and pretraining data selection.</p>
     <p>Outside of research, I enjoy esports, AAA games, music, novels, and animation. Proud Master-tier League of Legends player. 🎮</p>
@@ -40,11 +40,11 @@ redirect_from:
 
     <div class="exp-card">
       <div class="exp-logo">
-        <img src="{{ site.baseurl }}/images/logo-thu.png" alt="Tsinghua University">
+        <img src="{{ site.baseurl }}/images/logo-thu.png" alt="College of AI, Tsinghua University">
       </div>
       <div class="exp-content">
         <div class="exp-header">
-          <h3 class="exp-org">Tsinghua University</h3>
+          <h3 class="exp-org">College of AI, Tsinghua University</h3>
           <span class="exp-date">2026 – Present</span>
         </div>
         <p class="exp-role">Ph.D. Candidate &nbsp;·&nbsp; <a href="https://github.com/THUSI-Lab" target="_blank">Intern in THUSI-Lab</a></p>
