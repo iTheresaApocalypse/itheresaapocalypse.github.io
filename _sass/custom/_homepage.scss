@@ -1,9 +1,16 @@
 /* ==========================================================================
    HOMEPAGE LAYOUT + TONE
    Wider content, quieter color, denser cards.
+   Rose accents from Selen Su's homepage: #ca6f6f / #e7b8ac.
    ========================================================================== */
 
 #main:has(.home-section) {
+  --home-rose: #ca6f6f;
+  --home-rose-deep: #9a4652;
+  --home-rose-soft: #e7b8ac;
+  --home-rose-wash: #fffaf8;
+  --home-rose-tint: rgba(202, 111, 111, 0.14);
+  --home-rose-line: rgba(202, 111, 111, 0.32);
   max-width: 1480px;
 
   @include breakpoint($large) {
@@ -43,10 +50,12 @@
 
   .home-about-content a,
   .exp-role a {
+    color: var(--home-rose);
     text-decoration: underline;
     text-underline-offset: 2px;
 
     &:hover {
+      color: var(--home-rose-deep);
       text-decoration: underline;
     }
   }
@@ -75,8 +84,8 @@ body:has(.home-section) .page__footer footer {
   border-bottom: 1px solid var(--global-border-color);
 
   i {
-    color: var(--global-text-color-light);
-    opacity: 0.85;
+    color: var(--home-rose);
+    opacity: 0.9;
   }
 }
 
@@ -94,17 +103,17 @@ body:has(.home-section) .page__footer footer {
 
 .interest-tag {
   color: var(--global-text-color);
-  background: var(--global-code-background-color);
-  border: 1px solid var(--global-border-color);
+  background: var(--home-rose-wash);
+  border: 1px solid var(--home-rose-soft);
   border-radius: 999px;
 
   i {
-    color: var(--global-link-color);
+    color: var(--home-rose);
   }
 
   &:hover {
-    background: var(--global-bg-color);
-    border-color: var(--global-link-color);
+    background: #fff;
+    border-color: var(--home-rose);
     transform: none;
   }
 }
@@ -122,7 +131,8 @@ body:has(.home-section) .page__footer footer {
 
   &:hover {
     transform: none;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    border-color: var(--home-rose-soft);
+    box-shadow: 0 4px 14px rgba(202, 111, 111, 0.08);
   }
 }
 
@@ -172,8 +182,8 @@ body:has(.home-section) .page__footer footer {
 
   &:hover {
     transform: none;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-    border-color: var(--global-dark-border-color);
+    box-shadow: 0 6px 18px rgba(202, 111, 111, 0.1);
+    border-color: var(--home-rose-soft);
   }
 
   &--new {
@@ -186,16 +196,17 @@ body:has(.home-section) .page__footer footer {
       font-size: 0.6rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      color: var(--global-link-color);
-      background: rgba(82, 173, 200, 0.12);
-      border: 1px solid rgba(82, 173, 200, 0.28);
+      color: var(--home-rose);
+      background: var(--home-rose-tint);
+      border: 1px solid var(--home-rose-line);
       border-radius: 4px;
       box-shadow: none;
     }
   }
 
   &--first-author {
-    background: var(--global-bg-color);
+    background: var(--home-rose-wash);
+    border-color: var(--home-rose-soft);
   }
 }
 
@@ -231,6 +242,10 @@ body:has(.home-section) .page__footer footer {
   margin: 0;
   font-size: 1.02rem;
   line-height: 1.45;
+
+  a:hover {
+    color: var(--home-rose);
+  }
 }
 
 .home-pub-authors {
@@ -239,6 +254,11 @@ body:has(.home-section) .page__footer footer {
   margin: 0;
   font-size: 0.84rem;
   line-height: 1.5;
+
+  strong {
+    color: var(--home-rose-deep);
+    text-decoration-color: var(--home-rose);
+  }
 }
 
 .home-pub-desc {
@@ -264,16 +284,16 @@ body:has(.home-section) .page__footer footer {
   font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: none;
-  color: var(--global-link-color);
-  background: rgba(82, 173, 200, 0.1);
-  border: 1px solid rgba(82, 173, 200, 0.22);
+  color: var(--home-rose);
+  background: var(--home-rose-tint);
+  border: 1px solid var(--home-rose-line);
   border-radius: 999px;
   box-shadow: none;
 
   &--preprint {
-    color: var(--global-text-color-light);
-    background: var(--global-code-background-color);
-    border-color: var(--global-border-color);
+    color: var(--home-rose-deep);
+    background: var(--home-rose-wash);
+    border-color: var(--home-rose-soft);
     box-shadow: none;
   }
 }
@@ -289,16 +309,16 @@ body:has(.home-section) .page__footer footer {
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0;
-  color: var(--global-link-color);
+  color: var(--home-rose);
   background: transparent;
-  border: 1px solid var(--global-border-color);
+  border: 1px solid var(--home-rose-line);
   border-radius: 999px;
   box-shadow: none;
 
   &:hover {
-    color: var(--global-link-color-hover);
-    background: rgba(82, 173, 200, 0.08);
-    border-color: var(--global-link-color);
+    color: var(--home-rose-deep);
+    background: var(--home-rose-tint);
+    border-color: var(--home-rose);
     transform: none;
     box-shadow: none;
   }
@@ -307,15 +327,15 @@ body:has(.home-section) .page__footer footer {
   &--project,
   &--code,
   &--dataset {
-    color: var(--global-link-color);
+    color: var(--home-rose);
     background: transparent;
-    border-color: var(--global-border-color);
+    border-color: var(--home-rose-line);
     box-shadow: none;
 
     &:hover {
-      color: var(--global-link-color-hover);
-      background: rgba(82, 173, 200, 0.08);
-      border-color: var(--global-link-color);
+      color: var(--home-rose-deep);
+      background: var(--home-rose-tint);
+      border-color: var(--home-rose);
       box-shadow: none;
     }
   }
@@ -335,15 +355,20 @@ body:has(.home-section) .page__footer footer {
   border-radius: 999px;
   box-shadow: none;
   background: transparent;
+  border-color: var(--home-rose-line);
+  color: #766f72;
 
   &:hover {
+    color: var(--home-rose-deep);
+    background: rgba(255, 246, 247, 0.78);
+    border-color: var(--home-rose-line);
     box-shadow: none;
   }
 
   &--active {
-    color: #fff;
-    background: var(--global-link-color);
-    border-color: var(--global-link-color);
+    color: var(--home-rose-deep);
+    background: rgba(255, 239, 241, 0.85);
+    border-color: rgba(202, 111, 111, 0.4);
     box-shadow: none;
   }
 }
@@ -365,14 +390,15 @@ body:has(.home-section) .page__footer footer {
 .service-badge {
   color: var(--global-text-color);
   background: var(--global-bg-color);
-  border: 1px solid var(--global-border-color);
+  border: 1px solid var(--home-rose-soft);
   border-radius: 999px;
   box-shadow: none;
   font-weight: 600;
 
   &:hover {
     transform: none;
-    border-color: var(--global-link-color);
+    color: var(--home-rose-deep);
+    border-color: var(--home-rose);
     box-shadow: none;
   }
 
@@ -390,18 +416,34 @@ body:has(.home-section) .page__footer footer {
 
 .contact-email {
   box-shadow: none;
+  border-color: var(--home-rose-soft);
+
+  i {
+    color: var(--home-rose);
+  }
 
   &:hover {
     transform: none;
     box-shadow: none;
+    color: var(--home-rose-deep);
+    border-color: var(--home-rose);
   }
 }
 
 html[data-theme="dark"] {
+  #main:has(.home-section) {
+    --home-rose: #d88992;
+    --home-rose-deep: #f3c6c6;
+    --home-rose-soft: #a45f68;
+    --home-rose-wash: rgba(202, 111, 111, 0.12);
+    --home-rose-tint: rgba(216, 137, 146, 0.18);
+    --home-rose-line: rgba(216, 137, 146, 0.38);
+  }
+
   .home-pub-card--new::after {
-    color: var(--global-link-color);
-    background: rgba(14, 161, 197, 0.16);
-    border-color: rgba(14, 161, 197, 0.35);
+    color: var(--home-rose);
+    background: var(--home-rose-tint);
+    border-color: var(--home-rose-line);
   }
 
   .service-badge--golden {
