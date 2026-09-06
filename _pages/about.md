@@ -91,6 +91,26 @@ redirect_from:
     </div>
     <div class="home-pub-list">
 
+    <div class="home-pub-card home-pub-card--new" data-first-author="false">
+      <div class="home-pub-header">
+        <span class="home-pub-venue">EMNLP 2026 Findings</span>
+        <span class="home-pub-year">2026</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://arxiv.org/abs/2608.29607">SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions</a>
+      </h3>
+      <p class="home-pub-authors">Zirong Chen*, Fuda Ye*, <strong>Kuan Zhang</strong>, Enjun Du, Junfu Pu, Xinlei Wang, Xinyu Zuo, Lisheng Duan, Jin Ma, Yongqi Zhang†</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench Paper Figure">
+      </div>
+      <p class="home-pub-desc">The first paired benchmark for robust snap-and-ask multimodal retrieval, with 1,145 queries and 9,085 gallery items under 53 controlled corruption conditions. Image artifacts substantially degrade retrieval, while coarse user text can drag down joint retrieval; we propose MOOR for reliability-aware modality calibration.</p>
+      <div class="home-pub-links">
+        <a href="https://arxiv.org/abs/2608.29607" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://github.com/zrchen03/SnapBench" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://huggingface.co/datasets/yefd/SnapBench" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+      </div>
+    </div>
+
     <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue">ECCV 2026</span>
