@@ -10,9 +10,9 @@ redirect_from:
 <div id="about" class="home-section home-about">
   <h2><i class="fas fa-user-circle"></i> About Me</h2>
   <div class="home-about-content">
-    <p>I am a senior undergraduate student majoring in Software Engineering at <strong>Beijing Institute of Technology (BIT)</strong>, and an incoming Ph.D. student at <strong>Tsinghua University</strong>.</p>
+    <p>I am a Ph.D. Candidate at <strong>Tsinghua University</strong>.</p>
     <p>My research focuses on <strong>general game agents</strong> and <strong>general game world models</strong>. I am now working with <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a> at THUSI-Lab on building agents that can play and reason across diverse games, and I am currently a <strong>Research Intern at miHoYo (HoYoverse)</strong>.</p>
-    <p class="home-about-previous"><strong>Previous:</strong> <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a> with <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&hl=zh-CN" target="_blank">Prof. Chengliang Chai</a> — label noise learning and pretraining data selection.</p>
+    <p class="home-about-previous"><strong>Previous:</strong> B.Eng. in Software Engineering at Beijing Institute of Technology (BIT); <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a> with <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&hl=zh-CN" target="_blank">Prof. Chengliang Chai</a> — label noise learning and pretraining data selection.</p>
     <p>Outside of research, I enjoy esports, AAA games, music, novels, and animation. Proud Master-tier League of Legends player. 🎮</p>
   </div>
   <div class="home-research-interests">
@@ -47,7 +47,7 @@ redirect_from:
           <h3 class="exp-org">Tsinghua University</h3>
           <span class="exp-date">2026 – Present</span>
         </div>
-        <p class="exp-role">Ph.D. Student &nbsp;·&nbsp; <a href="https://github.com/THUSI-Lab" target="_blank">Intern in THUSI-Lab</a></p>
+        <p class="exp-role">Ph.D. Candidate &nbsp;·&nbsp; <a href="https://github.com/THUSI-Lab" target="_blank">Intern in THUSI-Lab</a></p>
       </div>
     </div>
 
@@ -117,7 +117,7 @@ redirect_from:
         <span class="home-pub-year">2026</span>
       </div>
       <h3 class="home-pub-title">
-        <a href="https://vsi-super-wild.github.io/">Towards Spatial Supersensing in the Wild</a>
+        <a href="https://arxiv.org/abs/2607.13681">Towards Spatial Supersensing in the Wild</a>
       </h3>
       <p class="home-pub-authors">Tianjun Gu*, Tianyu Xin*, <strong>Kuan Zhang</strong>*, Bowen Yang, Kok-Chung Chua, Peize Li, Xinran Zhang, Yupeng Chen, Qiyue Zhao, Qinlei Xie, Jianhang Liu, Yucheng Lu, Yinan Han, Marco Pavone, Yiming Li†</p>
       <div class="home-pub-figure">
@@ -125,7 +125,7 @@ redirect_from:
       </div>
       <p class="home-pub-desc">VSI-Super-Wild is a benchmark for spatial supersensing built from 442 real-world long-form, in-the-wild videos across 8 scene categories with 6,980 human-verified QA pairs, probing world-state understanding across agent, objects, and environment. Evaluating 13 multimodal models reveals that even strong models fail at coherent world-state tracking over time, exposing four failure modes: spatial collapse, semantic shortcuts, insufficient update, and instance confusion.</p>
       <div class="home-pub-links">
-        <span class="home-pub-link home-pub-link--disabled" aria-disabled="true" title="Paper coming soon"><i class="fas fa-file-pdf"></i> Paper</span>
+        <a href="https://arxiv.org/abs/2607.13681" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://vsi-super-wild.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
         <a href="https://github.com/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
         <a href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
