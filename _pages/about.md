@@ -173,7 +173,7 @@ redirect_from:
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
-        <span class="home-pub-venue">NeurIPS 2025 Poster</span>
+        <span class="home-pub-venue">NeurIPS 2025</span>
         <span class="home-pub-year">2025</span>
       </div>
       <h3 class="home-pub-title">
@@ -186,6 +186,7 @@ redirect_from:
       <p class="home-pub-desc">An efficient, hyperparameter-free, instance-level optimization framework for label noise in image classification.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2505.00812" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://github.com/iTheresaApocalypse/IDO" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
       </div>
     </div>
 
