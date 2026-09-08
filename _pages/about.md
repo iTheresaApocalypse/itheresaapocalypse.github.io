@@ -123,7 +123,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="VSI-Super-Wild Paper Figure">
       </div>
-      <p class="home-pub-desc">VSI-Super-Wild is a benchmark for spatial supersensing built from 442 real-world long-form, in-the-wild videos across 8 scene categories with 6,980 human-verified QA pairs, probing world-state understanding across agent, objects, and environment. Evaluating 13 multimodal models reveals that even strong models fail at coherent world-state tracking over time, exposing four failure modes: spatial collapse, semantic shortcuts, insufficient update, and instance confusion.</p>
+      <p class="home-pub-desc">A spatial supersensing benchmark of 442 in-the-wild long-form videos and 6,980 QA pairs, showing that even strong multimodal models fail at coherent world-state tracking.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2607.13681" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://vsi-super-wild.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
@@ -205,6 +205,7 @@ redirect_from:
       <p class="home-pub-desc">Combine multi-arm bandit with influence function to select data for pretraining process of large language models.</p>
       <div class="home-pub-links">
         <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://github.com/iTheresaApocalypse/Quad" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
       </div>
     </div>
 
