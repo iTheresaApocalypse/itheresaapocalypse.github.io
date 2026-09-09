@@ -5,6 +5,7 @@
     var items = root.querySelectorAll("[data-first-author]");
     if (!buttons.length || !items.length) return;
     function setMode(mode) {
+      root.classList.toggle("is-showing-all", mode === "all");
       items.forEach(function (el) {
         var isFirst = el.getAttribute("data-first-author") === "true";
         el.style.display = mode === "all" || isFirst ? "" : "none";
@@ -27,6 +28,7 @@
         setMode(btn.getAttribute("data-pub-filter"));
       });
     });
+    setMode("selected");
   }
   document.querySelectorAll(".js-pub-filter-root").forEach(initPubFilter);
 })();

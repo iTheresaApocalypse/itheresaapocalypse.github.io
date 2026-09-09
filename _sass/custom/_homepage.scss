@@ -160,6 +160,10 @@ body:has(.home-section) .page__footer footer {
   margin-bottom: 0.85rem;
 }
 
+.home-pub-section--filterable:not(.is-showing-all) .home-pub-card[data-first-author="false"] {
+  display: none;
+}
+
 .home-pub-list {
   display: flex;
   flex-direction: column;

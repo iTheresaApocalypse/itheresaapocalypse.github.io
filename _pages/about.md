@@ -86,8 +86,8 @@ redirect_from:
 
   <div class="home-pub-section--filterable js-pub-filter-root">
     <div class="pub-filter-bar" role="tablist" aria-label="Publication list filter">
-      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="all" role="tab" aria-selected="true">All</button>
-      <button type="button" class="pub-filter__btn" data-pub-filter="selected" role="tab" aria-selected="false">Selected</button>
+      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="selected" role="tab" aria-selected="true">Selected</button>
+      <button type="button" class="pub-filter__btn" data-pub-filter="all" role="tab" aria-selected="false">All</button>
     </div>
     <div class="home-pub-list">
 
