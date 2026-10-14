@@ -91,6 +91,48 @@ redirect_from:
     </div>
     <div class="home-pub-list">
 
+    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-header">
+        <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
+        <span class="home-pub-year">2026</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://gamescaling.github.io/assets/paper.pdf">Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds</a>
+      </h3>
+      <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Yukun Chen*, Zhihao Yang*, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Jinkun Hou, Tao Tan, Yinhe Zheng†, Yiming Li†</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/gamescaling.jpg" alt="GameScaling Paper Figure">
+      </div>
+      <p class="home-pub-desc">A controlled study of how gameplay data, world diversity, and model size scale continued pre-training and cross-world generalization for embodied game agents.</p>
+      <div class="home-pub-links">
+        <a href="https://gamescaling.github.io/assets/paper.pdf" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://gamescaling.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://github.com/THUSI-Lab/GameScaling" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://huggingface.co/THUSI-Lab/GameScaling" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-cube"></i> Models</a>
+      </div>
+    </div>
+
+    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-header">
+        <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
+        <span class="home-pub-year">2026</span>
+      </div>
+      <h3 class="home-pub-title">
+        <a href="https://arxiv.org/abs/2610.14158">Video-Arena: A Scalable Agentic Video Benchmark for Spatiotemporal Capability</a>
+      </h3>
+      <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Yukun Chen*, Zhihao Yang*, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Tao Tan, Yinhe Zheng†, Yiming Li†</p>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/video-arena.jpg" alt="Video-Arena Paper Figure">
+      </div>
+      <p class="home-pub-desc">A scalable video benchmark for perceiving critical events, interpreting state updates, and tracking evolving world states under visual and agentic evaluation.</p>
+      <div class="home-pub-links">
+        <a href="https://arxiv.org/abs/2610.14158" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        <a href="https://videoarena-bench.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
+        <a href="https://github.com/THUSI-Lab/VideoArena" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+      </div>
+    </div>
+
     <div class="home-pub-card home-pub-card--new" data-first-author="false">
       <div class="home-pub-header">
         <span class="home-pub-venue">EMNLP 2026 Findings</span>
