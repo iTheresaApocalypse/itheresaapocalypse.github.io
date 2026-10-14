@@ -118,11 +118,38 @@ body:has(.home-section) .page__footer footer {
   }
 }
 
-/* ---------- Experience: two columns ---------- */
+/* ---------- Experience: three cards per row ---------- */
 .exp-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
+}
+
+.home-experience {
+  .exp-card {
+    align-items: flex-start;
+    gap: 0.7em;
+    padding: 0.85em 0.8em;
+  }
+
+  .exp-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.28em;
+  }
+
+  .exp-org {
+    font-size: 0.92rem;
+  }
+
+  .exp-role {
+    font-size: 0.8rem;
+  }
 }
 
 .exp-card {
@@ -459,13 +486,15 @@ html[data-theme="dark"] {
 
 /* ---------- Breakpoints ---------- */
 @media (max-width: 1100px) {
-  .exp-list {
-    grid-template-columns: 1fr;
-  }
-
   .home-footer-grid {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .exp-list {
+    grid-template-columns: 1fr;
   }
 }
 
