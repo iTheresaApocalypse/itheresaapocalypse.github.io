@@ -90,10 +90,10 @@ redirect_from:
       </div>
       <div class="exp-content">
         <div class="exp-header">
-          <h3 class="exp-org">miHoYo (HoYoverse)</h3>
+          <h3 class="exp-org">miHoYo</h3>
           <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Mar 2026 – Oct 2026</span>
         </div>
-        <p class="exp-role">Research Intern</p>
+        <p class="exp-role">Foundation Model Research Intern</p>
       </div>
     </div>
 
