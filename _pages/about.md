@@ -11,7 +11,7 @@ redirect_from:
   <h2><i class="fas fa-user-circle"></i> About Me</h2>
   <div class="home-about-content">
     <p>I am a Ph.D. Candidate at the <strong>College of AI, Tsinghua University</strong>.</p>
-    <p>My research focuses on <strong>general game agents</strong> and <strong>general game world models</strong>. I am now working with <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a> at THUSI-Lab on building agents that can play and reason across diverse games, and I am currently a <strong>Research Intern in the Tencent Hunyuan Qingyun Talent Program</strong>.</p>
+    <p>My research focuses on <strong>general game agents</strong> and <strong>general game world models</strong>. I am now working with <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a> at THUSI-Lab on building agents that can play and reason across diverse games, and I am currently a <strong>Talent Prog. Intern at Tencent Hunyuan</strong>, working on LLMs.</p>
     <p class="home-about-previous"><strong>Previous:</strong> B.Eng. in Software Engineering at Beijing Institute of Technology (BIT); <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a> with <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&hl=zh-CN" target="_blank">Prof. Chengliang Chai</a> — label noise learning and pretraining data selection.</p>
     <p>Outside of research, I enjoy esports, AAA games, music, novels, and animation. Proud Master-tier League of Legends player. 🎮</p>
   </div>
@@ -32,7 +32,7 @@ redirect_from:
       <div class="exp-content">
         <div class="exp-header">
           <h3 class="exp-org">College of AI, Tsinghua University</h3>
-          <span class="exp-date">2026 – Present</span>
+          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2026 – Present</span>
         </div>
         <p class="exp-role">Ph.D. Candidate &nbsp;·&nbsp; <a href="https://github.com/THUSI-Lab" target="_blank">Intern in THUSI-Lab</a></p>
       </div>
@@ -45,7 +45,7 @@ redirect_from:
       <div class="exp-content">
         <div class="exp-header">
           <h3 class="exp-org">Beijing Institute of Technology</h3>
-          <span class="exp-date">2022 – 2026</span>
+          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2022 – 2026</span>
         </div>
         <p class="exp-role">B.Eng. in Software Engineering &nbsp;·&nbsp; <a href="https://github.com/BIT-DataLab" target="_blank">Intern in BIT-DataLab</a></p>
       </div>
@@ -58,7 +58,7 @@ redirect_from:
       <div class="exp-content">
         <div class="exp-header">
           <h3 class="exp-org">Chengdu No.7 High School</h3>
-          <span class="exp-date">2019 – 2022</span>
+          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2019 – 2022</span>
         </div>
         <p class="exp-role">High School</p>
       </div>
@@ -72,15 +72,15 @@ redirect_from:
   <div class="exp-list">
 
     <div class="exp-card">
-      <div class="exp-logo">
+      <div class="exp-logo exp-logo--wordmark">
         <img src="{{ site.baseurl }}/images/logo-tencent.png" alt="Tencent">
       </div>
       <div class="exp-content">
         <div class="exp-header">
-          <h3 class="exp-org">Tencent Hunyuan</h3>
-          <span class="exp-date">Oct 2026 – Present</span>
+          <h3 class="exp-org">Tencent</h3>
+          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Oct 2026 –</span>
         </div>
-        <p class="exp-role">Qingyun Talent Program, LLM Research Intern</p>
+        <p class="exp-role">Talent Prog. Intern at Hunyuan LLM</p>
       </div>
     </div>
 
@@ -91,7 +91,7 @@ redirect_from:
       <div class="exp-content">
         <div class="exp-header">
           <h3 class="exp-org">miHoYo (HoYoverse)</h3>
-          <span class="exp-date">Mar 2026 – Oct 2026</span>
+          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Mar 2026 – Oct 2026</span>
         </div>
         <p class="exp-role">Research Intern</p>
       </div>

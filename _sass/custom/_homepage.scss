@@ -137,18 +137,50 @@ body:has(.home-section) .page__footer footer {
     height: 42px;
   }
 
+  .exp-logo--wordmark {
+    width: 84px;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+
+    img {
+      padding: 0;
+    }
+  }
+
   .exp-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.28em;
+    gap: 0.15em;
   }
 
   .exp-org {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
+  }
+
+  .exp-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    margin: 0.15em 0 0.1em;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #70757a;
+    letter-spacing: 0;
+
+    i {
+      font-size: 0.82em;
+    }
   }
 
   .exp-role {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
   }
 }
 
