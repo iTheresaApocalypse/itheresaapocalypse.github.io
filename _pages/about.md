@@ -21,22 +21,9 @@ redirect_from:
   </div>
 </div>
 
-<div id="experience" class="home-section home-experience">
-  <h2><i class="fas fa-briefcase"></i> Experience</h2>
+<div id="education" class="home-section home-experience">
+  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
   <div class="exp-list">
-
-    <div class="exp-card">
-      <div class="exp-logo">
-        <img src="{{ site.baseurl }}/images/logo-mihoyo.png" alt="miHoYo">
-      </div>
-      <div class="exp-content">
-        <div class="exp-header">
-          <h3 class="exp-org">miHoYo (HoYoverse)</h3>
-          <span class="exp-date">Mar 2026 – Present</span>
-        </div>
-        <p class="exp-role">Research Intern</p>
-      </div>
-    </div>
 
     <div class="exp-card">
       <div class="exp-logo">
@@ -74,6 +61,26 @@ redirect_from:
           <span class="exp-date">2019 – 2022</span>
         </div>
         <p class="exp-role">High School</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="research" class="home-section home-experience">
+  <h2><i class="fas fa-flask"></i> Research Experience</h2>
+  <div class="exp-list">
+
+    <div class="exp-card">
+      <div class="exp-logo">
+        <img src="{{ site.baseurl }}/images/logo-mihoyo.png" alt="miHoYo">
+      </div>
+      <div class="exp-content">
+        <div class="exp-header">
+          <h3 class="exp-org">miHoYo (HoYoverse)</h3>
+          <span class="exp-date">Mar 2026 – Present</span>
+        </div>
+        <p class="exp-role">Research Intern</p>
       </div>
     </div>
 
