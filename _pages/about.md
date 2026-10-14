@@ -72,7 +72,7 @@ redirect_from:
   <div class="exp-list">
 
     <div class="exp-card">
-      <div class="exp-logo exp-logo--wordmark">
+      <div class="exp-logo">
         <img src="{{ site.baseurl }}/images/logo-tencent.png" alt="Tencent">
       </div>
       <div class="exp-content">

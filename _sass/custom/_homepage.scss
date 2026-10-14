@@ -133,21 +133,9 @@ body:has(.home-section) .page__footer footer {
   }
 
   .exp-logo {
-    width: 42px;
-    height: 42px;
-  }
-
-  .exp-logo--wordmark {
-    width: 84px;
-    height: 40px;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-    border-radius: 0;
-
-    img {
-      padding: 0;
-    }
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
   }
 
   .exp-header {
