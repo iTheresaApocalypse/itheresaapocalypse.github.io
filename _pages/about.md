@@ -34,7 +34,7 @@ redirect_from:
           <h3 class="exp-org">College of AI, Tsinghua University</h3>
           <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2026 – Present</span>
         </div>
-        <p class="exp-role">Ph.D. Candidate &nbsp;·&nbsp; <a href="https://github.com/THUSI-Lab" target="_blank">Intern in THUSI-Lab</a></p>
+        <p class="exp-role">Ph.D. Candidate</p>
       </div>
     </div>
 
@@ -47,7 +47,7 @@ redirect_from:
           <h3 class="exp-org">Beijing Institute of Technology</h3>
           <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2022 – 2026</span>
         </div>
-        <p class="exp-role">B.Eng. in Software Engineering &nbsp;·&nbsp; <a href="https://github.com/BIT-DataLab" target="_blank">Intern in BIT-DataLab</a></p>
+        <p class="exp-role">B.Eng. in Software Engineering</p>
       </div>
     </div>
 
@@ -97,6 +97,32 @@ redirect_from:
       </div>
     </div>
 
+    <div class="exp-card">
+      <div class="exp-logo">
+        <img src="{{ site.baseurl }}/images/logo-thu.png" alt="THU Spatial Intelligence Lab">
+      </div>
+      <div class="exp-content">
+        <div class="exp-header">
+          <h3 class="exp-org">THU Spatial Intelligence Lab</h3>
+          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Jul 2025 – Present</span>
+        </div>
+        <p class="exp-role">Intern, advised by <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a></p>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-logo">
+        <img src="{{ site.baseurl }}/images/logo-bit.png" alt="BIT Data Lab">
+      </div>
+      <div class="exp-content">
+        <div class="exp-header">
+          <h3 class="exp-org">BIT Data Lab</h3>
+          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Jan 2024 – May 2025</span>
+        </div>
+        <p class="exp-role">Intern, advised by <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&hl=zh-CN" target="_blank">Prof. Chengliang Chai</a></p>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -123,7 +149,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/gamescaling.jpg" alt="GameScaling Paper Figure">
       </div>
-      <p class="home-pub-desc">A controlled study of how gameplay data, world diversity, and model size scale continued pre-training and cross-world generalization for embodied game agents.</p>
+      <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
       <div class="home-pub-links">
         <a href="https://gamescaling.github.io/assets/paper.pdf" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://gamescaling.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
@@ -144,7 +170,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/video-arena.jpg" alt="Video-Arena Paper Figure">
       </div>
-      <p class="home-pub-desc">A scalable video benchmark for perceiving critical events, interpreting state updates, and tracking evolving world states under visual and agentic evaluation.</p>
+      <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2610.14158" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://videoarena-bench.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
@@ -165,7 +191,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench Paper Figure">
       </div>
-      <p class="home-pub-desc">The first paired benchmark for robust snap-and-ask multimodal retrieval, with 1,145 queries and 9,085 gallery items under 53 controlled corruption conditions. Image artifacts substantially degrade retrieval, while coarse user text can drag down joint retrieval; we propose MOOR for reliability-aware modality calibration.</p>
+      <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2608.29607" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://github.com/zrchen03/SnapBench" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
@@ -185,7 +211,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="VSI-Super-Wild Paper Figure">
       </div>
-      <p class="home-pub-desc">A spatial supersensing benchmark of 442 in-the-wild long-form videos and 6,980 QA pairs, showing that even strong multimodal models fail at coherent world-state tracking.</p>
+      <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2607.13681" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://vsi-super-wild.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
@@ -206,7 +232,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Game Multiverse Paper Figure">
       </div>
-      <p class="home-pub-desc">A systematic survey tracing the full lifecycle of generalist game players across four interdependent pillars — Dataset, Model, Harness, and Benchmark — and charting a five-level roadmap from single-game mastery toward the ultimate creator stage in the game multiverse.</p>
+      <p class="home-pub-desc">A survey of foundation models as generalist game players, from data to benchmarks.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2605.09965" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
@@ -225,7 +251,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse Paper Figure">
       </div>
-      <p class="home-pub-desc">A comprehensive video game benchmark enabling a reflective visual interaction loop for VLMs, with cognitive hierarchical taxonomy spanning 15 globally popular games, dual action space, and milestone evaluation.</p>
+      <p class="home-pub-desc">A video-game benchmark for reflective visual interaction across 15 popular games.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2603.06656" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://gameverse-bench.github.io" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
@@ -245,7 +271,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/noisy-label.png" alt="Label Noise Paper Figure">
       </div>
-      <p class="home-pub-desc">An efficient, hyperparameter-free, instance-level optimization framework for label noise in image classification.</p>
+      <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
       <div class="home-pub-links">
         <a href="https://arxiv.org/abs/2505.00812" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://github.com/iTheresaApocalypse/IDO" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
@@ -264,7 +290,7 @@ redirect_from:
       <div class="home-pub-figure">
         <img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity Paper Figure">
       </div>
-      <p class="home-pub-desc">Combine multi-arm bandit with influence function to select data for pretraining process of large language models.</p>
+      <p class="home-pub-desc">Bandits and influence functions for selecting pretraining data.</p>
       <div class="home-pub-links">
         <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
         <a href="https://github.com/iTheresaApocalypse/Quad" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
