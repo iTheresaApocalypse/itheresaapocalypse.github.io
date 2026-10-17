@@ -11,7 +11,7 @@ redirect_from:
   <h2><i class="fas fa-user-circle"></i> About Me</h2>
   <div class="home-about-content">
     <p>I am a Ph.D. Candidate at the <strong>College of AI, Tsinghua University</strong>.</p>
-    <p>My research focuses on <strong>general game agents</strong> and <strong>general game world models</strong>. I am now working with <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a> at THUSI-Lab on building agents that can play and reason across diverse games, and I am currently a <strong>Talent Prog. Intern at Tencent Hunyuan</strong>, working on LLMs.</p>
+    <p>My research focuses on <strong>general game agents</strong> and <strong>general game world models</strong>. I am now working with <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a> at THUSI-Lab on building agents that can play and reason across diverse games, and I am currently a <strong>Talent Prog. Intern at Tencent Hunyuan</strong>, focusing on large foundation models, game agents, and game generation.</p>
     <p class="home-about-previous"><strong>Previous:</strong> B.Eng. in Software Engineering at Beijing Institute of Technology (BIT); <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a> with <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&hl=zh-CN" target="_blank">Prof. Chengliang Chai</a> — label noise learning and pretraining data selection.</p>
     <p>Outside of research, I enjoy esports, AAA games, music, novels, and animation. Proud Master-tier League of Legends player. 🎮</p>
   </div>
