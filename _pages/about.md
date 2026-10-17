@@ -34,7 +34,7 @@ redirect_from:
           <h3 class="exp-org">College of AI, Tsinghua University</h3>
           <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2026 – Present</span>
         </div>
-        <p class="exp-role">Ph.D. Candidate</p>
+        <p class="exp-role">Ph.D. Candidate &nbsp;·&nbsp; Intern at <a href="https://github.com/THUSI-Lab" target="_blank">THUSI-Lab</a></p>
       </div>
     </div>
 
@@ -47,7 +47,7 @@ redirect_from:
           <h3 class="exp-org">Beijing Institute of Technology</h3>
           <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2022 – 2026</span>
         </div>
-        <p class="exp-role">B.Eng. in Software Engineering</p>
+        <p class="exp-role">B.Eng. in Software Engineering &nbsp;·&nbsp; Intern at <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a></p>
       </div>
     </div>
 
@@ -97,32 +97,6 @@ redirect_from:
       </div>
     </div>
 
-    <div class="exp-card">
-      <div class="exp-logo">
-        <img src="{{ site.baseurl }}/images/logo-thu.png" alt="THU Spatial Intelligence Lab">
-      </div>
-      <div class="exp-content">
-        <div class="exp-header">
-          <h3 class="exp-org">THU Spatial Intelligence Lab</h3>
-          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Jul 2025 – Present</span>
-        </div>
-        <p class="exp-role">Intern, advised by <a href="https://yimingli-page.github.io/" target="_blank">Prof. Yiming Li</a></p>
-      </div>
-    </div>
-
-    <div class="exp-card">
-      <div class="exp-logo">
-        <img src="{{ site.baseurl }}/images/logo-bit.png" alt="BIT Data Lab">
-      </div>
-      <div class="exp-content">
-        <div class="exp-header">
-          <h3 class="exp-org">BIT Data Lab</h3>
-          <span class="exp-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Jan 2024 – May 2025</span>
-        </div>
-        <p class="exp-role">Intern, advised by <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&hl=zh-CN" target="_blank">Prof. Chengliang Chai</a></p>
-      </div>
-    </div>
-
   </div>
 </div>
 
@@ -137,7 +111,7 @@ redirect_from:
     </div>
     <div class="home-pub-list">
 
-    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+    <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -146,19 +120,16 @@ redirect_from:
         <a href="https://gamescaling.github.io/assets/paper.pdf">Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds</a>
       </h3>
       <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Yukun Chen*, Zhihao Yang*, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Jinkun Hou, Tao Tan, Yinhe Zheng†, Yiming Li†</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/gamescaling.jpg" alt="GameScaling Paper Figure">
-      </div>
       <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
       <div class="home-pub-links">
-        <a href="https://gamescaling.github.io/assets/paper.pdf" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://gamescaling.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
-        <a href="https://github.com/THUSI-Lab/GameScaling" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
-        <a href="https://huggingface.co/THUSI-Lab/GameScaling" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-cube"></i> Models</a>
+        <a href="https://gamescaling.github.io/assets/paper.pdf" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://gamescaling.github.io/" class="home-pub-link home-pub-link--project" target="_blank">🌐 Project page</a>
+        <a href="https://github.com/THUSI-Lab/GameScaling" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
+        <a href="https://huggingface.co/THUSI-Lab/GameScaling" class="home-pub-link home-pub-link--dataset" target="_blank">🤗 Models</a>
       </div>
     </div>
 
-    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+    <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -167,19 +138,16 @@ redirect_from:
         <a href="https://arxiv.org/abs/2610.14158">Video-Arena: A Scalable Agentic Video Benchmark for Spatiotemporal Capability</a>
       </h3>
       <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Yukun Chen*, Zhihao Yang*, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Tao Tan, Yinhe Zheng†, Yiming Li†</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/video-arena.jpg" alt="Video-Arena Paper Figure">
-      </div>
       <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
       <div class="home-pub-links">
-        <a href="https://arxiv.org/abs/2610.14158" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://videoarena-bench.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
-        <a href="https://github.com/THUSI-Lab/VideoArena" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
-        <a href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+        <a href="https://arxiv.org/abs/2610.14158" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://videoarena-bench.github.io/" class="home-pub-link home-pub-link--project" target="_blank">🌐 Project page</a>
+        <a href="https://github.com/THUSI-Lab/VideoArena" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
+        <a href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" class="home-pub-link home-pub-link--dataset" target="_blank">🤗 Dataset</a>
       </div>
     </div>
 
-    <div class="home-pub-card home-pub-card--new" data-first-author="false">
+    <div class="home-pub-card" data-first-author="false">
       <div class="home-pub-header">
         <span class="home-pub-venue">EMNLP 2026 Findings</span>
         <span class="home-pub-year">2026</span>
@@ -188,18 +156,15 @@ redirect_from:
         <a href="https://arxiv.org/abs/2608.29607">SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions</a>
       </h3>
       <p class="home-pub-authors">Zirong Chen*, Fuda Ye*, <strong>Kuan Zhang</strong>, Enjun Du, Junfu Pu, Xinlei Wang, Xinyu Zuo, Lisheng Duan, Jin Ma, Yongqi Zhang†</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench Paper Figure">
-      </div>
       <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
       <div class="home-pub-links">
-        <a href="https://arxiv.org/abs/2608.29607" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://github.com/zrchen03/SnapBench" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
-        <a href="https://huggingface.co/datasets/yefd/SnapBench" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+        <a href="https://arxiv.org/abs/2608.29607" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://github.com/zrchen03/SnapBench" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
+        <a href="https://huggingface.co/datasets/yefd/SnapBench" class="home-pub-link home-pub-link--dataset" target="_blank">🤗 Dataset</a>
       </div>
     </div>
 
-    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+    <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue">ECCV 2026</span>
         <span class="home-pub-year">2026</span>
@@ -208,19 +173,16 @@ redirect_from:
         <a href="https://arxiv.org/abs/2607.13681">Towards Spatial Supersensing in the Wild</a>
       </h3>
       <p class="home-pub-authors">Tianjun Gu*, Tianyu Xin*, <strong>Kuan Zhang</strong>*, Bowen Yang, Kok-Chung Chua, Peize Li, Xinran Zhang, Yupeng Chen, Qiyue Zhao, Qinlei Xie, Jianhang Liu, Yucheng Lu, Yinan Han, Marco Pavone, Yiming Li†</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="VSI-Super-Wild Paper Figure">
-      </div>
       <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
       <div class="home-pub-links">
-        <a href="https://arxiv.org/abs/2607.13681" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://vsi-super-wild.github.io/" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
-        <a href="https://github.com/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
-        <a href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--dataset" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+        <a href="https://arxiv.org/abs/2607.13681" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://vsi-super-wild.github.io/" class="home-pub-link home-pub-link--project" target="_blank">🌐 Project page</a>
+        <a href="https://github.com/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
+        <a href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" class="home-pub-link home-pub-link--dataset" target="_blank">🤗 Dataset</a>
       </div>
     </div>
 
-    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+    <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -229,17 +191,14 @@ redirect_from:
         <a href="https://arxiv.org/abs/2605.09965">Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse</a>
       </h3>
       <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Dongchen Liu*, Qiyue Zhao*, Tianyu Xin*, Yue Su*, Haisheng Wang, Han Yin, Hongbo Ma, Peize Li, Tianjun Gu, Xiangnan Wu, Xinran Zhang, Yongxuan Li, Zirong Chen, Yiming Li†</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Game Multiverse Paper Figure">
-      </div>
       <p class="home-pub-desc">A survey of foundation models as generalist game players, from data to benchmarks.</p>
       <div class="home-pub-links">
-        <a href="https://arxiv.org/abs/2605.09965" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://arxiv.org/abs/2605.09965" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
       </div>
     </div>
 
-    <div class="home-pub-card home-pub-card--new home-pub-card--first-author" data-first-author="true">
+    <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
       <div class="home-pub-header">
         <span class="home-pub-venue">ICML 2026</span>
         <span class="home-pub-year">2026</span>
@@ -248,14 +207,11 @@ redirect_from:
         <a href="https://arxiv.org/abs/2603.06656">GameVerse: Can Vision-Language Models Learn from Video-based Reflection?</a>
       </h3>
       <p class="home-pub-authors"><strong>Kuan Zhang</strong>*, Dongchen Liu*, Qiyue Zhao, Jinkun Hou, Xinran Zhang, Qinlei Xie, Miao Liu†, Yiming Li†</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse Paper Figure">
-      </div>
       <p class="home-pub-desc">A video-game benchmark for reflective visual interaction across 15 popular games.</p>
       <div class="home-pub-links">
-        <a href="https://arxiv.org/abs/2603.06656" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://gameverse-bench.github.io" class="home-pub-link home-pub-link--project" target="_blank"><i class="fas fa-globe"></i> Project</a>
-        <a href="https://github.com/THUSI-Lab/GameVerse" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://arxiv.org/abs/2603.06656" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://gameverse-bench.github.io" class="home-pub-link home-pub-link--project" target="_blank">🌐 Project page</a>
+        <a href="https://github.com/THUSI-Lab/GameVerse" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
       </div>
     </div>
 
@@ -268,13 +224,10 @@ redirect_from:
         <a href="https://arxiv.org/abs/2505.00812">Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization</a>
       </h3>
       <p class="home-pub-authors"><strong>Kuan Zhang</strong>, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/noisy-label.png" alt="Label Noise Paper Figure">
-      </div>
       <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
       <div class="home-pub-links">
-        <a href="https://arxiv.org/abs/2505.00812" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://github.com/iTheresaApocalypse/IDO" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://arxiv.org/abs/2505.00812" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://github.com/iTheresaApocalypse/IDO" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
       </div>
     </div>
 
@@ -287,13 +240,10 @@ redirect_from:
         <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html">Harnessing Diversity for Important Data Selection in Pretraining Large Language Models</a>
       </h3>
       <p class="home-pub-authors">Chi Zhang*, Huaping Zhong*, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</p>
-      <div class="home-pub-figure">
-        <img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity Paper Figure">
-      </div>
       <p class="home-pub-desc">Bandits and influence functions for selecting pretraining data.</p>
       <div class="home-pub-links">
-        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" class="home-pub-link home-pub-link--pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
-        <a href="https://github.com/iTheresaApocalypse/Quad" class="home-pub-link home-pub-link--code" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" class="home-pub-link home-pub-link--pdf" target="_blank">📃 Paper</a>
+        <a href="https://github.com/iTheresaApocalypse/Quad" class="home-pub-link home-pub-link--code" target="_blank">🏠 GitHub</a>
       </div>
     </div>
 
