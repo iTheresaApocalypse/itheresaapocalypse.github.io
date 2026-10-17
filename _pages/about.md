@@ -112,6 +112,7 @@ redirect_from:
     <div class="home-pub-list">
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/gamescaling.jpg" alt="GameScaling project overview"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -130,6 +131,7 @@ redirect_from:
     </div>
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/video-arena.jpg" alt="Video-Arena project overview"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -148,6 +150,7 @@ redirect_from:
     </div>
 
     <div class="home-pub-card" data-first-author="false">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench paper figure"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue">EMNLP 2026 Findings</span>
         <span class="home-pub-year">2026</span>
@@ -165,6 +168,7 @@ redirect_from:
     </div>
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="Towards Spatial Supersensing in the Wild paper figure"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue">ECCV 2026</span>
         <span class="home-pub-year">2026</span>
@@ -183,6 +187,7 @@ redirect_from:
     </div>
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Game Multiverse survey figure"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -199,6 +204,7 @@ redirect_from:
     </div>
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse paper figure"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue">ICML 2026</span>
         <span class="home-pub-year">2026</span>
@@ -216,6 +222,7 @@ redirect_from:
     </div>
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/noisy-label.png" alt="Handling Label Noise paper figure"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue">NeurIPS 2025</span>
         <span class="home-pub-year">2025</span>
@@ -232,6 +239,7 @@ redirect_from:
     </div>
 
     <div class="home-pub-card" data-first-author="false">
+      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity paper figure"></div>
       <div class="home-pub-header">
         <span class="home-pub-venue">ICLR 2025 Spotlight</span>
         <span class="home-pub-year">2025</span>
