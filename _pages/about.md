@@ -36,7 +36,7 @@ redirect_from:
   </div>
 </div>
 
-<hr>
+<hr class="experience-divider">
 <section id="education" class="home-section">
   <h2>Education</h2>
   <div class="exp-list"><div class="exp-entry">
@@ -50,7 +50,7 @@ redirect_from:
 </div></div>
 </section>
 
-<hr>
+<hr class="experience-divider">
 <section id="research" class="home-section">
   <h2>Research Experience</h2>
   <div class="exp-list"><div class="exp-entry">
@@ -61,7 +61,7 @@ redirect_from:
 </div></div>
 </section>
 
-<hr>
+<hr class="experience-divider">
 <section id="publications" class="home-section home-publications">
   <div class="publication-heading"><h2>Publications</h2><p class="home-section-subtitle">* equal contribution; † corresponding author</p></div>
   <div class="home-pub-section--filterable js-pub-filter-root is-showing-all" data-default-filter="all">
