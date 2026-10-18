@@ -72,8 +72,8 @@ redirect_from:
     <div class="home-pub-list">
 <article class="home-pub-card home-pub-card--first-author" data-selected="true">
   <a class="home-pub-figure home-pub-figure--grid" href="https://gamescaling.github.io/videos/promo/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds">
-    <img src="{{ site.baseurl }}/images/previews/gamescaling-grid.jpg" alt="GameScaling playing Minecraft, Doom, Monster Shoot, and Pac-Man in a 2 by 2 grid" loading="lazy">
-    <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling-grid.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling-grid.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+    <img src="{{ site.baseurl }}/images/previews/gamescaling-six-groups.jpg" alt="Six rotating 2 by 2 GameScaling demo groups across Minecraft, Doom, OmniGameArena, and GameWorld" loading="lazy">
+    <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling-six-groups.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling-six-groups.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
   </a>
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://gamescaling.github.io/assets/paper.pdf" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Scaling in Games:</span><span class="paper-title-subtitle">Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds</span></a></h3>
