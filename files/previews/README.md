@@ -8,47 +8,40 @@ Encoding: H.264, 20 fps, with MP4 metadata at the start for playback.
 
 Project: https://gamescaling.github.io/
 
-`gamescaling-six-groups.mp4` is a 30-second, 960 x 608 silent loop. Six different
-2 x 2 groups run for exactly 5 seconds each. Every group has one Minecraft task,
-one Doom task, one OmniGameArena game, and one GameWorld game. All footage is
-from the project's GameScaling-27B-S3 demos and plays at its original speed.
-Each label sits above the complete source frame, including original annotations.
+`gamescaling-grid-3x3.mp4` is a fixed 3 x 3 grid. All nine gameplay clips play
+simultaneously at their original speed in a 14-second, 1440 x 912 silent loop.
+The panel composition stays fixed: two Minecraft tasks, two ViZDoom tasks,
+two OmniGameArena games, and three GameWorld games. All use GameScaling-27B-S3.
+The complete source frame and original annotations are preserved in every panel.
 
-| Loop interval | Minecraft | Doom | OmniGameArena | GameWorld |
-| --- | --- | --- | --- | --- |
-| 0-5s | Mine birch log | Defend the line | Monster Shoot | Pac-Man |
-| 5-10s | Fight zombie | Defend the center | Scene Escape | Boxel Rebound |
-| 10-15s | Craft enchanting table | Defend the line | Monster Shoot | Gentleman's Adventure |
-| 15-20s | Mine birch log | Defend the center | Scene Escape | Pac-Man |
-| 20-25s | Fight zombie | Defend the line | Monster Shoot | Boxel Rebound |
-| 25-30s | Craft enchanting table | Defend the center | Scene Escape | Gentleman's Adventure |
-
-Source intervals (seconds in the original clips, same column order):
-
-- Group 1: 0.8-5.8s, 27-32s, 7-12s, 1-6s.
-- Group 2: 0.5-5.5s, 8-13s, 18-23s, 0.2-5.2s.
-- Group 3: 5-10s, 35-40s, 17-22s, 1-6s.
-- Group 4: 3.5-8.5s, 24-29s, 45-50s, 10-15s.
-- Group 5: 3.5-8.5s, 45-50s, 30-35s, 2.3-7.3s.
-- Group 6: 18-23s, 40-45s, 78-83s, 11-16s.
+| Position | Benchmark | Task/game | Source interval |
+| --- | --- | --- | --- |
+| Row 1, column 1 | Minecraft | Mine birch log | 0.8-7.8s (repeated twice) |
+| Row 1, column 2 | Minecraft | Fight zombie | 0.5-7.5s (repeated twice) |
+| Row 1, column 3 | ViZDoom | Defend the line | 27-41s |
+| Row 2, column 1 | ViZDoom | Defend the center | 24-38s |
+| Row 2, column 2 | OmniGameArena | Monster Shoot | 7-21s |
+| Row 2, column 3 | OmniGameArena | Scene Escape | 45-59s |
+| Row 3, column 1 | GameWorld | Pac-Man | 1-15s |
+| Row 3, column 2 | GameWorld | Boxel Rebound | 0.2-7.2s (repeated twice) |
+| Row 3, column 3 | GameWorld | Gentleman's Adventure | 1-15s |
 
 Source videos:
 
-- doom-center: https://gamescaling.github.io/videos/mixture/vizdoom/defend_the_center/27b_s3.mp4
-- doom-line: https://gamescaling.github.io/videos/mixture/vizdoom/defend_the_line/27b_s3.mp4
-- gw-adventure: https://gamescaling.github.io/videos/mixture/gw/gentlemans_adventure/27b_s3.mp4
-- gw-boxel: https://gamescaling.github.io/videos/mixture/gw/boxel_rebound/27b_s3.mp4
-- gw-pacman: https://gamescaling.github.io/videos/mixture/gw/pacman/27b_s3.mp4
 - minecraft-birch: https://gamescaling.github.io/videos/mixture/mcu/mine_birch_log/27b_s3.mp4
-- minecraft-crafting: https://gamescaling.github.io/videos/mixture/mcu/craft_enchanting_table/27b_s3.mp4
 - minecraft-zombie: https://gamescaling.github.io/videos/mixture/mcu/kill_zombie/27b_s3.mp4
-- oga-escape: https://gamescaling.github.io/videos/mixture/oga/scene_escape/27b_s3.mp4
+- doom-line: https://gamescaling.github.io/videos/mixture/vizdoom/defend_the_line/27b_s3.mp4
+- doom-center: https://gamescaling.github.io/videos/mixture/vizdoom/defend_the_center/27b_s3.mp4
 - oga-shoot: https://gamescaling.github.io/videos/mixture/oga/monster_shoot/27b_s3.mp4
+- oga-escape: https://gamescaling.github.io/videos/mixture/oga/scene_escape/27b_s3.mp4
+- gw-pacman: https://gamescaling.github.io/videos/mixture/gw/pacman/27b_s3.mp4
+- gw-boxel: https://gamescaling.github.io/videos/mixture/gw/boxel_rebound/27b_s3.mp4
+- gw-adventure: https://gamescaling.github.io/videos/mixture/gw/gentlemans_adventure/27b_s3.mp4
 
-The matching poster is `images/previews/gamescaling-six-groups.jpg`, extracted
-at 2 seconds. New filenames ensure browsers fetch the updated preview. The video
-loops automatically on the homepage; the demo link opens the full project introduction.
-The older `gamescaling.mp4` and `gamescaling-grid.mp4` remain available for old links.
+The poster is `images/previews/gamescaling-grid-3x3.jpg`, extracted at 2 seconds.
+New filenames ensure browsers fetch the updated preview. The homepage loops
+the preview automatically; its demo link opens the complete project introduction.
+Older sequential and 2 x 2 previews remain available for old links.
 
 ## Video-Arena
 
