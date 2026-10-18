@@ -2,17 +2,17 @@
 (function () {
   function initPubFilter(root) {
     var buttons = root.querySelectorAll("[data-pub-filter]");
-    var items = root.querySelectorAll("[data-first-author]");
+    var items = root.querySelectorAll("[data-selected], [data-first-author]");
     if (!buttons.length || !items.length) return;
     function setMode(mode) {
       root.classList.toggle("is-showing-all", mode === "all");
       items.forEach(function (el) {
-        var isFirst = el.getAttribute("data-first-author") === "true";
-        el.style.display = mode === "all" || isFirst ? "" : "none";
+        var selected = el.getAttribute("data-selected") || el.getAttribute("data-first-author");
+        el.style.display = mode === "all" || selected === "true" ? "" : "none";
       });
       root.querySelectorAll(".pub-category-block").forEach(function (block) {
         var anyVisible = false;
-        block.querySelectorAll("[data-first-author]").forEach(function (el) {
+        block.querySelectorAll("[data-selected], [data-first-author]").forEach(function (el) {
           if (el.style.display !== "none") anyVisible = true;
         });
         block.style.display = anyVisible ? "" : "none";
@@ -20,7 +20,8 @@
       buttons.forEach(function (btn) {
         var active = btn.getAttribute("data-pub-filter") === mode;
         btn.classList.toggle("pub-filter__btn--active", active);
-        btn.setAttribute("aria-selected", active ? "true" : "false");
+        var state = btn.getAttribute("role") === "tab" ? "aria-selected" : "aria-pressed";
+        btn.setAttribute(state, active ? "true" : "false");
       });
     }
     buttons.forEach(function (btn) {
@@ -28,7 +29,7 @@
         setMode(btn.getAttribute("data-pub-filter"));
       });
     });
-    setMode("selected");
+    setMode(root.getAttribute("data-default-filter") === "all" ? "all" : "selected");
   }
   document.querySelectorAll(".js-pub-filter-root").forEach(initPubFilter);
 })();

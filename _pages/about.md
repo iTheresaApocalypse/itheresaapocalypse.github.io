@@ -64,16 +64,16 @@ redirect_from:
 <hr>
 <section id="publications" class="home-section home-publications">
   <div class="publication-heading"><h2>Publications</h2><p class="home-section-subtitle">* equal contribution; † corresponding author</p></div>
-  <div class="home-pub-section--filterable js-pub-filter-root">
-    <div class="pub-filter-bar" role="tablist" aria-label="Publication list filter">
-      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="selected" role="tab" aria-selected="true">Selected</button>
-      <button type="button" class="pub-filter__btn" data-pub-filter="all" role="tab" aria-selected="false">All</button>
+  <div class="home-pub-section--filterable js-pub-filter-root is-showing-all" data-default-filter="all">
+    <div class="pub-filter-bar" role="group" aria-label="Publication list filter">
+      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="pub-filter__btn" data-pub-filter="selected" aria-pressed="false">Selected</button>
     </div>
     <div class="home-pub-list">
-<article class="home-pub-card home-pub-card--first-author" data-first-author="true">
-  <a class="home-pub-figure" href="https://gamescaling.github.io/videos/promo/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds">
-    <img src="{{ site.baseurl }}/images/previews/gamescaling.jpg" alt="GameScaling project overview" loading="lazy">
-    <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+<article class="home-pub-card home-pub-card--first-author" data-selected="true">
+  <a class="home-pub-figure home-pub-figure--grid" href="https://gamescaling.github.io/videos/promo/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds">
+    <img src="{{ site.baseurl }}/images/previews/gamescaling-grid.jpg" alt="GameScaling playing Minecraft, Doom, Monster Shoot, and Pac-Man in a 2 by 2 grid" loading="lazy">
+    <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling-grid.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling-grid.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
   </a>
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://gamescaling.github.io/assets/paper.pdf" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Scaling in Games:</span><span class="paper-title-subtitle">Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds</span></a></h3>
@@ -88,7 +88,7 @@ redirect_from:
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-first-author="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true">
   <a class="home-pub-figure" href="https://videoarena-bench.github.io/videos/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Video-Arena: A Scalable Agentic Video Benchmark for Spatiotemporal Capability">
     <img src="{{ site.baseurl }}/images/previews/video-arena.jpg" alt="Video-Arena project overview" loading="lazy">
     <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/video-arena.mp4" poster="{{ site.baseurl }}/images/previews/video-arena.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
@@ -106,7 +106,23 @@ redirect_from:
     <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
   </div>
 </article>
-<article class="home-pub-card" data-first-author="false">
+<article class="home-pub-card" data-selected="false">
+  <a class="home-pub-figure" href="https://selen-suyue.github.io/OneWMNet/" target="_blank" rel="noopener noreferrer" aria-label="OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?">
+    <img src="{{ site.baseurl }}/images/onewm-method.webp" alt="OneWM architecture for unified causal world and action modeling" loading="lazy">
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2610.21095" target="_blank" rel="noopener noreferrer">Can World and Action Modeling Benefit Each Other under Unified Causal Training?</a></h3>
+    <p class="home-pub-authors"><span class="author-names-full">Yue Su<sup>*</sup>, Bokai Lin<sup>*</sup>, Xinkai Wang<sup>*</sup>, Chubin Zhang, Xiangnan Wu, <strong>Kuan Zhang</strong>, Weiyang Jin, Jiwen Yu, Yiming Li, Cewu Lu, Lixin Yang<sup>†</sup>, Xihui Liu<sup>†</sup></span><span class="author-names-short">Y. Su<sup>*</sup>, B. Lin<sup>*</sup>, X. Wang<sup>*</sup>, C. Zhang, X. Wu, <strong>Kuan Zhang</strong>, W. Jin, J. Yu, Y. Li, C. Lu, L. Yang<sup>†</sup>, X. Liu<sup>†</sup></span></p>
+    <p class="home-pub-venue">arXiv 2026</p>
+    <div class="home-pub-links">
+      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.21095" rel="noopener noreferrer" target="_blank">📃 paper</a>
+      <a class="home-pub-link home-pub-link--project" href="https://selen-suyue.github.io/OneWMNet/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
+      <a class="home-pub-link home-pub-link--code" href="https://github.com/Interactive-Active-AI/OneWM" rel="noopener noreferrer" target="_blank">🏠 github</a>
+    </div>
+    <p class="home-pub-desc">Unified causal training lets world prediction and action learning improve each other.</p>
+  </div>
+</article>
+<article class="home-pub-card" data-selected="false">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer" aria-label="SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions">
     <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench paper figure" loading="lazy">
 
@@ -123,7 +139,7 @@ redirect_from:
     <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
   </div>
 </article>
-<article class="home-pub-card" data-first-author="false">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer" aria-label="Towards Spatial Supersensing in the Wild">
     <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="Towards Spatial Supersensing in the Wild paper figure" loading="lazy">
 
@@ -141,7 +157,7 @@ redirect_from:
     <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-first-author="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2605.09965" target="_blank" rel="noopener noreferrer" aria-label="Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse">
     <img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Game Multiverse survey figure" loading="lazy">
 
@@ -157,7 +173,7 @@ redirect_from:
     <p class="home-pub-desc">A survey of foundation models as generalist game players, from data to benchmarks.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-first-author="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2603.06656" target="_blank" rel="noopener noreferrer" aria-label="GameVerse: Can Vision-Language Models Learn from Video-based Reflection?">
     <img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse paper figure" loading="lazy">
 
@@ -174,7 +190,7 @@ redirect_from:
     <p class="home-pub-desc">A video-game benchmark for reflective visual interaction across 15 popular games.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-first-author="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2505.00812" target="_blank" rel="noopener noreferrer" aria-label="Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization">
     <img src="{{ site.baseurl }}/images/noisy-label.png" alt="Handling Label Noise paper figure" loading="lazy">
 
@@ -190,7 +206,7 @@ redirect_from:
     <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
   </div>
 </article>
-<article class="home-pub-card" data-first-author="false">
+<article class="home-pub-card" data-selected="false">
   <a class="home-pub-figure" href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" target="_blank" rel="noopener noreferrer" aria-label="Harnessing Diversity for Important Data Selection in Pretraining Large Language Models">
     <img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity paper figure" loading="lazy">
 
