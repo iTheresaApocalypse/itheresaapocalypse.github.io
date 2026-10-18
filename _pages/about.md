@@ -31,6 +31,31 @@ redirect_from:
 </div>
 
 <hr>
+<section id="education" class="home-section">
+  <h2>Education</h2>
+  <div class="exp-list"><div class="exp-entry">
+  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-thu.png" alt="College of AI, Tsinghua University" loading="lazy"><div><h3 class="exp-org">College of AI, Tsinghua University</h3><p class="exp-role">Ph.D. Candidate  ·  Intern at <a href="https://github.com/THUSI-Lab" target="_blank">THUSI-Lab</a></p><p class="exp-date">2026 – Present</p></div></div>
+</div>
+<div class="exp-entry">
+  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-bit.png" alt="Beijing Institute of Technology" loading="lazy"><div><h3 class="exp-org">Beijing Institute of Technology</h3><p class="exp-role">B.Eng. in Software Engineering  ·  Intern at <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a></p><p class="exp-date">2022 – 2026</p></div></div>
+</div>
+<div class="exp-entry">
+  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-cd7.png" alt="Chengdu No.7 High School" loading="lazy"><div><h3 class="exp-org">Chengdu No.7 High School</h3><p class="exp-role">High School</p><p class="exp-date">2019 – 2022</p></div></div>
+</div></div>
+</section>
+
+<hr>
+<section id="research" class="home-section">
+  <h2>Research Experience</h2>
+  <div class="exp-list"><div class="exp-entry">
+  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-tencent.png" alt="Tencent" loading="lazy"><div><h3 class="exp-org">Tencent</h3><p class="exp-role">Talent Prog. Intern at Hunyuan LLM</p><p class="exp-focus">Large Foundation Models, Game Agents, and Game Generation</p><p class="exp-date">Oct 2026 – Present</p></div></div>
+</div>
+<div class="exp-entry">
+  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-mihoyo.png" alt="miHoYo" loading="lazy"><div><h3 class="exp-org">miHoYo</h3><p class="exp-role">Foundation Model Research Intern</p><p class="exp-focus">Game Agents and Game VLA</p><p class="exp-date">Mar 2026 – Oct 2026</p></div></div>
+</div></div>
+</section>
+
+<hr>
 <section id="publications" class="home-section home-publications">
   <div class="publication-heading"><h2>Publications</h2><p class="home-section-subtitle">* equal contribution; † corresponding author</p></div>
   <div class="home-pub-section--filterable js-pub-filter-root">
@@ -83,7 +108,7 @@ redirect_from:
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">SnapBench:</span><span class="paper-title-subtitle">Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions</span></a></h3>
     <p class="home-pub-authors"><span class="author-names-full">Zirong Chen<sup>*</sup>, Fuda Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, Enjun Du, Junfu Pu, Xinlei Wang, Xinyu Zuo, Lisheng Duan, Jin Ma, Yongqi Zhang<sup>†</sup></span><span class="author-names-short">Z. Chen<sup>*</sup>, F. Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, E. Du, J. Pu, X. Wang, X. Zuo, L. Duan, J. Ma, Y. Zhang<sup>†</sup></span></p>
-    <p class="home-pub-venue">EMNLP 2026 Findings</p>
+    <p class="home-pub-venue home-pub-venue--accepted">EMNLP 2026 Findings</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2608.29607" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/zrchen03/SnapBench" rel="noopener noreferrer" target="_blank">🏠 github</a>
@@ -92,7 +117,7 @@ redirect_from:
     <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-first-author="true">
+<article class="home-pub-card" data-first-author="false">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer" aria-label="Towards Spatial Supersensing in the Wild">
     <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="Towards Spatial Supersensing in the Wild paper figure" loading="lazy">
 
@@ -100,7 +125,7 @@ redirect_from:
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer">Towards Spatial Supersensing in the Wild</a></h3>
     <p class="home-pub-authors"><span class="author-names-full">Tianjun Gu<sup>*</sup>, Tianyu Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Bowen Yang, Kok-Chung Chua, Peize Li, Xinran Zhang, Yupeng Chen, Qiyue Zhao, Qinlei Xie, Jianhang Liu, Yucheng Lu, Yinan Han, Marco Pavone, Yiming Li<sup>†</sup></span><span class="author-names-short">T. Gu<sup>*</sup>, T. Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, B. Yang, K. Chua, P. Li, X. Zhang, Y. Chen, Q. Zhao, Q. Xie, J. Liu, Y. Lu, Y. Han, M. Pavone, Y. Li<sup>†</sup></span></p>
-    <p class="home-pub-venue">ECCV 2026</p>
+    <p class="home-pub-venue home-pub-venue--accepted">ECCV 2026</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://vsi-super-wild.github.io/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
@@ -134,7 +159,7 @@ redirect_from:
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2603.06656" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">GameVerse:</span><span class="paper-title-subtitle">Can Vision-Language Models Learn from Video-based Reflection?</span></a></h3>
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Dongchen Liu<sup>*</sup>, Qiyue Zhao, Jinkun Hou, Xinran Zhang, Qinlei Xie, Miao Liu<sup>†</sup>, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, D. Liu<sup>*</sup>, Q. Zhao, J. Hou, X. Zhang, Q. Xie, M. Liu<sup>†</sup>, Y. Li<sup>†</sup></span></p>
-    <p class="home-pub-venue">ICML 2026</p>
+    <p class="home-pub-venue home-pub-venue--accepted">ICML 2026</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2603.06656" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gameverse-bench.github.io" rel="noopener noreferrer" target="_blank">🌐 project page</a>
@@ -151,7 +176,7 @@ redirect_from:
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2505.00812" target="_blank" rel="noopener noreferrer">Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization</a></h3>
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong>, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</span><span class="author-names-short"><strong>Kuan Zhang</strong>, C. Chai, J. Xu, C. Zhang, H. Han, Y. Yuan, G. Wang, L. Cao</span></p>
-    <p class="home-pub-venue">NeurIPS 2025</p>
+    <p class="home-pub-venue home-pub-venue--accepted">NeurIPS 2025</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2505.00812" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/IDO" rel="noopener noreferrer" target="_blank">🏠 github</a>
@@ -167,7 +192,7 @@ redirect_from:
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Harnessing Diversity for Important Data Selection in Pretraining Large Language Models</a></h3>
     <p class="home-pub-authors"><span class="author-names-full">Chi Zhang<sup>*</sup>, Huaping Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</span><span class="author-names-short">C. Zhang<sup>*</sup>, H. Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, C. Chai, R. Wang, X. Zhuang, T. Bai, Q. Jiantao, L. Cao, J. Fan, Y. Yuan, G. Wang, C. He</span></p>
-    <p class="home-pub-venue">ICLR 2025 Spotlight</p>
+    <p class="home-pub-venue home-pub-venue--accepted">ICLR 2025 Spotlight</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/Quad" rel="noopener noreferrer" target="_blank">🏠 github</a>
@@ -177,36 +202,6 @@ redirect_from:
 </article>
     </div>
   </div>
-</section>
-
-<hr>
-<section id="education" class="home-section">
-  <h2>Education</h2>
-  <div class="exp-list"><div class="exp-entry">
-  <div class="exp-date">2026 – Present</div>
-  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-thu.png" alt="College of AI, Tsinghua University" loading="lazy"><div><h3 class="exp-org">College of AI, Tsinghua University</h3><p class="exp-role">Ph.D. Candidate  ·  Intern at <a href="https://github.com/THUSI-Lab" target="_blank">THUSI-Lab</a></p></div></div>
-</div>
-<div class="exp-entry">
-  <div class="exp-date">2022 – 2026</div>
-  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-bit.png" alt="Beijing Institute of Technology" loading="lazy"><div><h3 class="exp-org">Beijing Institute of Technology</h3><p class="exp-role">B.Eng. in Software Engineering  ·  Intern at <a href="https://github.com/BIT-DataLab" target="_blank">BIT-DataLab</a></p></div></div>
-</div>
-<div class="exp-entry">
-  <div class="exp-date">2019 – 2022</div>
-  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-cd7.png" alt="Chengdu No.7 High School" loading="lazy"><div><h3 class="exp-org">Chengdu No.7 High School</h3><p class="exp-role">High School</p></div></div>
-</div></div>
-</section>
-
-<hr>
-<section id="research" class="home-section">
-  <h2>Research Experience</h2>
-  <div class="exp-list"><div class="exp-entry">
-  <div class="exp-date">Oct 2026 – Present</div>
-  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-tencent.png" alt="Tencent" loading="lazy"><div><h3 class="exp-org">Tencent</h3><p class="exp-role">Talent Prog. Intern at Hunyuan LLM</p><p class="exp-focus">Large Foundation Models, Game Agents, and Game Generation</p></div></div>
-</div>
-<div class="exp-entry">
-  <div class="exp-date">Mar 2026 – Oct 2026</div>
-  <div class="exp-info"><img class="exp-logo" src="{{ site.baseurl }}/images/logo-mihoyo.png" alt="miHoYo" loading="lazy"><div><h3 class="exp-org">miHoYo</h3><p class="exp-role">Foundation Model Research Intern</p><p class="exp-focus">Game Agents and Game VLA</p></div></div>
-</div></div>
 </section>
 
 <hr>
