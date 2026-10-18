@@ -28,8 +28,9 @@ redirect_from:
     </nav>
   </div>
   <div class="home-about-content">
-    <p>I am a Ph.D. Candidate at the <strong>College of AI, Tsinghua University</strong>, working with <a href="https://yimingli-page.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yiming Li</a> at <a href="https://github.com/THUSI-Lab" target="_blank" rel="noopener noreferrer">THUSI-Lab</a>. I received my B.Eng. in Software Engineering from Beijing Institute of Technology.</p>
-    <p>My research focuses on <strong>general game agents</strong> and <strong>general game world models</strong>: building agents that can play and reason across diverse games. I am currently a <strong>Talent Prog. Intern at Tencent Hunyuan LLM</strong>, working on large foundation models, game agents, and game generation.</p>
+    <p>I am a Ph.D. Candidate at the <strong>College of AI, Tsinghua University</strong>, working with <a href="https://yimingli-page.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yiming Li</a> at <a href="https://github.com/THUSI-Lab" target="_blank" rel="noopener noreferrer">THUSI-Lab</a>. I am also a <strong>Talent Prog. Intern at Tencent Hunyuan LLM</strong>, working on large foundation models, game agents, and game generation. I received my B.Eng. in Software Engineering from Beijing Institute of Technology.</p>
+    <p>I am interested in <strong>Game &amp; AI</strong>, especially <strong>AI for playing games</strong> and <strong>game generation</strong>. My research focuses on general game agents and general game world models.</p>
+    <p>Outside of research, I enjoy esports, AAA games, music, novels, and animation. I am a <strong>Master-tier League of Legends player</strong>. 🎮</p>
     <details class="previous-experience"><summary>Previous experience</summary><p>Previously, I was a Foundation Model Research Intern at miHoYo, working on game agents and Game VLA. At <a href="https://github.com/BIT-DataLab" target="_blank" rel="noopener noreferrer">BIT-DataLab</a>, I worked with <a href="https://scholar.google.com/citations?user=qMPFwIUAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Prof. Chengliang Chai</a> on label noise learning and pretraining data selection.</p></details>
     <p class="contact-line">Email: <a href="mailto:kuanzhang2004@163.com">kuanzhang2004@163.com</a> · <a href="mailto:kuanzhang2004@gmail.com">kuanzhang2004@gmail.com</a></p>
   </div>
@@ -215,11 +216,6 @@ redirect_from:
   <ul class="service-list"><li>Conference Reviewer: <span class="service-golden">ICML 2026 Golden Reviewer</span>; NeurIPS; ICLR; AAAI; TMLR.</li></ul>
 </section>
 
-<hr>
-<section class="home-section miscellaneous">
-  <h2>Miscellaneous</h2>
-  <p>I enjoy esports, AAA games, music, novels, and animation. Proud Master-tier League of Legends player. 🎮</p>
-</section>
 <footer class="footer-note">Kuan Zhang · College of AI, Tsinghua University</footer>
 
 {% include pub-filter-script.html %}
