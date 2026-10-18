@@ -112,7 +112,10 @@ redirect_from:
     <div class="home-pub-list">
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
-      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/gamescaling.jpg" alt="GameScaling project overview"></div>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/gamescaling.jpg" alt="GameScaling project overview">
+        <video class="home-pub-video" data-src="https://gamescaling.github.io/videos/promo/hero_bg.mp4" poster="{{ site.baseurl }}/images/gamescaling.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+      </div>
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -131,7 +134,10 @@ redirect_from:
     </div>
 
     <div class="home-pub-card home-pub-card--first-author" data-first-author="true">
-      <div class="home-pub-figure"><img src="{{ site.baseurl }}/images/video-arena.jpg" alt="Video-Arena project overview"></div>
+      <div class="home-pub-figure">
+        <img src="{{ site.baseurl }}/images/video-arena.jpg" alt="Video-Arena project overview">
+        <video class="home-pub-video" data-src="https://videoarena-bench.github.io/videos/hero_bg.mp4" poster="{{ site.baseurl }}/images/video-arena.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+      </div>
       <div class="home-pub-header">
         <span class="home-pub-venue home-pub-venue--preprint">arXiv 2026</span>
         <span class="home-pub-year">2026</span>
@@ -290,3 +296,4 @@ redirect_from:
 </div>
 
 {% include pub-filter-script.html %}
+{% include pub-video-script.html %}

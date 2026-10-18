@@ -247,6 +247,7 @@ body:has(.home-section) .page__footer footer {
 }
 
 .home-pub-figure {
+  position: relative;
   grid-column: 1;
   grid-row: 1 / span 5;
   width: 100%;
@@ -262,6 +263,22 @@ body:has(.home-section) .page__footer footer {
     height: 124px;
     object-fit: contain;
     object-position: center;
+  }
+}
+
+.home-pub-video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #111;
+  opacity: 0;
+  pointer-events: none;
+
+  &.is-playing {
+    opacity: 1;
   }
 }
 
