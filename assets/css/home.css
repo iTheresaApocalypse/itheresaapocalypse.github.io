@@ -63,6 +63,7 @@ img { max-width: 100%; }
 .intro-layout { display: grid; grid-template-columns: minmax(190px, 24%) minmax(0, 1fr); gap: 28px; }
 .intro-photo { display: block; width: 100%; max-width: 260px; height: auto; margin: 0 auto; border-radius: 10px; }
 .profile-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 8px; margin: 12px 0 0; }
+.profile-links + .profile-links { margin-top: 4px; }
 .profile-links a:not(:last-child)::after { content: "|"; margin-left: 8px; color: var(--muted); }
 .home-about-content p { margin: 0; }
 .home-about-content p + p { margin-top: 16px; }

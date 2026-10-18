@@ -21,6 +21,11 @@ redirect_from:
       <a href="https://scholar.google.com/citations?user=jZ5fy6kAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       <a href="https://github.com/iTheresaApocalypse" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
+    <nav class="profile-links" aria-label="Social links">
+      <a href="https://www.xiaohongshu.com/user/profile/5f460ff5000000000100b792" target="_blank" rel="noopener noreferrer">小红书</a>
+      <a href="https://www.zhihu.com/people/itheresaapocalypse" target="_blank" rel="noopener noreferrer">知乎</a>
+      <a href="https://x.com/kuanzhang2004" target="_blank" rel="noopener noreferrer">X</a>
+    </nav>
   </div>
   <div class="home-about-content">
     <p>I am a Ph.D. Candidate at the <strong>College of AI, Tsinghua University</strong>, working with <a href="https://yimingli-page.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yiming Li</a> at <a href="https://github.com/THUSI-Lab" target="_blank" rel="noopener noreferrer">THUSI-Lab</a>. I received my B.Eng. in Software Engineering from Beijing Institute of Technology.</p>
