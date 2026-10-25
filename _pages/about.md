@@ -76,15 +76,15 @@ redirect_from:
     <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling-grid-3x3.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling-grid-3x3.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
   </a>
   <div class="home-pub-copy">
-    <p class="home-pub-flags"><span class="home-pub-pin"><span aria-hidden="true">📌</span> Pinned</span><a class="home-pub-highlight" href="https://huggingface.co/papers/2610.28698" target="_blank" rel="noopener noreferrer">🤗 Hugging Face Daily Paper #8</a></p>
+    <p class="home-pub-flags"><span class="home-pub-pin"><span aria-hidden="true">📌</span> Pinned</span><a class="home-pub-highlight" href="https://huggingface.co/papers/2610.28698" target="_blank" rel="noopener noreferrer">{% include huggingface-icon.html %} Hugging Face Daily Paper #8</a></p>
     <h3 class="home-pub-title"><a href="https://gamescaling.github.io/assets/paper.pdf" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Scaling in Games:</span><span class="paper-title-subtitle">Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds</span></a></h3>
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Yukun Chen<sup>*</sup>, Zhihao Yang<sup>*</sup>, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Jinkun Hou, Tao Tan, Yinhe Zheng<sup>†</sup>, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, Y. Chen<sup>*</sup>, Z. Yang<sup>*</sup>, Y. Su, X. Wu, Z. Chen, R. Luo, J. Hou, T. Tan, Y. Zheng<sup>†</sup>, Y. Li<sup>†</sup></span></p>
     <p class="home-pub-venue">arXiv 2026</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://gamescaling.github.io/assets/paper.pdf" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://gamescaling.github.io/assets/paper.pdf" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gamescaling.github.io/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub <span class="github-star-count" data-github-stars="THUSI-Lab/GameScaling" data-stats-url="https://raw.githubusercontent.com/iTheresaApocalypse/itheresaapocalypse.github.io/master/_data/github_stars.json" title="GitHub stars; refreshed once per day">★ {{ site.data.github_stars.stars }}</span></a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">🤗 models</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} models</a>
 <a class="home-pub-link" href="https://gamescaling.github.io/videos/promo/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ demo</a></div>
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
   </div>
@@ -99,10 +99,10 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Yukun Chen<sup>*</sup>, Zhihao Yang<sup>*</sup>, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Tao Tan, Yinhe Zheng<sup>†</sup>, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, Y. Chen<sup>*</sup>, Z. Yang<sup>*</sup>, Y. Su, X. Wu, Z. Chen, R. Luo, T. Tan, Y. Zheng<sup>†</sup>, Y. Li<sup>†</sup></span></p>
     <p class="home-pub-venue">arXiv 2026</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.14158" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.14158" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://videoarena-bench.github.io/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VideoArena" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">🤗 dataset</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} dataset</a>
 <a class="home-pub-link" href="https://videoarena-bench.github.io/videos/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ demo</a></div>
     <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
   </div>
@@ -116,7 +116,7 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full">Yue Su<sup>*</sup>, Bokai Lin<sup>*</sup>, Xinkai Wang<sup>*</sup>, Chubin Zhang, Xiangnan Wu, <strong>Kuan Zhang</strong>, Weiyang Jin, Jiwen Yu, Yiming Li, Cewu Lu, Lixin Yang<sup>†</sup>, Xihui Liu<sup>†</sup></span><span class="author-names-short">Y. Su<sup>*</sup>, B. Lin<sup>*</sup>, X. Wang<sup>*</sup>, C. Zhang, X. Wu, <strong>Kuan Zhang</strong>, W. Jin, J. Yu, Y. Li, C. Lu, L. Yang<sup>†</sup>, X. Liu<sup>†</sup></span></p>
     <p class="home-pub-venue">arXiv 2026</p>
     <div class="home-pub-links">
-      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.21095" rel="noopener noreferrer" target="_blank">📃 paper</a>
+      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.21095" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
       <a class="home-pub-link home-pub-link--project" href="https://selen-suyue.github.io/OneWMNet/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
       <a class="home-pub-link home-pub-link--code" href="https://github.com/Interactive-Active-AI/OneWM" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
     </div>
@@ -133,9 +133,9 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full">Zirong Chen<sup>*</sup>, Fuda Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, Enjun Du, Junfu Pu, Xinlei Wang, Xinyu Zuo, Lisheng Duan, Jin Ma, Yongqi Zhang<sup>†</sup></span><span class="author-names-short">Z. Chen<sup>*</sup>, F. Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, E. Du, J. Pu, X. Wang, X. Zuo, L. Duan, J. Ma, Y. Zhang<sup>†</sup></span></p>
     <p class="home-pub-venue home-pub-venue--accepted">EMNLP 2026 Findings</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2608.29607" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2608.29607" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/zrchen03/SnapBench" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/yefd/SnapBench" rel="noopener noreferrer" target="_blank">🤗 dataset</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/yefd/SnapBench" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} dataset</a>
 </div>
     <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
   </div>
@@ -150,10 +150,10 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full">Tianjun Gu<sup>*</sup>, Tianyu Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Bowen Yang, Kok-Chung Chua, Peize Li, Xinran Zhang, Yupeng Chen, Qiyue Zhao, Qinlei Xie, Jianhang Liu, Yucheng Lu, Yinan Han, Marco Pavone, Yiming Li<sup>†</sup></span><span class="author-names-short">T. Gu<sup>*</sup>, T. Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, B. Yang, K. Chua, P. Li, X. Zhang, Y. Chen, Q. Zhao, Q. Xie, J. Liu, Y. Lu, Y. Han, M. Pavone, Y. Li<sup>†</sup></span></p>
     <p class="home-pub-venue home-pub-venue--accepted">ECCV 2026</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://vsi-super-wild.github.io/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">🤗 dataset</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} dataset</a>
 </div>
     <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
   </div>
@@ -168,7 +168,7 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Dongchen Liu<sup>*</sup>, Qiyue Zhao<sup>*</sup>, Tianyu Xin<sup>*</sup>, Yue Su<sup>*</sup>, Haisheng Wang, Han Yin, Hongbo Ma, Peize Li, Tianjun Gu, Xiangnan Wu, Xinran Zhang, Yongxuan Li, Zirong Chen, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, D. Liu<sup>*</sup>, Q. Zhao<sup>*</sup>, T. Xin<sup>*</sup>, Y. Su<sup>*</sup>, H. Wang, H. Yin, H. Ma, P. Li, T. Gu, X. Wu, X. Zhang, Y. Li, Z. Chen, Y. Li<sup>†</sup></span></p>
     <p class="home-pub-venue home-pub-venue--accepted">TMLR 2026</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2605.09965" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2605.09965" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">A survey of foundation models as generalist game players, from data to benchmarks.</p>
@@ -184,7 +184,7 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Dongchen Liu<sup>*</sup>, Qiyue Zhao, Jinkun Hou, Xinran Zhang, Qinlei Xie, Miao Liu<sup>†</sup>, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, D. Liu<sup>*</sup>, Q. Zhao, J. Hou, X. Zhang, Q. Xie, M. Liu<sup>†</sup>, Y. Li<sup>†</sup></span></p>
     <p class="home-pub-venue home-pub-venue--accepted">ICML 2026</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2603.06656" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2603.06656" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gameverse-bench.github.io" rel="noopener noreferrer" target="_blank">🌐 project page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameVerse" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
@@ -201,7 +201,7 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong>, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</span><span class="author-names-short"><strong>Kuan Zhang</strong>, C. Chai, J. Xu, C. Zhang, H. Han, Y. Yuan, G. Wang, L. Cao</span></p>
     <p class="home-pub-venue home-pub-venue--accepted">NeurIPS 2025</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2505.00812" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2505.00812" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/IDO" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
@@ -217,7 +217,7 @@ redirect_from:
     <p class="home-pub-authors"><span class="author-names-full">Chi Zhang<sup>*</sup>, Huaping Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</span><span class="author-names-short">C. Zhang<sup>*</sup>, H. Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, C. Chai, R. Wang, X. Zhuang, T. Bai, Q. Jiantao, L. Cao, J. Fan, Y. Yuan, G. Wang, C. He</span></p>
     <p class="home-pub-venue home-pub-venue--accepted">ICLR 2025 Spotlight</p>
     <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" rel="noopener noreferrer" target="_blank">📃 paper</a>
+<a class="home-pub-link home-pub-link--pdf" href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/Quad" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">Bandits and influence functions for selecting pretraining data.</p>
