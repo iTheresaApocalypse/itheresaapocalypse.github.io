@@ -64,10 +64,10 @@ redirect_from:
 <hr class="experience-divider">
 <section id="publications" class="home-section home-publications">
   <div class="publication-heading"><h2>Publications</h2><p class="home-section-subtitle">* equal contribution; † corresponding author</p></div>
-  <div class="home-pub-section--filterable js-pub-filter-root is-showing-all" data-default-filter="all">
+  <div class="home-pub-section--filterable js-pub-filter-root" data-default-filter="selected">
     <div class="pub-filter-bar" role="group" aria-label="Publication list filter">
-      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="all" aria-pressed="true">All</button>
-      <button type="button" class="pub-filter__btn" data-pub-filter="selected" aria-pressed="false">Selected</button>
+      <button type="button" class="pub-filter__btn pub-filter__btn--active" data-pub-filter="selected" aria-pressed="true">Selected</button>
+      <button type="button" class="pub-filter__btn" data-pub-filter="all" aria-pressed="false">All</button>
     </div>
     <div class="home-pub-list">
 <article id="scaling-in-games" class="home-pub-card home-pub-card--first-author home-pub-card--pinned" data-selected="true" data-pinned="true">
@@ -83,7 +83,7 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://gamescaling.github.io/assets/paper.pdf" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gamescaling.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub <span class="github-star-count" data-github-stars="THUSI-Lab/GameScaling" data-stats-url="https://raw.githubusercontent.com/iTheresaApocalypse/itheresaapocalypse.github.io/master/_data/github_stars.json" title="GitHub stars; refreshed once per day">★ {{ site.data.github_stars.stars }}</span></a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub <span class="github-star-count" data-github-stars="THUSI-Lab/GameScaling" data-stats-url="https://raw.githubusercontent.com/iTheresaApocalypse/itheresaapocalypse.github.io/master/_data/github_stars.json" data-updated-at="{{ site.data.github_stars.updated_at }}" title="GitHub stars; refreshed daily by this website">★ {{ site.data.github_stars.stars }}</span></a>
 <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Models</a>
 <a class="home-pub-link" href="https://gamescaling.github.io/videos/promo/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
@@ -105,57 +105,6 @@ redirect_from:
 <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset</a>
 <a class="home-pub-link" href="https://videoarena-bench.github.io/videos/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
-  </div>
-</article>
-<article class="home-pub-card" data-selected="false">
-  <a class="home-pub-figure" href="https://selen-suyue.github.io/OneWMNet/" target="_blank" rel="noopener noreferrer" aria-label="OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?">
-    <img src="{{ site.baseurl }}/images/onewm-method.webp" alt="OneWM architecture for unified causal world and action modeling" loading="lazy">
-  </a>
-  <div class="home-pub-copy">
-    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2610.21095" target="_blank" rel="noopener noreferrer">Can World and Action Modeling Benefit Each Other under Unified Causal Training?</a></h3>
-    <p class="home-pub-authors"><span class="author-names-full">Yue Su<sup>*</sup>, Bokai Lin<sup>*</sup>, Xinkai Wang<sup>*</sup>, Chubin Zhang, Xiangnan Wu, <strong>Kuan Zhang</strong>, Weiyang Jin, Jiwen Yu, Yiming Li, Cewu Lu, Lixin Yang<sup>†</sup>, Xihui Liu<sup>†</sup></span><span class="author-names-short">Y. Su<sup>*</sup>, B. Lin<sup>*</sup>, X. Wang<sup>*</sup>, C. Zhang, X. Wu, <strong>Kuan Zhang</strong>, W. Jin, J. Yu, Y. Li, C. Lu, L. Yang<sup>†</sup>, X. Liu<sup>†</sup></span></p>
-    <p class="home-pub-venue">arXiv 2026</p>
-    <div class="home-pub-links">
-      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.21095" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
-      <a class="home-pub-link home-pub-link--project" href="https://selen-suyue.github.io/OneWMNet/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-      <a class="home-pub-link home-pub-link--code" href="https://github.com/Interactive-Active-AI/OneWM" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-    </div>
-    <p class="home-pub-desc">Unified causal training lets world prediction and action learning improve each other.</p>
-  </div>
-</article>
-<article class="home-pub-card" data-selected="false">
-  <a class="home-pub-figure" href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer" aria-label="SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions">
-    <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench paper figure" loading="lazy">
-
-  </a>
-  <div class="home-pub-copy">
-    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">SnapBench:</span><span class="paper-title-subtitle">Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions</span></a></h3>
-    <p class="home-pub-authors"><span class="author-names-full">Zirong Chen<sup>*</sup>, Fuda Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, Enjun Du, Junfu Pu, Xinlei Wang, Xinyu Zuo, Lisheng Duan, Jin Ma, Yongqi Zhang<sup>†</sup></span><span class="author-names-short">Z. Chen<sup>*</sup>, F. Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, E. Du, J. Pu, X. Wang, X. Zuo, L. Duan, J. Ma, Y. Zhang<sup>†</sup></span></p>
-    <p class="home-pub-venue home-pub-venue--accepted">EMNLP 2026 Findings</p>
-    <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2608.29607" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/zrchen03/SnapBench" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/yefd/SnapBench" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset</a>
-</div>
-    <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
-  </div>
-</article>
-<article class="home-pub-card home-pub-card--first-author" data-selected="true">
-  <a class="home-pub-figure" href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer" aria-label="Towards Spatial Supersensing in the Wild">
-    <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="Towards Spatial Supersensing in the Wild paper figure" loading="lazy">
-
-  </a>
-  <div class="home-pub-copy">
-    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer">Towards Spatial Supersensing in the Wild</a></h3>
-    <p class="home-pub-authors"><span class="author-names-full">Tianjun Gu<sup>*</sup>, Tianyu Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Bowen Yang, Kok-Chung Chua, Peize Li, Xinran Zhang, Yupeng Chen, Qiyue Zhao, Qinlei Xie, Jianhang Liu, Yucheng Lu, Yinan Han, Marco Pavone, Yiming Li<sup>†</sup></span><span class="author-names-short">T. Gu<sup>*</sup>, T. Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, B. Yang, K. Chua, P. Li, X. Zhang, Y. Chen, Q. Zhao, Q. Xie, J. Liu, Y. Lu, Y. Han, M. Pavone, Y. Li<sup>†</sup></span></p>
-    <p class="home-pub-venue home-pub-venue--accepted">ECCV 2026</p>
-    <div class="home-pub-links">
-<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
-<a class="home-pub-link home-pub-link--project" href="https://vsi-super-wild.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset</a>
-</div>
-    <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
   </div>
 </article>
 <article class="home-pub-card home-pub-card--first-author" data-selected="true">
@@ -192,6 +141,24 @@ redirect_from:
   </div>
 </article>
 <article class="home-pub-card home-pub-card--first-author" data-selected="true">
+  <a class="home-pub-figure" href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer" aria-label="Towards Spatial Supersensing in the Wild">
+    <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="Towards Spatial Supersensing in the Wild paper figure" loading="lazy">
+
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer">Towards Spatial Supersensing in the Wild</a></h3>
+    <p class="home-pub-authors"><span class="author-names-full">Tianjun Gu<sup>*</sup>, Tianyu Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Bowen Yang, Kok-Chung Chua, Peize Li, Xinran Zhang, Yupeng Chen, Qiyue Zhao, Qinlei Xie, Jianhang Liu, Yucheng Lu, Yinan Han, Marco Pavone, Yiming Li<sup>†</sup></span><span class="author-names-short">T. Gu<sup>*</sup>, T. Xin<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, B. Yang, K. Chua, P. Li, X. Zhang, Y. Chen, Q. Zhao, Q. Xie, J. Liu, Y. Lu, Y. Han, M. Pavone, Y. Li<sup>†</sup></span></p>
+    <p class="home-pub-venue home-pub-venue--accepted">ECCV 2026</p>
+    <div class="home-pub-links">
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
+<a class="home-pub-link home-pub-link--project" href="https://vsi-super-wild.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset</a>
+</div>
+    <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
+  </div>
+</article>
+<article class="home-pub-card home-pub-card--first-author" data-selected="true">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2505.00812" target="_blank" rel="noopener noreferrer" aria-label="Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization">
     <img src="{{ site.baseurl }}/images/noisy-label.png" alt="Handling Label Noise paper figure" loading="lazy">
 
@@ -205,6 +172,39 @@ redirect_from:
 <a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/IDO" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
+  </div>
+</article>
+<article class="home-pub-card" data-selected="false">
+  <a class="home-pub-figure" href="https://selen-suyue.github.io/OneWMNet/" target="_blank" rel="noopener noreferrer" aria-label="OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?">
+    <img src="{{ site.baseurl }}/images/onewm-method.webp" alt="OneWM architecture for unified causal world and action modeling" loading="lazy">
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2610.21095" target="_blank" rel="noopener noreferrer">Can World and Action Modeling Benefit Each Other under Unified Causal Training?</a></h3>
+    <p class="home-pub-authors"><span class="author-names-full">Yue Su<sup>*</sup>, Bokai Lin<sup>*</sup>, Xinkai Wang<sup>*</sup>, Chubin Zhang, Xiangnan Wu, <strong>Kuan Zhang</strong>, Weiyang Jin, Jiwen Yu, Yiming Li, Cewu Lu, Lixin Yang<sup>†</sup>, Xihui Liu<sup>†</sup></span><span class="author-names-short">Y. Su<sup>*</sup>, B. Lin<sup>*</sup>, X. Wang<sup>*</sup>, C. Zhang, X. Wu, <strong>Kuan Zhang</strong>, W. Jin, J. Yu, Y. Li, C. Lu, L. Yang<sup>†</sup>, X. Liu<sup>†</sup></span></p>
+    <p class="home-pub-venue">arXiv 2026</p>
+    <div class="home-pub-links">
+      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.21095" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
+      <a class="home-pub-link home-pub-link--project" href="https://selen-suyue.github.io/OneWMNet/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
+      <a class="home-pub-link home-pub-link--code" href="https://github.com/Interactive-Active-AI/OneWM" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
+    </div>
+    <p class="home-pub-desc">Unified causal training lets world prediction and action learning improve each other.</p>
+  </div>
+</article>
+<article class="home-pub-card" data-selected="false">
+  <a class="home-pub-figure" href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer" aria-label="SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions">
+    <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench paper figure" loading="lazy">
+
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">SnapBench:</span><span class="paper-title-subtitle">Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions</span></a></h3>
+    <p class="home-pub-authors"><span class="author-names-full">Zirong Chen<sup>*</sup>, Fuda Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, Enjun Du, Junfu Pu, Xinlei Wang, Xinyu Zuo, Lisheng Duan, Jin Ma, Yongqi Zhang<sup>†</sup></span><span class="author-names-short">Z. Chen<sup>*</sup>, F. Ye<sup>*</sup>, <strong>Kuan Zhang</strong>, E. Du, J. Pu, X. Wang, X. Zuo, L. Duan, J. Ma, Y. Zhang<sup>†</sup></span></p>
+    <p class="home-pub-venue home-pub-venue--accepted">EMNLP 2026 Findings</p>
+    <div class="home-pub-links">
+<a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2608.29607" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/zrchen03/SnapBench" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/yefd/SnapBench" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset</a>
+</div>
+    <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
   </div>
 </article>
 <article class="home-pub-card" data-selected="false">
@@ -238,4 +238,4 @@ redirect_from:
 {% include pub-filter-script.html %}
 {% include pub-video-script.html %}
 
-<script src="{{ "/assets/js/github-stars.js" | relative_url }}" defer></script>
+<script src="{{ "/assets/js/github-stars.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
