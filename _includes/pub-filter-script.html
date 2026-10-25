@@ -1,6 +1,13 @@
 <script>
 (function () {
   function initPubFilter(root) {
+    // Keep featured papers first in both All and Selected views.
+    var list = root.querySelector(".home-pub-list");
+    if (list) {
+      Array.from(list.children).filter(function (item) {
+        return item.getAttribute("data-pinned") === "true";
+      }).reverse().forEach(function (item) { list.prepend(item); });
+    }
     var buttons = root.querySelectorAll("[data-pub-filter]");
     var items = root.querySelectorAll("[data-selected], [data-first-author]");
     if (!buttons.length || !items.length) return;

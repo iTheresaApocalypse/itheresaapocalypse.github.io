@@ -1,0 +1,95 @@
+% !TeX program = xelatex
+% Reconstructed from Kuan Zhang's public CV (2026-10-18).
+% Based on xiangrongjingujiu's Chinese Resume Template.
+% Updated 2026-10-25: survey accepted at TMLR; GameScaling title and HF highlight.
+\documentclass{resume}
+\usepackage{linespacing_fix}
+\usepackage[normalem]{ulem}
+\usepackage[hidelinks]{hyperref}
+
+% The original class provides Chinese contact labels; this CV is in English.
+\renewcommand{\contactInfo}[2]{%
+  \centerline{\sffamily\large{\ Phone: {#1} \textperiodcentered\ \ Email: {#2}}}%
+}
+\renewcommand{\yourphoto}[1]{%
+  \hfill \smash{\raisebox{-24bp}{\includegraphics[width={#1}\paperwidth]{images/you.png}}}\hspace{2.7375pt}%
+}
+% Match the compact heading spacing of the reference CV.
+\titlespacing*{\section}{0cm}{*0.351}{*0.35}
+\titlespacing*{\subsection}{0cm}{*0.5}{*0.2}
+\setlist[itemize]{topsep=0.25em,leftmargin=1.5pc,after=\vspace{-2.95pt}}
+\newcommand{\self}{\underline{\textbf{Kuan Zhang}}}
+\newcommand{\equalcontrib}{\textsuperscript{$\ast$}}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\name{Kuan Zhang}
+\contactInfo{(+86) 150-0846-0895}{kuanzhang2004@163.com}
+\centerline{\sffamily\large\textbf{\href{https://scholar.google.com/citations?user=jZ5fy6kAAAAJ&hl=en}{Google Scholar}}}
+\vspace{1.2ex}
+\yourphoto{0.15}
+
+\section{Education}
+\datedsubsection{\textbf{Tsinghua University}, College of AI, \textit{Ph.D. Student}}{Sep.\ 2026 -- Jun.\ 2031}
+\begin{itemize}[parsep=0.5ex]
+  \item Intern at THUSI-Lab, supervised by Yiming Li.
+\end{itemize}
+\datedsubsection{\textbf{Beijing Institute of Technology}, School of Computer Science, \textit{B.Eng.\ in SE}}{Sep.\ 2022 -- Jun.\ 2026}
+\begin{itemize}[parsep=0.5ex]
+  \item GPA 3.87 / 4.0, Ranked \textbf{1 / 110}
+  \item Intern at BIT-DataLab, supervised by Chengliang Chai.
+\end{itemize}
+
+\section{Research Interests}
+General game agents and general game world models.
+
+\section{Research Experience}
+\datedsubsection{\textbf{Tencent}, \textit{Talent Prog. Intern at Hunyuan LLM}}{Oct.\ 2026 -- Present}
+\begin{itemize}[parsep=0.5ex]
+  \item Large Foundation Models, Game Agents, and Game Generation.
+\end{itemize}
+\datedsubsection{\textbf{miHoYo}, \textit{Foundation Model Research Intern}}{Mar.\ 2026 -- Oct.\ 2026}
+\begin{itemize}[parsep=0.5ex]
+  \item Game Agents and Game VLA.
+\end{itemize}
+
+\section{Publications}
+\subsection{\textit{Game Agent}}
+\begin{itemize}[parsep=0.7ex]
+  \item \self, ..., Miao Liu, Yiming Li. \textit{GameVerse: Can Vision-Language Models Learn from Video-based Reflection?}. \textbf{ICML 2026}.
+  \item \self, ..., Yiming Li. \textit{Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds}. Under Review. \href{https://huggingface.co/papers/2610.28698}{\textbf{Hugging Face Daily Paper \#8}}.
+  \item \self, ..., Yiming Li. \textit{Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse}. \textbf{TMLR 2026}.
+\end{itemize}
+\subsection{\textit{Spatiotemporal Intelligence}}
+\begin{itemize}[parsep=0.7ex]
+  \item Tianjun Gu\equalcontrib, Tianyu Xin\equalcontrib, \self\equalcontrib, ..., Marco Pavone, Yiming Li. \textit{Towards Spatial Supersensing in the Wild}. \textbf{ECCV 2026}.
+  \item \self, ..., Yiming Li. \textit{Video-Arena: A Scalable Agentic Video Benchmark for Spatiotemporal Capability}. Under Review.
+\end{itemize}
+\subsection{\textit{Data-Centric AI}}
+\begin{itemize}[parsep=0.7ex]
+  \item \self, Chengliang Chai, ..., Ye Yuan, Guoren Wang, Lei Cao. \textit{Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization}. \textbf{NeurIPS 2025}.
+  \item Chi Zhang\equalcontrib, Huaping Zhong\equalcontrib, \self, ..., Guoren Wang, Conghui He. \textit{Harnessing Diversity for Important Data Selection in Pretraining Large Language Models}. \textbf{ICLR 2025 Spotlight} (Acceptance Rate 3.2\%).
+  \item Zirong Chen\equalcontrib, Fuda Ye\equalcontrib, \self\equalcontrib, ..., Lisheng Duan, Jin Ma, Yongqi Zhang. \textit{SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions}. \textbf{Findings of EMNLP 2026}.
+\end{itemize}
+
+\section{Honors \& Awards}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{National Scholarship}, 2023 \& 2024 --- the highest scholarship for Chinese undergraduates.
+  \item \textbf{Xu Teli Scholarship}, 2026 --- BIT's highest scholarship.
+  \item Huanlan Scholarship, 2026 --- Tsinghua University.
+  \item BYD Scholarship, 2025.
+\end{itemize}
+
+\section{Academic Service}
+\begin{itemize}[parsep=0.5ex]
+  \item Reviewer: \textbf{ICML 2026 Golden Reviewer}; \textbf{ICLR 2027, 2026}; \textbf{ICML 2026}; \textbf{AAAI 2027}; \textbf{TMLR}.
+\end{itemize}
+
+\section{Hobbies}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{Sports}: Badminton, Fitness, Tennis.
+  \item \textbf{Games}: League of Legends (Master), FPS, RPG \& Action game enthusiast.
+\end{itemize}
+
+\end{document}

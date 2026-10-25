@@ -19,7 +19,7 @@ redirect_from:
     <nav class="profile-links" aria-label="Profile links">
       <a href="{{ site.author.cv | relative_url }}" target="_blank" rel="noopener noreferrer">CV</a>
       <a href="https://scholar.google.com/citations?user=jZ5fy6kAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-      <a href="https://github.com/iTheresaApocalypse" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://github.com/iTheresaApocalypse" target="_blank" rel="noopener noreferrer">{% include github-icon.html %} GitHub</a>
     </nav>
     <nav class="profile-links" aria-label="Social links">
       <a href="https://www.xiaohongshu.com/user/profile/5f460ff5000000000100b792" target="_blank" rel="noopener noreferrer">小红书</a>
@@ -70,19 +70,20 @@ redirect_from:
       <button type="button" class="pub-filter__btn" data-pub-filter="selected" aria-pressed="false">Selected</button>
     </div>
     <div class="home-pub-list">
-<article class="home-pub-card home-pub-card--first-author" data-selected="true">
+<article id="scaling-in-games" class="home-pub-card home-pub-card--first-author home-pub-card--pinned" data-selected="true" data-pinned="true">
   <a class="home-pub-figure home-pub-figure--grid" href="https://gamescaling.github.io/videos/promo/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds">
     <img src="{{ site.baseurl }}/images/previews/gamescaling-grid-3x3.jpg" alt="Nine simultaneous GameScaling demos in a fixed 3 by 3 grid: two Minecraft, two ViZDoom, two OmniGameArena, and three GameWorld games" loading="lazy">
     <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling-grid-3x3.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling-grid-3x3.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
   </a>
   <div class="home-pub-copy">
+    <p class="home-pub-flags"><span class="home-pub-pin"><span aria-hidden="true">📌</span> Pinned</span><a class="home-pub-highlight" href="https://huggingface.co/papers/2610.28698" target="_blank" rel="noopener noreferrer">🤗 Hugging Face Daily Paper #8</a></p>
     <h3 class="home-pub-title"><a href="https://gamescaling.github.io/assets/paper.pdf" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Scaling in Games:</span><span class="paper-title-subtitle">Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds</span></a></h3>
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Yukun Chen<sup>*</sup>, Zhihao Yang<sup>*</sup>, Yue Su, Xiangnan Wu, Zirong Chen, Run Luo, Jinkun Hou, Tao Tan, Yinhe Zheng<sup>†</sup>, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, Y. Chen<sup>*</sup>, Z. Yang<sup>*</sup>, Y. Su, X. Wu, Z. Chen, R. Luo, J. Hou, T. Tan, Y. Zheng<sup>†</sup>, Y. Li<sup>†</sup></span></p>
     <p class="home-pub-venue">arXiv 2026</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://gamescaling.github.io/assets/paper.pdf" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gamescaling.github.io/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub <span class="github-star-count" data-github-stars="THUSI-Lab/GameScaling" data-stats-url="https://raw.githubusercontent.com/iTheresaApocalypse/itheresaapocalypse.github.io/master/_data/github_stars.json" title="GitHub stars; refreshed once per day">★ {{ site.data.github_stars.stars }}</span></a>
 <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">🤗 models</a>
 <a class="home-pub-link" href="https://gamescaling.github.io/videos/promo/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ demo</a></div>
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
@@ -100,7 +101,7 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.14158" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://videoarena-bench.github.io/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VideoArena" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VideoArena" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">🤗 dataset</a>
 <a class="home-pub-link" href="https://videoarena-bench.github.io/videos/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ demo</a></div>
     <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
@@ -117,7 +118,7 @@ redirect_from:
     <div class="home-pub-links">
       <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.21095" rel="noopener noreferrer" target="_blank">📃 paper</a>
       <a class="home-pub-link home-pub-link--project" href="https://selen-suyue.github.io/OneWMNet/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
-      <a class="home-pub-link home-pub-link--code" href="https://github.com/Interactive-Active-AI/OneWM" rel="noopener noreferrer" target="_blank">🏠 github</a>
+      <a class="home-pub-link home-pub-link--code" href="https://github.com/Interactive-Active-AI/OneWM" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
     </div>
     <p class="home-pub-desc">Unified causal training lets world prediction and action learning improve each other.</p>
   </div>
@@ -133,7 +134,7 @@ redirect_from:
     <p class="home-pub-venue home-pub-venue--accepted">EMNLP 2026 Findings</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2608.29607" rel="noopener noreferrer" target="_blank">📃 paper</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/zrchen03/SnapBench" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/zrchen03/SnapBench" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/yefd/SnapBench" rel="noopener noreferrer" target="_blank">🤗 dataset</a>
 </div>
     <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
@@ -151,7 +152,7 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://vsi-super-wild.github.io/" rel="noopener noreferrer" target="_blank">🌐 project page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">🤗 dataset</a>
 </div>
     <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
@@ -165,10 +166,10 @@ redirect_from:
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2605.09965" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Towards Generalist Game Players:</span><span class="paper-title-subtitle">An Investigation of Foundation Models in the Game Multiverse</span></a></h3>
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Dongchen Liu<sup>*</sup>, Qiyue Zhao<sup>*</sup>, Tianyu Xin<sup>*</sup>, Yue Su<sup>*</sup>, Haisheng Wang, Han Yin, Hongbo Ma, Peize Li, Tianjun Gu, Xiangnan Wu, Xinran Zhang, Yongxuan Li, Zirong Chen, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, D. Liu<sup>*</sup>, Q. Zhao<sup>*</sup>, T. Xin<sup>*</sup>, Y. Su<sup>*</sup>, H. Wang, H. Yin, H. Ma, P. Li, T. Gu, X. Wu, X. Zhang, Y. Li, Z. Chen, Y. Li<sup>†</sup></span></p>
-    <p class="home-pub-venue">arXiv 2026</p>
+    <p class="home-pub-venue home-pub-venue--accepted">TMLR 2026</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2605.09965" rel="noopener noreferrer" target="_blank">📃 paper</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">A survey of foundation models as generalist game players, from data to benchmarks.</p>
   </div>
@@ -185,7 +186,7 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2603.06656" rel="noopener noreferrer" target="_blank">📃 paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gameverse-bench.github.io" rel="noopener noreferrer" target="_blank">🌐 project page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameVerse" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameVerse" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">A video-game benchmark for reflective visual interaction across 15 popular games.</p>
   </div>
@@ -201,7 +202,7 @@ redirect_from:
     <p class="home-pub-venue home-pub-venue--accepted">NeurIPS 2025</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2505.00812" rel="noopener noreferrer" target="_blank">📃 paper</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/IDO" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/IDO" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
   </div>
@@ -217,7 +218,7 @@ redirect_from:
     <p class="home-pub-venue home-pub-venue--accepted">ICLR 2025 Spotlight</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" rel="noopener noreferrer" target="_blank">📃 paper</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/Quad" rel="noopener noreferrer" target="_blank">🏠 github</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/Quad" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
 </div>
     <p class="home-pub-desc">Bandits and influence functions for selecting pretraining data.</p>
   </div>
@@ -236,3 +237,5 @@ redirect_from:
 
 {% include pub-filter-script.html %}
 {% include pub-video-script.html %}
+
+<script src="{{ "/assets/js/github-stars.js" | relative_url }}" defer></script>
