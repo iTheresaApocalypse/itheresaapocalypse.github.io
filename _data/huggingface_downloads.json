@@ -22,5 +22,13 @@
     ],
     "total": 1040,
     "updated_at": "2026-10-26T06:40:35Z"
+  },
+  "vsi_super_wild": {
+    "kind": "datasets",
+    "repositories": [
+      "THUSI-Lab/VSI-Super-Wild"
+    ],
+    "total": 3720,
+    "updated_at": "2026-10-26T06:58:04Z"
   }
 }

@@ -1,5 +1,32 @@
 {
-  "repository": "THUSI-Lab/GameScaling",
-  "stars": 378,
-  "updated_at": "2026-10-25T12:43:50Z"
+  "gamescaling": {
+    "repository": "THUSI-Lab/GameScaling",
+    "stars": 390,
+    "updated_at": "2026-10-26T06:54:34.749Z"
+  },
+  "video_arena": {
+    "repository": "THUSI-Lab/VideoArena",
+    "stars": 9,
+    "updated_at": "2026-10-26T06:54:34.553Z"
+  },
+  "survey": {
+    "repository": "THUSI-Lab/Awesome-LFMs-Play-Games",
+    "stars": 48,
+    "updated_at": "2026-10-26T06:54:34.748Z"
+  },
+  "gameverse": {
+    "repository": "THUSI-Lab/GameVerse",
+    "stars": 53,
+    "updated_at": "2026-10-26T06:54:34.749Z"
+  },
+  "vsi_super_wild": {
+    "repository": "THUSI-Lab/VSI-Super-Wild",
+    "stars": 21,
+    "updated_at": "2026-10-26T06:54:34.749Z"
+  },
+  "handling": {
+    "repository": "iTheresaApocalypse/IDO",
+    "stars": 9,
+    "updated_at": "2026-10-26T06:54:34.555Z"
+  }
 }

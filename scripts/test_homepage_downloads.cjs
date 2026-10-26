@@ -9,9 +9,10 @@ const flush = () => new Promise(setImmediate);
 const signature = key => initial[key].kind + ":" + [...initial[key].repositories].sort().join(",");
 const cacheKey = key => "hf-lifetime-downloads-v1-" + key;
 const models = (count = 10) => initial.gamescaling.repositories.map(id => ({ id, downloadsAllTime: count, downloads: 999 }));
+const vsi = (count = 30) => ({ id: initial.vsi_super_wild.repositories[0], downloadsAllTime: count, downloads: 999 });
 const dataset = (count = 20) => ({ id: initial.video_arena.repositories[0], downloadsAllTime: count, downloads: 999 });
 
-function page({ responses = [models(), dataset(), models(11), dataset(21)], cache = {}, storageBlocked = false } = {}) {
+function page({ responses = [models(), dataset(), vsi(), models(11), dataset(21), vsi(31)], cache = {}, storageBlocked = false } = {}) {
   let now = Date.parse("2026-10-26T15:59:00Z");
   let timerId = 0;
   const timers = new Map(), events = {}, storage = new Map(Object.entries(cache)), calls = [];
@@ -56,40 +57,41 @@ function page({ responses = [models(), dataset(), models(11), dataset(21)], cach
   let p = page();
   p.events.pageshow(); // Duplicate events during in-flight requests.
   await flush();
-  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 90", "↓ 20"]);
-  assert.equal(p.calls.length, 2, "each metric fetches once despite concurrent resume events");
+  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 90", "↓ 20", "↓ 30"]);
+  assert.equal(p.calls.length, 3, "each metric fetches once despite concurrent resume events");
   assert(p.calls.every(url => url.includes("downloadsAllTime")));
   p.events.pageshow(); p.events.visibilitychange(); await flush();
-  assert.equal(p.calls.length, 2, "no repeated same-day requests");
+  assert.equal(p.calls.length, 3, "no repeated same-day requests");
   const midnight = [...p.timers.values()][0];
   assert.equal(midnight.delay, 61000);
   p.advance(61000); midnight.fn(); await flush();
-  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 99", "↓ 21"]);
+  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 99", "↓ 21", "↓ 31"]);
   assert.equal(JSON.parse(p.storage.get(cacheKey("gamescaling"))).checked_day, "2026-10-27");
 
   const cached = { signature: signature("gamescaling"), total: 1234, updated_at: "2026-10-26T10:00:00Z", checked_day: "2026-10-26" };
-  p = page({ cache: { [cacheKey("gamescaling")]: JSON.stringify(cached) }, responses: [dataset()] });
+  p = page({ cache: { [cacheKey("gamescaling")]: JSON.stringify(cached) }, responses: [dataset(), vsi()] });
   await flush();
-  assert.equal(p.calls.length, 1, "each metric has an independent daily cache");
+  assert.equal(p.calls.length, 2, "each metric has an independent daily cache");
   assert.equal(p.badges[0].textContent, "↓ 1,234");
 
   p = page(); await flush(); p.advance(2 * 86400000); p.events.visibilitychange(); await flush();
-  assert.equal(p.calls.length, 4, "returning after missed days reads the latest lifetime total");
+  assert.equal(p.calls.length, 6, "returning after missed days reads the latest lifetime total");
 
-  p = page({ responses: [models(0), dataset(0)], storageBlocked: true });
+  p = page({ responses: [models(0), dataset(0), vsi(0)], storageBlocked: true });
   await flush(); p.events.pageshow(); await flush();
-  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 0", "↓ 0"]);
-  assert.equal(p.calls.length, 2);
+  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 0", "↓ 0", "↓ 0"]);
+  assert.equal(p.calls.length, 3);
 
   for (const invalid of [models().slice(1), [...models(), models()[0]], models().map(m => ({ id: m.id, downloads: 999 })), models(-1), models(Number.MAX_SAFE_INTEGER)]) {
-    p = page({ responses: [invalid, dataset()] }); await flush();
+    p = page({ responses: [invalid, dataset(), vsi()] }); await flush();
     assert.equal(p.badges[0].textContent, "↓ " + initial.gamescaling.total, "incomplete or invalid totals retain fallback");
     assert.equal(p.badges[1].textContent, "↓ 20", "one failure does not block the other project");
+    assert.equal(p.badges[2].textContent, "↓ 30", "VSI uses its own dataset endpoint");
   }
   p = page({ responses: [[...models().map(m => m.id === "THUSI-Lab/GameScaling" ? { ...m, downloadsAllTime: 100 } : m), { id: "THUSI-Lab/Unrelated", downloadsAllTime: 9999 }], dataset()] });
   await flush(); assert.equal(p.badges[0].textContent, "↓ 180", "include the main repository and eight checkpoints, excluding unrelated repos");
 
-  p = page({ cache: { [cacheKey("gamescaling")]: JSON.stringify({ ...cached, checked_day: "2026-10-25" }) }, responses: [Error("offline"), Error("offline")] });
+  p = page({ cache: { [cacheKey("gamescaling")]: JSON.stringify({ ...cached, checked_day: "2026-10-25" }) }, responses: [Error("offline"), Error("offline"), Error("offline")] });
   await flush(); assert.equal(p.badges[0].textContent, "↓ 1,234", "API failures retain successful cache");
 
   p = page({ cache: { [cacheKey("gamescaling")]: JSON.stringify({ ...cached, signature: "wrong" }) } });

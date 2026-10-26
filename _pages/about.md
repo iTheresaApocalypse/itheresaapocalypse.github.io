@@ -70,7 +70,7 @@ redirect_from:
       <button type="button" class="pub-filter__btn" data-pub-filter="all" aria-pressed="false">All</button>
     </div>
     <div class="home-pub-list">
-<article id="scaling-in-games" class="home-pub-card home-pub-card--first-author home-pub-card--pinned" data-selected="true" data-pinned="true">
+<article id="scaling-in-games" class="home-pub-card home-pub-card--first-author home-pub-card--pinned" data-selected="true" data-pinned="true" data-published="2026-10-20">
   <a class="home-pub-figure home-pub-figure--grid" href="https://gamescaling.github.io/videos/promo/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds">
     <img src="{{ site.baseurl }}/images/previews/gamescaling-grid-3x3.jpg" alt="Nine simultaneous GameScaling demos in a fixed 3 by 3 grid: two Minecraft, two ViZDoom, two OmniGameArena, and three GameWorld games" loading="lazy">
     <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling-grid-3x3.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling-grid-3x3.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
@@ -83,13 +83,13 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://gamescaling.github.io/assets/paper.pdf" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gamescaling.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub <span class="github-star-count" data-github-stars="THUSI-Lab/GameScaling" data-stats-url="https://raw.githubusercontent.com/iTheresaApocalypse/itheresaapocalypse.github.io/master/_data/github_stars.json" data-updated-at="{{ site.data.github_stars.updated_at }}" title="GitHub stars; refreshed daily by this website">★ {{ site.data.github_stars.stars }}</span></a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Models <span class="hf-download-count" data-hf-downloads="gamescaling" data-hf-kind="{{ site.data.huggingface_downloads.gamescaling.kind }}" data-hf-repositories="{{ site.data.huggingface_downloads.gamescaling.repositories | join: ',' }}" data-hf-updated-at="{{ site.data.huggingface_downloads.gamescaling.updated_at }}" title="All-time Hugging Face downloads; main repository plus 8 model checkpoints; refreshed daily">↓ {{ site.data.huggingface_downloads.gamescaling.total }}</span></a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="gamescaling" %}</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Models {% include huggingface-download-count.html key="gamescaling" %}</a>
 <a class="home-pub-link" href="https://gamescaling.github.io/videos/promo/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-selected="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-10-09">
   <a class="home-pub-figure" href="https://videoarena-bench.github.io/videos/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Video-Arena: A Scalable Agentic Video Benchmark for Spatiotemporal Capability">
     <img src="{{ site.baseurl }}/images/previews/video-arena.jpg" alt="Video-Arena project overview" loading="lazy">
     <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/video-arena.mp4" poster="{{ site.baseurl }}/images/previews/video-arena.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
@@ -101,13 +101,13 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.14158" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://videoarena-bench.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VideoArena" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset <span class="hf-download-count" data-hf-downloads="video_arena" data-hf-kind="{{ site.data.huggingface_downloads.video_arena.kind }}" data-hf-repositories="{{ site.data.huggingface_downloads.video_arena.repositories | join: ',' }}" data-hf-updated-at="{{ site.data.huggingface_downloads.video_arena.updated_at }}" title="All-time Hugging Face downloads; dataset; refreshed daily">↓ {{ site.data.huggingface_downloads.video_arena.total }}</span></a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VideoArena" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="video_arena" %}</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset {% include huggingface-download-count.html key="video_arena" %}</a>
 <a class="home-pub-link" href="https://videoarena-bench.github.io/videos/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-selected="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-05-11">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2605.09965" target="_blank" rel="noopener noreferrer" aria-label="Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse">
     <img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Game Multiverse survey figure" loading="lazy">
 
@@ -118,12 +118,12 @@ redirect_from:
     <p class="home-pub-venue home-pub-venue--accepted">TMLR 2026</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2605.09965" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="survey" %}</a>
 </div>
     <p class="home-pub-desc">A survey of foundation models as generalist game players, from data to benchmarks.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-selected="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-03-01">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2603.06656" target="_blank" rel="noopener noreferrer" aria-label="GameVerse: Can Vision-Language Models Learn from Video-based Reflection?">
     <img src="{{ site.baseurl }}/images/gameverse.png" alt="GameVerse paper figure" loading="lazy">
 
@@ -135,12 +135,12 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2603.06656" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gameverse-bench.github.io" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameVerse" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameVerse" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="gameverse" %}</a>
 </div>
     <p class="home-pub-desc">A video-game benchmark for reflective visual interaction across 15 popular games.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-selected="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-07-15">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2607.13681" target="_blank" rel="noopener noreferrer" aria-label="Towards Spatial Supersensing in the Wild">
     <img src="{{ site.baseurl }}/images/vsi-super-wild.png" alt="Towards Spatial Supersensing in the Wild paper figure" loading="lazy">
 
@@ -152,13 +152,13 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://vsi-super-wild.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="vsi_super_wild" %}</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset {% include huggingface-download-count.html key="vsi_super_wild" %}</a>
 </div>
     <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
   </div>
 </article>
-<article class="home-pub-card home-pub-card--first-author" data-selected="true">
+<article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2025-05-01">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2505.00812" target="_blank" rel="noopener noreferrer" aria-label="Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization">
     <img src="{{ site.baseurl }}/images/noisy-label.png" alt="Handling Label Noise paper figure" loading="lazy">
 
@@ -169,12 +169,12 @@ redirect_from:
     <p class="home-pub-venue home-pub-venue--accepted">NeurIPS 2025</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2505.00812" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
-<a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/IDO" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
+<a class="home-pub-link home-pub-link--code" href="https://github.com/iTheresaApocalypse/IDO" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="handling" %}</a>
 </div>
     <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
   </div>
 </article>
-<article class="home-pub-card" data-selected="false">
+<article class="home-pub-card" data-selected="false" data-published="2026-10-15">
   <a class="home-pub-figure" href="https://selen-suyue.github.io/OneWMNet/" target="_blank" rel="noopener noreferrer" aria-label="OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?">
     <img src="{{ site.baseurl }}/images/onewm-method.webp" alt="OneWM architecture for unified causal world and action modeling" loading="lazy">
   </a>
@@ -190,7 +190,7 @@ redirect_from:
     <p class="home-pub-desc">Unified causal training lets world prediction and action learning improve each other.</p>
   </div>
 </article>
-<article class="home-pub-card" data-selected="false">
+<article class="home-pub-card" data-selected="false" data-published="2026-08-30">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer" aria-label="SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions">
     <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench paper figure" loading="lazy">
 
@@ -207,7 +207,7 @@ redirect_from:
     <p class="home-pub-desc">A paired benchmark for snap-and-ask retrieval under controlled image and text corruption.</p>
   </div>
 </article>
-<article class="home-pub-card" data-selected="false">
+<article class="home-pub-card" data-selected="false" data-published="2025">
   <a class="home-pub-figure" href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" target="_blank" rel="noopener noreferrer" aria-label="Harnessing Diversity for Important Data Selection in Pretraining Large Language Models">
     <img src="{{ site.baseurl }}/images/harnessing.png" alt="Harnessing Diversity paper figure" loading="lazy">
 
