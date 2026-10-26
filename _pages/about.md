@@ -84,7 +84,7 @@ redirect_from:
 <a class="home-pub-link home-pub-link--pdf" href="https://gamescaling.github.io/assets/paper.pdf" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gamescaling.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub <span class="github-star-count" data-github-stars="THUSI-Lab/GameScaling" data-stats-url="https://raw.githubusercontent.com/iTheresaApocalypse/itheresaapocalypse.github.io/master/_data/github_stars.json" data-updated-at="{{ site.data.github_stars.updated_at }}" title="GitHub stars; refreshed daily by this website">★ {{ site.data.github_stars.stars }}</span></a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Models</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Models <span class="hf-download-count" data-hf-downloads="gamescaling" data-hf-kind="{{ site.data.huggingface_downloads.gamescaling.kind }}" data-hf-repositories="{{ site.data.huggingface_downloads.gamescaling.repositories | join: ',' }}" data-hf-updated-at="{{ site.data.huggingface_downloads.gamescaling.updated_at }}" title="All-time Hugging Face downloads; sum of 8 model checkpoints; refreshed daily">↓ {{ site.data.huggingface_downloads.gamescaling.total }}</span></a>
 <a class="home-pub-link" href="https://gamescaling.github.io/videos/promo/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
   </div>
@@ -102,7 +102,7 @@ redirect_from:
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.14158" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://videoarena-bench.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VideoArena" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset</a>
+<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset <span class="hf-download-count" data-hf-downloads="video_arena" data-hf-kind="{{ site.data.huggingface_downloads.video_arena.kind }}" data-hf-repositories="{{ site.data.huggingface_downloads.video_arena.repositories | join: ',' }}" data-hf-updated-at="{{ site.data.huggingface_downloads.video_arena.updated_at }}" title="All-time Hugging Face downloads; dataset; refreshed daily">↓ {{ site.data.huggingface_downloads.video_arena.total }}</span></a>
 <a class="home-pub-link" href="https://videoarena-bench.github.io/videos/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
   </div>
@@ -239,3 +239,5 @@ redirect_from:
 {% include pub-video-script.html %}
 
 <script src="{{ "/assets/js/github-stars.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+
+<script src="{{ "/assets/js/huggingface-downloads.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

@@ -148,6 +148,7 @@ h2 { margin: 0 0 16px; color: #111; font: 700 24px/1.3 var(--font-heading); }
 .home-pub-pin { display: inline-flex; align-items: center; gap: 3px; color: #765515; }
 .home-pub-highlight { padding: 2px 7px; border: 1px solid #edd8b4; border-radius: 5px; color: #845015; background: #fff5df; }
 .github-star-count { margin-left: 4px; color: #765515; font: 700 13px/1.4 var(--font-heading); font-variant-numeric: tabular-nums; }
+.hf-download-count { margin-left: 4px; color: #765515; font: 700 13px/1.4 var(--font-heading); font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* Brand marks stay sharp and consistent across operating systems. */
 .brand-icon { display: inline-block; width: 1em; height: 1em; vertical-align: -0.125em; }
