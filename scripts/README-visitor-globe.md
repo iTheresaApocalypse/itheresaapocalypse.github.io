@@ -7,12 +7,13 @@ license. The separate `visitor-globe-service` backend validates country codes.
 The vendored renderer has one local fix: redraw after the embedded land-map
 texture loads, so a paused or reduced-motion globe still shows continents.
 
-The globe works before statistics are connected, showing a gold Beijing home
-landmark and an explicit disconnected status. It does not invent visits.
-Green dots and arcs appear only from aggregate backend data. Controls support
-rotation, connections, a return to Beijing, country focus, dragging, arrow
-keys, and reduced motion. Rendering pauses outside the viewport or while the
-tab is hidden. The renderer loads only when the widget approaches view.
+The globe works before statistics are connected, showing the world map and
+an explicit disconnected status. It does not invent visits. All markers
+come from aggregate visitor data; there is no owner location or personal
+landmark. Controls support rotation, resetting the view, country focus,
+dragging, arrow keys, and reduced motion. Rendering pauses outside the
+viewport or while the tab is hidden. The renderer loads only when the widget
+approaches view.
 
 The public API returns only countries and visit counts. Totals, approximate
 country coordinates, and dot brightness are derived in the frontend. Brighter

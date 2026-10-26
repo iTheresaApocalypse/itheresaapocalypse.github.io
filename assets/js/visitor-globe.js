@@ -8,24 +8,20 @@ if (root) {
   const canvas = root.querySelector('canvas');
   const status = root.querySelector('.visitor-globe-status');
   const spinButton = root.querySelector('[data-globe-spin]');
-  const arcsButton = root.querySelector('[data-globe-arcs]');
   const places = root.querySelector('.visitor-globe-places');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const HOME = [39.9, 116.4];
+  const DEFAULT_VIEW = { phi: 0, theta: .2 };
   const TAU = Math.PI * 2;
   const sessionKey = 'kuan-visitor-session-v1';
   let globe, frame, lastFrame = 0, data = null, target = null;
-  let phi = Math.PI * 1.5 - HOME[1] * Math.PI / 180;
-  let theta = HOME[0] * Math.PI / 180;
+  let { phi, theta } = DEFAULT_VIEW;
   let spinning = !reducedMotion.matches;
-  let connections = true, visible = false, dragging = null, starting = false;
+  let visible = false, dragging = null, starting = false;
   let refreshTimer, destroyed = false;
 
   function syncControls() {
     spinButton.setAttribute('aria-pressed', String(spinning));
     spinButton.textContent = spinning ? 'Pause rotation' : 'Resume rotation';
-    arcsButton.setAttribute('aria-pressed', String(connections));
-    arcsButton.textContent = connections ? 'Connections on' : 'Connections off';
   }
 
   function geometry() {
@@ -37,14 +33,7 @@ if (root) {
         color: [.13 + .29 * density, .4 + .55 * density, .3 + .38 * density],
       };
     });
-    // The gold home marker is a landmark, never counted as a visitor.
-    markers.push({ location: HOME, size: .045, color: [.74, .47, .13] });
-    return {
-      markers,
-      arcs: connections ? (data?.markers || []).slice(0, 18)
-        .filter(m => Math.abs(m.location[0] - HOME[0]) + Math.abs(m.location[1] - HOME[1]) > 3)
-        .map(m => ({ from: m.location, to: HOME, color: [.43, .58, .39] })) : [],
-    };
+    return { markers };
   }
 
   function draw(now = 0) {
@@ -81,7 +70,7 @@ if (root) {
         phi, theta, dark: 0, diffuse: 1.25, mapSamples: 16000,
         mapBrightness: 5.5, baseColor: [.49, .56, .41],
         markerColor: [.2, .48, .36], glowColor: [.84, .86, .77],
-        scale: .96, arcWidth: .45, arcHeight: .18, markerElevation: .015,
+        scale: .96, markerElevation: .015,
         ...geometry(),
       });
       schedule();
@@ -91,13 +80,16 @@ if (root) {
     }
   }
 
-  function focusLocation(location) {
+  function focusView(next) {
     spinning = false;
-    const next = { phi: Math.PI * 1.5 - location[1] * Math.PI / 180, theta: location[0] * Math.PI / 180 };
     if (reducedMotion.matches) { phi = next.phi; theta = next.theta; target = null; }
     else target = next;
     syncControls();
     schedule();
+  }
+
+  function focusLocation(location) {
+    focusView({ phi: Math.PI * 1.5 - location[1] * Math.PI / 180, theta: location[0] * Math.PI / 180 });
   }
 
   function applyStats(payload) {
@@ -172,10 +164,9 @@ if (root) {
   }
 
   spinButton.addEventListener('click', () => { spinning = !spinning; target = null; syncControls(); schedule(); });
-  arcsButton.addEventListener('click', () => { connections = !connections; syncControls(); globe?.update(geometry()); schedule(); });
   root.querySelector('[data-globe-reset]').addEventListener('click', () => {
     for (const place of places.querySelectorAll('button')) place.setAttribute('aria-pressed', 'false');
-    focusLocation(HOME);
+    focusView(DEFAULT_VIEW);
   });
   canvas.addEventListener('pointerdown', event => {
     if (event.button !== 0) return;
