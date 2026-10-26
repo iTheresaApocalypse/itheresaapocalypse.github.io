@@ -147,6 +147,9 @@ h2 { margin: 0 0 16px; color: #111; font: 700 24px/1.3 var(--font-heading); }
 .home-pub-flags { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 7px; font: 700 13px/1.5 var(--font-heading); }
 .home-pub-pin { display: inline-flex; align-items: center; gap: 3px; color: #765515; }
 .home-pub-highlight { padding: 2px 7px; border: 1px solid #edd8b4; border-radius: 5px; color: #845015; background: #fff5df; }
+.home-pub-media-label { color: var(--muted); font-weight: 500; }
+.home-pub-media-link { padding: 2px 7px; border: 1px solid #c9d7e6; border-radius: 5px; color: #235c8b; background: #f3f7fb; white-space: nowrap; }
+.home-pub-media-link:hover, .home-pub-media-link:focus-visible { border-color: #235c8b; background: #e8f1fa; text-decoration: underline; }
 .github-star-count { margin-left: 4px; color: #765515; font: 700 13px/1.4 var(--font-heading); font-variant-numeric: tabular-nums; }
 .hf-download-count { margin-left: 4px; color: #765515; font: 700 13px/1.4 var(--font-heading); font-variant-numeric: tabular-nums; white-space: nowrap; }
 

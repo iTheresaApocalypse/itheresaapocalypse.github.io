@@ -1,0 +1,37 @@
+[
+  {
+    "label": "IT之家",
+    "url": "https://www.ithome.com/1/016/575.htm",
+    "title": "米哈游崩坏 AI 团队开源 GameScaling 游戏智能模型，多位高校实习生参与，参数规模 0.8B–27B",
+    "date": "2026-10-22",
+    "attribution": "IT之家报道"
+  },
+  {
+    "label": "凤凰科技",
+    "url": "https://tech.ifeng.com/c/8xQwuH4OLe5",
+    "title": "米哈游联合清华北大等高校发布开源GameScaling游戏模型，覆盖0.8B至27B参数规模",
+    "date": "2026-10-22",
+    "attribution": "转载 IT之家"
+  },
+  {
+    "label": "搜狐",
+    "url": "https://timeline.sohu.com/news/DnwMGOYUqg",
+    "title": "米哈游联合清华北大等高校发布开源GameScaling游戏模型，覆盖0.8B至27B参数规模",
+    "date": "2026-10-22",
+    "attribution": "搜狐时间线，转载 IT之家"
+  },
+  {
+    "label": "36氪",
+    "url": "https://www.36kr.com/p/4038036364317824",
+    "title": "米哈游项目组联手清北高材生，开源游戏操作AI模型：字节也做过",
+    "date": "2026-10-23",
+    "attribution": "游戏葡萄文章，刊载于36氪"
+  },
+  {
+    "label": "TechNode",
+    "url": "https://technode.com/2026/10/23/mihoyo-team-open-sources-gamescaling-models-that-control-games-through-keyboard-and-mouse-actions/",
+    "title": "MiHoYo team open-sources GameScaling models that control games through keyboard and mouse actions",
+    "date": "2026-10-23",
+    "attribution": "TechNode English"
+  }
+]
