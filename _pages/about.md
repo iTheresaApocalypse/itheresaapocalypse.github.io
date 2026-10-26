@@ -108,19 +108,19 @@ redirect_from:
   </div>
 </article>
 <article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-05-11">
-  <a class="home-pub-figure" href="https://arxiv.org/abs/2605.09965" target="_blank" rel="noopener noreferrer" aria-label="Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse">
-    <img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Game Multiverse survey figure" loading="lazy">
+  <a class="home-pub-figure" href="https://arxiv.org/abs/2605.09965" target="_blank" rel="noopener noreferrer" aria-label="Towards Generalist Game Agents: A Survey of Foundation Models in Virtual Worlds">
+    <img src="{{ site.baseurl }}/images/game-multiverse.png" alt="Generalist Game Agents survey figure" loading="lazy">
 
   </a>
   <div class="home-pub-copy">
-    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2605.09965" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Towards Generalist Game Players:</span><span class="paper-title-subtitle">An Investigation of Foundation Models in the Game Multiverse</span></a></h3>
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2605.09965" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Towards Generalist Game Agents:</span><span class="paper-title-subtitle">A Survey of Foundation Models in Virtual Worlds</span></a></h3>
     <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Dongchen Liu<sup>*</sup>, Qiyue Zhao<sup>*</sup>, Tianyu Xin<sup>*</sup>, Yue Su<sup>*</sup>, Haisheng Wang, Han Yin, Hongbo Ma, Peize Li, Tianjun Gu, Xiangnan Wu, Xinran Zhang, Yongxuan Li, Zirong Chen, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, D. Liu<sup>*</sup>, Q. Zhao<sup>*</sup>, T. Xin<sup>*</sup>, Y. Su<sup>*</sup>, H. Wang, H. Yin, H. Ma, P. Li, T. Gu, X. Wu, X. Zhang, Y. Li, Z. Chen, Y. Li<sup>†</sup></span></p>
     <p class="home-pub-venue home-pub-venue--accepted">TMLR 2026</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2605.09965" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="survey" %}</a>
 </div>
-    <p class="home-pub-desc">A survey of foundation models as generalist game players, from data to benchmarks.</p>
+    <p class="home-pub-desc">A survey of foundation models as generalist game agents in virtual worlds, from data to benchmarks.</p>
   </div>
 </article>
 <article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-03-01">
