@@ -56,7 +56,7 @@ function page({ responses = [models(), dataset(), models(11), dataset(21)], cach
   let p = page();
   p.events.pageshow(); // Duplicate events during in-flight requests.
   await flush();
-  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 80", "↓ 20"]);
+  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 90", "↓ 20"]);
   assert.equal(p.calls.length, 2, "each metric fetches once despite concurrent resume events");
   assert(p.calls.every(url => url.includes("downloadsAllTime")));
   p.events.pageshow(); p.events.visibilitychange(); await flush();
@@ -64,7 +64,7 @@ function page({ responses = [models(), dataset(), models(11), dataset(21)], cach
   const midnight = [...p.timers.values()][0];
   assert.equal(midnight.delay, 61000);
   p.advance(61000); midnight.fn(); await flush();
-  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 88", "↓ 21"]);
+  assert.deepEqual(p.badges.map(b => b.textContent), ["↓ 99", "↓ 21"]);
   assert.equal(JSON.parse(p.storage.get(cacheKey("gamescaling"))).checked_day, "2026-10-27");
 
   const cached = { signature: signature("gamescaling"), total: 1234, updated_at: "2026-10-26T10:00:00Z", checked_day: "2026-10-26" };
@@ -86,13 +86,13 @@ function page({ responses = [models(), dataset(), models(11), dataset(21)], cach
     assert.equal(p.badges[0].textContent, "↓ " + initial.gamescaling.total, "incomplete or invalid totals retain fallback");
     assert.equal(p.badges[1].textContent, "↓ 20", "one failure does not block the other project");
   }
-  p = page({ responses: [[...models(), { id: "THUSI-Lab/GameScaling", downloadsAllTime: 9999 }], dataset()] });
-  await flush(); assert.equal(p.badges[0].textContent, "↓ 80", "client/index repository is excluded");
+  p = page({ responses: [[...models().map(m => m.id === "THUSI-Lab/GameScaling" ? { ...m, downloadsAllTime: 100 } : m), { id: "THUSI-Lab/Unrelated", downloadsAllTime: 9999 }], dataset()] });
+  await flush(); assert.equal(p.badges[0].textContent, "↓ 180", "include the main repository and eight checkpoints, excluding unrelated repos");
 
   p = page({ cache: { [cacheKey("gamescaling")]: JSON.stringify({ ...cached, checked_day: "2026-10-25" }) }, responses: [Error("offline"), Error("offline")] });
   await flush(); assert.equal(p.badges[0].textContent, "↓ 1,234", "API failures retain successful cache");
 
   p = page({ cache: { [cacheKey("gamescaling")]: JSON.stringify({ ...cached, signature: "wrong" }) } });
-  await flush(); assert.equal(p.badges[0].textContent, "↓ 80", "a changed repository set invalidates the cache");
-  console.log("Passed: lifetime totals, complete checkpoint sum, midnight refresh, independent daily caches, suspended tabs, zero, blocked storage, and failure retention.");
+  await flush(); assert.equal(p.badges[0].textContent, "↓ 90", "a changed repository set invalidates the cache");
+  console.log("Passed: lifetime totals, complete main-and-checkpoint sum, midnight refresh, independent daily caches, suspended tabs, zero, blocked storage, and failure retention.");
 })().catch(error => { console.error(error); process.exitCode = 1; });

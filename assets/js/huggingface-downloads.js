@@ -40,7 +40,7 @@
     if (timestamp < metric.timestamp) return;
     metric.timestamp = timestamp;
     metric.badge.textContent = "↓ " + snapshot.total.toLocaleString("en-US");
-    var scope = metric.kind === "models" ? "summed across " + metric.repositories.length + " model checkpoints" : "dataset";
+    var scope = metric.kind === "models" ? "summed across " + metric.repositories.length + " model repositories" : "dataset";
     metric.badge.setAttribute("aria-label", snapshot.total + " all-time Hugging Face downloads, " + scope);
     metric.badge.title = "All-time Hugging Face downloads · " + scope + " · updated " + snapshot.updated_at + " · refreshed daily";
   }

@@ -2,6 +2,7 @@
   "gamescaling": {
     "kind": "models",
     "repositories": [
+      "THUSI-Lab/GameScaling",
       "THUSI-Lab/GameScaling-0.8B-S1",
       "THUSI-Lab/GameScaling-0.8B-S3",
       "THUSI-Lab/GameScaling-27B-S1",
@@ -11,8 +12,8 @@
       "THUSI-Lab/GameScaling-9B-S1",
       "THUSI-Lab/GameScaling-9B-S3"
     ],
-    "total": 1287,
-    "updated_at": "2026-10-26T06:40:35Z"
+    "total": 1471,
+    "updated_at": "2026-10-26T06:47:30Z"
   },
   "video_arena": {
     "kind": "datasets",

@@ -5,10 +5,10 @@
 The official API documentation defines this as downloads since repository
 creation: https://huggingface.co/docs/huggingface_hub/package_reference/hf_api
 
-- Scaling in Games: sum of the eight checkpoint repositories listed in
+- Scaling in Games: sum of the main repository and eight checkpoint repositories listed in
   `_data/huggingface_downloads.json`, as linked by the official model card.
-  The main `THUSI-Lab/GameScaling` repository contains the client and an index,
-  not model weights, so it is excluded from the model download total.
+  This includes `THUSI-Lab/GameScaling` (client and index) as well as the eight
+  weight repositories, for nine repositories in total.
 - Video-Arena: lifetime downloads of `THUSI-Lab/Video-Arena` (dataset).
 
 These are Hugging Face download events, not unique people. Model and dataset
