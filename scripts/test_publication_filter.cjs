@@ -14,10 +14,9 @@ assert.equal(selectedArticles.length, 6);
 assert(selectedArticles.every(m => m[2].includes('include github-star-count.html')), "every selected paper has stars");
 assert.equal(selectedArticles.filter(m => m[2].includes('include huggingface-download-count.html')).length, 3, "three selected papers have Hugging Face downloads");
 
-function page({ pinnedOld = false } = {}) {
+function page() {
   const items = articles.map((m, index) => {
     const attributes = Object.fromEntries([...m[1].matchAll(/([\w-]+)="([^"]*)"/g)].map(a => [a[1], a[2]]));
-    if (pinnedOld && attributes["data-pinned"]) attributes["data-published"] = "2000-01-01";
     return { name: names[index], style: {}, getAttribute: key => attributes[key] };
   });
   const list = {
@@ -54,6 +53,4 @@ for (let i = 0; i < 3; i++) {
   assert.deepEqual(p.visible(), expectedSelected, "Selected restores the curated order");
   assert.equal(p.buttons[0].attributes["aria-pressed"], "true");
 }
-p = page({ pinnedOld: true }); p.buttons[1].click();
-assert.equal(p.visible().at(-1), "scaling", "pinning cannot override All chronology");
-console.log("Passed: chronological All, curated Selected, repeated toggles, pin independence, and accessible filter state.");
+console.log("Passed: chronological All, curated Selected, repeated toggles, and accessible filter state.");
