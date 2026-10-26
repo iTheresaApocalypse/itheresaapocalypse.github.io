@@ -72,7 +72,7 @@ if (root) {
     try {
       const contextOptions = { alpha: true, stencil: false, antialias: true, depth: false, preserveDrawingBuffer: false };
       if (!canvas.getContext('webgl2', contextOptions) && !canvas.getContext('webgl', contextOptions)) throw new Error('WebGL unavailable');
-      const { default: createGlobe } = await import('./vendor/cobe/cobe.esm.js');
+      const { default: createGlobe } = await import('./vendor/cobe/cobe.esm.js?v=2.0.1-texture1');
       if (destroyed) return;
       const size = Math.max(1, canvas.clientWidth);
       const ratio = Math.min(devicePixelRatio || 1, 2);

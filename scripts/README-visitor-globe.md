@@ -4,6 +4,8 @@ The footer globe is a custom, locally served Cobe 2.0.1 visualization inspired
 by https://github.com/Selenium39/umami-maps. Its country coordinate table is
 served locally under the upstream MIT license, alongside the vendored Cobe
 license. The separate `visitor-globe-service` backend validates country codes.
+The vendored renderer has one local fix: redraw after the embedded land-map
+texture loads, so a paused or reduced-motion globe still shows continents.
 
 The globe works before statistics are connected, showing a gold Beijing home
 landmark and an explicit disconnected status. It does not invent visits.
