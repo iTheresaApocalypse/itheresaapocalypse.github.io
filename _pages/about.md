@@ -233,6 +233,8 @@ redirect_from:
   <ul class="service-list"><li>Conference Reviewer: <span class="service-golden">ICML 2026 Golden Reviewer</span>; NeurIPS; ICLR; AAAI; TMLR.</li></ul>
 </section>
 
+{% include visitor-globe.html %}
+
 <footer class="footer-note">Kuan Zhang · College of AI, Tsinghua University</footer>
 
 {% include pub-filter-script.html %}
@@ -241,3 +243,5 @@ redirect_from:
 <script src="{{ "/assets/js/github-stars.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 
 <script src="{{ "/assets/js/huggingface-downloads.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+
+<script type="module" src="{{ '/assets/js/visitor-globe.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

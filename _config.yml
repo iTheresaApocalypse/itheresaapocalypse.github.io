@@ -17,6 +17,11 @@ url                      : https://itheresaapocalypse.github.io # the base hostn
 baseurl                  : "" # user site at domain root; use "/repo-name" only for project pages
 repository               : "iTheresaApocalypse/itheresaapocalypse.github.io"
 
+# Public aggregate statistics endpoint for the homepage visitor globe.
+# The backend returns only countries and visit counts.
+visitor_globe:
+  endpoint: "https://kuan-visitor-observatory.swiftguppy9.chatgpt.site/api/visitor-globe"
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -184,6 +189,7 @@ exclude:
   - local
   - log
   - node_modules
+  - scripts
   - package.json*
   - Rakefile
   - README

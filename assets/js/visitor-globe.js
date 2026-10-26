@@ -1,0 +1,231 @@
+// Custom homepage globe, inspired by Selenium39/umami-maps (MIT).
+// Cobe 2.0.1 is vendored locally; no runtime CDN dependency.
+import COUNTRY_COORDINATES from './globe-countries.js';
+
+const root = document.querySelector('[data-visitor-globe]');
+
+if (root) {
+  const canvas = root.querySelector('canvas');
+  const status = root.querySelector('.visitor-globe-status');
+  const spinButton = root.querySelector('[data-globe-spin]');
+  const arcsButton = root.querySelector('[data-globe-arcs]');
+  const places = root.querySelector('.visitor-globe-places');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const HOME = [39.9, 116.4];
+  const TAU = Math.PI * 2;
+  const sessionKey = 'kuan-visitor-session-v1';
+  let globe, frame, lastFrame = 0, data = null, target = null;
+  let phi = Math.PI * 1.5 - HOME[1] * Math.PI / 180;
+  let theta = HOME[0] * Math.PI / 180;
+  let spinning = !reducedMotion.matches;
+  let connections = true, visible = false, dragging = null, starting = false;
+  let refreshTimer, destroyed = false;
+
+  function syncControls() {
+    spinButton.setAttribute('aria-pressed', String(spinning));
+    spinButton.textContent = spinning ? 'Pause rotation' : 'Resume rotation';
+    arcsButton.setAttribute('aria-pressed', String(connections));
+    arcsButton.textContent = connections ? 'Connections on' : 'Connections off';
+  }
+
+  function geometry() {
+    const peak = Math.max(1, ...(data?.markers || []).map(m => m.visits));
+    const markers = (data?.markers || []).map(m => {
+      const density = Math.log1p(m.visits) / Math.log1p(peak);
+      return {
+        location: m.location, size: .025 + .035 * density,
+        color: [.13 + .29 * density, .4 + .55 * density, .3 + .38 * density],
+      };
+    });
+    // The gold home marker is a landmark, never counted as a visitor.
+    markers.push({ location: HOME, size: .045, color: [.74, .47, .13] });
+    return {
+      markers,
+      arcs: connections ? (data?.markers || []).slice(0, 18)
+        .filter(m => Math.abs(m.location[0] - HOME[0]) + Math.abs(m.location[1] - HOME[1]) > 3)
+        .map(m => ({ from: m.location, to: HOME, color: [.43, .58, .39] })) : [],
+    };
+  }
+
+  function draw(now = 0) {
+    frame = null;
+    if (!globe || destroyed || !visible || document.hidden) return;
+    const delta = lastFrame ? Math.min((now - lastFrame) / 1000, .05) : 0;
+    lastFrame = now;
+    if (target) {
+      const difference = ((target.phi - phi + Math.PI) % TAU + TAU) % TAU - Math.PI;
+      phi += difference * .12;
+      theta += (target.theta - theta) * .12;
+      if (Math.abs(difference) + Math.abs(target.theta - theta) < .002) target = null;
+    } else if (spinning && !dragging) phi += delta * .12;
+    globe.update({ phi, theta });
+    if (spinning || target || dragging) schedule();
+  }
+
+  function schedule() {
+    if (!frame && globe && visible && !document.hidden && !destroyed) frame = requestAnimationFrame(draw);
+  }
+
+  async function startGlobe() {
+    if (globe || starting || destroyed) return;
+    starting = true;
+    try {
+      const contextOptions = { alpha: true, stencil: false, antialias: true, depth: false, preserveDrawingBuffer: false };
+      if (!canvas.getContext('webgl2', contextOptions) && !canvas.getContext('webgl', contextOptions)) throw new Error('WebGL unavailable');
+      const { default: createGlobe } = await import('./vendor/cobe/cobe.esm.js');
+      if (destroyed) return;
+      const size = Math.max(1, canvas.clientWidth);
+      const ratio = Math.min(devicePixelRatio || 1, 2);
+      globe = createGlobe(canvas, {
+        devicePixelRatio: ratio, width: size * ratio, height: size * ratio,
+        phi, theta, dark: 0, diffuse: 1.25, mapSamples: 16000,
+        mapBrightness: 5.5, baseColor: [.49, .56, .41],
+        markerColor: [.2, .48, .36], glowColor: [.84, .86, .77],
+        scale: .96, arcWidth: .45, arcHeight: .18, markerElevation: .015,
+        ...geometry(),
+      });
+      schedule();
+    } catch {
+      root.querySelector('.visitor-globe-fallback').hidden = false;
+      canvas.style.visibility = 'hidden';
+    }
+  }
+
+  function focusLocation(location) {
+    spinning = false;
+    const next = { phi: Math.PI * 1.5 - location[1] * Math.PI / 180, theta: location[0] * Math.PI / 180 };
+    if (reducedMotion.matches) { phi = next.phi; theta = next.theta; target = null; }
+    else target = next;
+    syncControls();
+    schedule();
+  }
+
+  function applyStats(payload) {
+    if (!payload || !Array.isArray(payload.countries) || payload.countries.length > 260) throw new Error('Invalid statistics');
+    const seen = new Set();
+    let totalVisits = 0;
+    const markers = [];
+    for (const row of payload.countries) {
+      if (!row || !/^[A-Z]{2}$/.test(row.country) || !Number.isSafeInteger(row.visits) || row.visits < 1 || seen.has(row.country)) throw new Error('Invalid country counts');
+      seen.add(row.country); totalVisits += row.visits;
+      if (COUNTRY_COORDINATES[row.country]) markers.push({ ...row, location: COUNTRY_COORDINATES[row.country] });
+    }
+    if (!Number.isSafeInteger(totalVisits)) throw new Error('Invalid total');
+    markers.sort((a, b) => b.visits - a.visits || a.country.localeCompare(b.country));
+    data = { totalVisits, markers };
+    root.querySelector('[data-globe-visits]').textContent = totalVisits.toLocaleString();
+    root.querySelector('[data-globe-countries]').textContent = markers.length.toLocaleString();
+    const regions = new Intl.DisplayNames(['en'], { type: 'region' });
+    places.replaceChildren();
+    markers.slice(0, 6).forEach(marker => {
+      const item = document.createElement('li');
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = `${regions.of(marker.country)} · ${marker.visits.toLocaleString()}`;
+      button.setAttribute('aria-pressed', 'false');
+      button.addEventListener('click', () => {
+        for (const place of places.querySelectorAll('button')) place.setAttribute('aria-pressed', 'false');
+        button.setAttribute('aria-pressed', 'true');
+        focusLocation(marker.location);
+      });
+      item.append(button); places.append(item);
+    });
+    status.textContent = totalVisits ? 'Every dot is a place that stopped by. Thanks for visiting!' : 'The observatory is ready for its first visit.';
+    globe?.update(geometry());
+    schedule();
+  }
+
+  const endpoint = root.dataset.endpoint.trim();
+  const production = location.hostname === 'itheresaapocalypse.github.io';
+  function sessionId() {
+    const now = Date.now();
+    let saved;
+    try { saved = JSON.parse(sessionStorage.getItem(sessionKey)); } catch { /* Storage may be unavailable. */ }
+    if (!saved || !/^[\da-f-]{36}$/i.test(saved.id) || !Number.isFinite(saved.lastSeen) || now - saved.lastSeen >= 1800000 || saved.lastSeen > now) {
+      saved = { id: crypto.randomUUID() };
+    }
+    saved.lastSeen = now;
+    try { sessionStorage.setItem(sessionKey, JSON.stringify(saved)); } catch { /* The server still deduplicates retries. */ }
+    return saved.id;
+  }
+
+  async function loadStats(record = false) {
+    if (!endpoint || destroyed) return;
+    try {
+      const url = new URL(endpoint);
+      if (url.protocol !== 'https:' && !(url.protocol === 'http:' && ['localhost', '127.0.0.1'].includes(url.hostname))) throw new Error('Invalid endpoint');
+      let response;
+      // Previewing localhost never sends visitor telemetry to production.
+      if (record && production && navigator.doNotTrack !== '1' && !navigator.globalPrivacyControl) {
+        const visitUrl = new URL('visit', url.href.replace(/visitor-globe\/?$/, ''));
+        response = await fetch(visitUrl, {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionId: sessionId() }), credentials: 'omit',
+          signal: AbortSignal.timeout(8000),
+        });
+      } else response = await fetch(url, { credentials: 'omit', signal: AbortSignal.timeout(8000) });
+      if (!response.ok) throw new Error('Statistics unavailable');
+      applyStats(await response.json());
+    } catch {
+      status.textContent = data ? 'Showing the latest available counts. Reconnecting…' : 'Visitor statistics are temporarily unavailable.';
+    }
+  }
+
+  spinButton.addEventListener('click', () => { spinning = !spinning; target = null; syncControls(); schedule(); });
+  arcsButton.addEventListener('click', () => { connections = !connections; syncControls(); globe?.update(geometry()); schedule(); });
+  root.querySelector('[data-globe-reset]').addEventListener('click', () => {
+    for (const place of places.querySelectorAll('button')) place.setAttribute('aria-pressed', 'false');
+    focusLocation(HOME);
+  });
+  canvas.addEventListener('pointerdown', event => {
+    if (event.button !== 0) return;
+    dragging = { id: event.pointerId, x: event.clientX, phi };
+    target = null;
+    canvas.setPointerCapture(event.pointerId);
+    canvas.classList.add('is-dragging');
+    schedule();
+  });
+  canvas.addEventListener('pointermove', event => {
+    if (!dragging || dragging.id !== event.pointerId) return;
+    phi = dragging.phi + (event.clientX - dragging.x) / 160;
+    schedule();
+  });
+  function endDrag() { dragging = null; canvas.classList.remove('is-dragging'); schedule(); }
+  canvas.addEventListener('pointerup', endDrag);
+  canvas.addEventListener('pointercancel', endDrag);
+  canvas.addEventListener('lostpointercapture', endDrag);
+  canvas.addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) return;
+    event.preventDefault(); target = null; spinning = false;
+    if (event.key === 'ArrowLeft') phi -= .18;
+    if (event.key === 'ArrowRight') phi += .18;
+    if (event.key === 'ArrowUp') theta = Math.min(1.35, theta + .12);
+    if (event.key === 'ArrowDown') theta = Math.max(-1.35, theta - .12);
+    syncControls(); schedule();
+  });
+  new ResizeObserver(() => {
+    if (!globe) return;
+    const ratio = Math.min(devicePixelRatio || 1, 2);
+    globe.update({ width: canvas.clientWidth * ratio, height: canvas.clientWidth * ratio }); schedule();
+  }).observe(canvas);
+  const observer = new IntersectionObserver(entries => {
+    visible = entries[0].isIntersecting;
+    lastFrame = 0;
+    if (visible) { startGlobe(); schedule(); }
+  }, { rootMargin: '120px' });
+  observer.observe(root);
+  document.addEventListener('visibilitychange', () => {
+    lastFrame = 0; schedule();
+    if (!document.hidden) loadStats(false);
+  });
+  reducedMotion.addEventListener('change', event => { if (event.matches) spinning = false; syncControls(); schedule(); });
+  window.addEventListener('pagehide', event => {
+    if (event.persisted) return;
+    destroyed = true; cancelAnimationFrame(frame); clearInterval(refreshTimer); observer.disconnect(); globe?.destroy();
+  });
+  syncControls();
+  if (endpoint) {
+    loadStats(true);
+    refreshTimer = setInterval(() => { if (!document.hidden) loadStats(false); }, 60000);
+  } else status.textContent = 'The globe is ready. Visitor statistics are not connected yet.';
+}
