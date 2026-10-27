@@ -24,6 +24,11 @@ export async function createCountryMap() {
   const context = canvas.getContext('2d');
   const paths = regions.map(region => {
     const path = new Path2D();
+    const points = region.polygons.flat(2);
+    const longitudes = points.map(point => point[0]);
+    const latitudes = points.map(point => point[1]);
+    const span = Math.max(Math.max(...longitudes) - Math.min(...longitudes),
+      Math.max(...latitudes) - Math.min(...latitudes)) * canvas.width / 360;
     for (const polygon of region.polygons) {
       const anchor = polygon[0].reduce((sum, point) => sum + point[0], 0) / polygon[0].length;
       for (const ring of polygon) {
@@ -38,7 +43,9 @@ export async function createCountryMap() {
         }
       }
     }
-    return { code: region.code, path };
+    // A tiny visited region needs a visible footprint at the globe's scale.
+    // Expand its own outline, rather than substituting a centroid marker.
+    return { code: region.code, path, visibilityStroke: Math.max(0, 12 - span) };
   });
   let signature = null;
   return {
@@ -58,6 +65,20 @@ export async function createCountryMap() {
       context.strokeStyle = 'rgba(239,244,235,.6)';
       context.lineWidth = .55;
       for (const { path } of paths) context.stroke(path);
+      // Draw after borders/neighboring land so islands such as Singapore are
+      // not erased by a pale boundary or another region. Unvisited land stays
+      // at its geographic size; only the footprint changes, never the count.
+      context.save();
+      context.lineJoin = 'round';
+      context.lineCap = 'round';
+      for (const { code, path, visibilityStroke } of paths) {
+        if (!visibilityStroke || !counts.has(code)) continue;
+        context.fillStyle = context.strokeStyle = regionColor(counts.get(code), peak);
+        context.lineWidth = visibilityStroke;
+        context.stroke(path);
+        context.fill(path, 'evenodd');
+      }
+      context.restore();
       return canvas;
     }
   };

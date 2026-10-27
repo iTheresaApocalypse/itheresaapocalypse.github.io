@@ -24,6 +24,12 @@ markers. A visible light-to-dark legend explains the scale. Countries without
 visits stay neutral; unknown locations (`ZZ`) never color unassigned geometry
 or affect the color scale.
 
+Visited regions smaller than 12 texture pixels receive a minimum visible
+footprint (about 9px at the center of the desktop globe). This expands their
+own polygon outline in the same aggregate color after borders are drawn, so
+Singapore and similar small regions remain visible without centroid markers.
+Unvisited regions retain their original footprint.
+
 The desktop canvas is 500px wide. At scale 1.24, the sphere occupies 99.2% of
 that height, reaching almost to the card's top and bottom edges. Only the
 text column retains vertical padding. The sphere has 32,000 Fibonacci points;

@@ -56,7 +56,7 @@ if (root) {
       if (!canvas.getContext('webgl2', contextOptions) && !canvas.getContext('webgl', contextOptions)) throw new Error('WebGL unavailable');
       const [{ default: createGlobe }, { createCountryMap }] = await Promise.all([
         import('./vendor/cobe/cobe.esm.js?v=2.0.1-regions1'),
-        import('./globe-choropleth.js'),
+        import('./globe-choropleth.js?v=small-regions2'),
       ]);
       countryMap = await createCountryMap();
       if (destroyed) return;
