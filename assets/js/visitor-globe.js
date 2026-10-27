@@ -13,7 +13,7 @@ if (root) {
   const DEFAULT_VIEW = { phi: 0, theta: .2 };
   const TAU = Math.PI * 2;
   const sessionKey = 'kuan-visitor-session-v1';
-  let globe, frame, lastFrame = 0, data = null, target = null;
+  let globe, countryMap, frame, lastFrame = 0, data = null, target = null;
   let { phi, theta } = DEFAULT_VIEW;
   let spinning = !reducedMotion.matches;
   let visible = false, dragging = null, starting = false;
@@ -25,15 +25,8 @@ if (root) {
   }
 
   function geometry() {
-    const peak = Math.max(1, ...(data?.markers || []).map(m => m.visits));
-    const markers = (data?.markers || []).map(m => {
-      const density = Math.log1p(m.visits) / Math.log1p(peak);
-      return {
-        location: m.location, size: .025 + .035 * density,
-        color: [.13 + .29 * density, .4 + .55 * density, .3 + .38 * density],
-      };
-    });
-    return { markers };
+    // Visits color complete country/region polygons; no centroid markers.
+    return { markers: [], countryMap: countryMap?.paint(data?.countries || []) };
   }
 
   function draw(now = 0) {
@@ -61,14 +54,18 @@ if (root) {
     try {
       const contextOptions = { alpha: true, stencil: false, antialias: true, depth: false, preserveDrawingBuffer: false };
       if (!canvas.getContext('webgl2', contextOptions) && !canvas.getContext('webgl', contextOptions)) throw new Error('WebGL unavailable');
-      const { default: createGlobe } = await import('./vendor/cobe/cobe.esm.js?v=2.0.1-texture1');
+      const [{ default: createGlobe }, { createCountryMap }] = await Promise.all([
+        import('./vendor/cobe/cobe.esm.js?v=2.0.1-regions1'),
+        import('./globe-choropleth.js'),
+      ]);
+      countryMap = await createCountryMap();
       if (destroyed) return;
       const size = Math.max(1, canvas.clientWidth);
       const ratio = Math.min(devicePixelRatio || 1, 2);
       globe = createGlobe(canvas, {
-        devicePixelRatio: ratio, width: size * ratio, height: size * ratio,
-        phi, theta, dark: 0, diffuse: 1.25, mapSamples: 16000,
-        mapBrightness: 5.5, baseColor: [.49, .56, .41],
+        devicePixelRatio: ratio, width: size, height: size,
+        phi, theta, dark: 0, diffuse: 1.25, mapSamples: 32000,
+        mapBrightness: 5.5, baseColor: [.9, .92, .86],
         markerColor: [.2, .48, .36], glowColor: [.84, .86, .77],
         scale: .96, markerElevation: .015,
         ...geometry(),
@@ -104,7 +101,7 @@ if (root) {
     }
     if (!Number.isSafeInteger(totalVisits)) throw new Error('Invalid total');
     markers.sort((a, b) => b.visits - a.visits || a.country.localeCompare(b.country));
-    data = { totalVisits, markers };
+    data = { totalVisits, markers, countries: payload.countries };
     root.querySelector('[data-globe-visits]').textContent = totalVisits.toLocaleString();
     root.querySelector('[data-globe-countries]').textContent = markers.length.toLocaleString();
     const regions = new Intl.DisplayNames(['en'], { type: 'region' });
@@ -122,7 +119,7 @@ if (root) {
       });
       item.append(button); places.append(item);
     });
-    status.textContent = totalVisits ? 'Every dot is a place that stopped by. Thanks for visiting!' : 'The observatory is ready for its first visit.';
+    status.textContent = totalVisits ? 'Country and region colors show where visits come from. Thanks for visiting!' : 'The observatory is ready for its first visit.';
     globe?.update(geometry());
     schedule();
   }
@@ -196,8 +193,7 @@ if (root) {
   });
   new ResizeObserver(() => {
     if (!globe) return;
-    const ratio = Math.min(devicePixelRatio || 1, 2);
-    globe.update({ width: canvas.clientWidth * ratio, height: canvas.clientWidth * ratio }); schedule();
+    globe.update({ width: canvas.clientWidth, height: canvas.clientWidth }); schedule();
   }).observe(canvas);
   const observer = new IntersectionObserver(entries => {
     visible = entries[0].isIntersecting;

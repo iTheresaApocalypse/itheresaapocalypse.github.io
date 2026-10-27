@@ -1,7 +1,7 @@
 <section class="visitor-observatory" data-visitor-globe data-endpoint="{{ site.visitor_globe.endpoint | default: '' | escape }}" aria-labelledby="visitor-globe-heading">
   <div class="visitor-globe-stage">
     <div class="visitor-globe-orbit" aria-hidden="true"></div>
-    <canvas class="visitor-globe-canvas" width="640" height="640" tabindex="0" role="img" aria-label="Interactive globe showing approximate visitor countries and regions. Drag or use arrow keys to rotate."></canvas>
+    <canvas class="visitor-globe-canvas" width="920" height="920" tabindex="0" role="img" aria-label="Interactive globe colored by visits across whole countries and regions. Darker green means more visits. Drag or use arrow keys to rotate."></canvas>
     <p class="visitor-globe-fallback" hidden>The globe needs WebGL. Visitor statistics are listed alongside it.</p>
   </div>
   <div class="visitor-globe-copy">
@@ -18,8 +18,8 @@
     </div>
     <ul class="visitor-globe-places" aria-label="Visitor countries and regions"></ul>
     <p class="visitor-globe-status" role="status">Connecting to the visitor observatory…</p>
-    <p class="visitor-globe-density"><span aria-hidden="true"></span> Dim → bright · more visits</p>
-    <p class="visitor-globe-note">Drag to explore · Select a place to fly there<br>Approximate country-level locations · Visits count browsing sessions</p>
+    <p class="visitor-globe-density"><span aria-hidden="true"></span> Light → dark · more visits</p>
+    <p class="visitor-globe-note">Drag to explore · Select a place to fly there<br>Country &amp; region totals · Visits count browsing sessions</p>
     <noscript><p>JavaScript is needed to load the globe and record this visit.</p></noscript>
   </div>
 </section>
