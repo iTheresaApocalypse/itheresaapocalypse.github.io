@@ -119,13 +119,14 @@ h2 { margin: 0 0 16px; color: #111; font: 700 24px/1.3 var(--font-heading); }
 .service-list li + li { margin-top: 6px; }
 .service-golden { color: #8c6818; font-weight: 700; }
 .miscellaneous p { margin: 0; }
-.visitor-observatory { display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr); align-items: center; gap: 36px; max-width: 1000px; margin: 36px auto 0; padding: 24px 28px; border: 1px solid #e4e0d7; border-radius: 16px; background: radial-gradient(ellipse at 20% 45%, #eeeee2 0, transparent 60%), #f8f7f2; }
+.visitor-observatory { display: grid; grid-template-columns: minmax(0, 500px) minmax(0, 1fr); align-items: center; gap: 28px; max-width: 1000px; margin: 36px auto 0; padding: 0 24px; overflow: hidden; border: 1px solid #e4e0d7; border-radius: 16px; background: radial-gradient(ellipse at 20% 45%, #eeeee2 0, transparent 60%), #f8f7f2; }
 .visitor-globe-stage { position: relative; display: grid; place-items: center; min-width: 0; }
-.visitor-globe-canvas { position: relative; display: block; width: 100%; aspect-ratio: 1; max-width: 460px; height: auto; cursor: grab; touch-action: pan-y; }
+.visitor-globe-canvas { position: relative; display: block; width: 100%; aspect-ratio: 1; max-width: 500px; height: auto; cursor: grab; touch-action: pan-y; }
 .visitor-globe-canvas.is-dragging { cursor: grabbing; }
 .visitor-globe-canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 50%; }
 .visitor-globe-orbit { position: absolute; inset: 15%; border: 1px solid #a3ad9a55; border-radius: 50%; transform: rotate(-25deg) scaleX(1.45) scaleY(.5); pointer-events: none; }
 .visitor-globe-eyebrow { margin: 0 0 5px; color: #6d7865; font: 700 10px/1.5 var(--font-heading); letter-spacing: .16em; }
+.visitor-globe-copy { padding-block: 24px; }
 .visitor-globe-copy h2 { margin: 0 0 6px; font-size: 30px; }
 .visitor-globe-intro { max-width: 290px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
 .visitor-globe-stats { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 20px 0 16px; font-family: var(--font-heading); }
@@ -147,9 +148,9 @@ h2 { margin: 0 0 16px; color: #111; font: 700 24px/1.3 var(--font-heading); }
 .visitor-globe-fallback { position: absolute; inset: 25% 10%; margin: 0; color: var(--muted); text-align: center; font: 13px/1.6 var(--font-heading); }
 .visitor-globe-fallback[hidden] { display: none; }
 @media (max-width: 900px) {
-  .visitor-observatory { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 20px; }
+  .visitor-observatory { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 0 16px 20px; }
   .visitor-globe-stage { width: min(420px, 100%); margin: 0 auto; }
-  .visitor-globe-copy { max-width: 360px; margin-inline: auto; }
+  .visitor-globe-copy { max-width: 360px; margin-inline: auto; padding-block: 0; }
 }
 .footer-note { margin: 32px 0 0; color: var(--muted); text-align: center; font: 13px/1.5 var(--font-heading); }
 

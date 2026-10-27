@@ -67,7 +67,8 @@ if (root) {
         phi, theta, dark: 0, diffuse: 1.25, mapSamples: 32000,
         mapBrightness: 5.5, baseColor: [.9, .92, .86],
         markerColor: [.2, .48, .36], glowColor: [.84, .86, .77],
-        scale: .96, markerElevation: .015,
+        // Cobe's sphere occupies 80% of its canvas at scale 1; fill 99.2%.
+        scale: 1.24, markerElevation: .015,
         ...geometry(),
       });
       schedule();

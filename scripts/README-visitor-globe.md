@@ -24,9 +24,11 @@ markers. A visible light-to-dark legend explains the scale. Countries without
 visits stay neutral; unknown locations (`ZZ`) never color unassigned geometry
 or affect the color scale.
 
-The desktop canvas grows from 340px to 460px and the sphere's Fibonacci point
-count grows from 16,000 to 32,000. Device pixel ratio is applied once by Cobe.
-The layout stacks below 900px and keeps the canvas inside the available width.
+The desktop canvas is 500px wide. At scale 1.24, the sphere occupies 99.2% of
+that height, reaching almost to the card's top and bottom edges. Only the
+text column retains vertical padding. The sphere has 32,000 Fibonacci points;
+device pixel ratio is applied once by Cobe. The layout stacks below 900px
+and keeps the canvas inside the available width.
 
 ## Enable real statistics
 
