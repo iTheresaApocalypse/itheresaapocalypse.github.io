@@ -190,6 +190,21 @@ redirect_from:
     <p class="home-pub-desc">Unified causal training lets world prediction and action learning improve each other.</p>
   </div>
 </article>
+<article id="skill-adaptation" class="home-pub-card" data-selected="false" data-published="2026-10-10">
+  <a class="home-pub-figure" href="https://zhihaoyang30.github.io/skill-adaptation/" target="_blank" rel="noopener noreferrer" aria-label="Evolving to Match Capabilities: Improving Harness Self-Evolution via Skill Adaptation">
+    <img src="https://zhihaoyang30.github.io/skill-adaptation/assets/fig3_pipeline.png" alt="Skill adaptation pipeline: constructing a meta-skill from failure analysis to guide harness self-evolution" loading="lazy">
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2610.33024" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Evolving to Match Capabilities:</span><span class="paper-title-subtitle">Improving Harness Self-Evolution via Skill Adaptation</span></a></h3>
+    <p class="home-pub-authors"><span class="author-names-full">Zhihao Yang<sup>*</sup>, Haojin Wang<sup>*</sup>, Juncheng Wu<sup>*</sup>, <strong>Kuan Zhang</strong>, Yukun Chen, Run Luo, Yaojie Lu, Yuyin Zhou, Lu Wang<sup>†</sup>, Xianpei Han<sup>†</sup></span><span class="author-names-short">Z. Yang<sup>*</sup>, H. Wang<sup>*</sup>, J. Wu<sup>*</sup>, <strong>Kuan Zhang</strong>, Y. Chen, R. Luo, Y. Lu, Y. Zhou, L. Wang<sup>†</sup>, X. Han<sup>†</sup></span></p>
+    <p class="home-pub-venue">arXiv 2026</p>
+    <div class="home-pub-links">
+      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.33024" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
+      <a class="home-pub-link home-pub-link--project" href="https://zhihaoyang30.github.io/skill-adaptation/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
+    </div>
+    <p class="home-pub-desc">Adapting skills to model capabilities improves harness self-evolution without updating model parameters.</p>
+  </div>
+</article>
 <article class="home-pub-card" data-selected="false" data-published="2026-08-30">
   <a class="home-pub-figure" href="https://arxiv.org/abs/2608.29607" target="_blank" rel="noopener noreferrer" aria-label="SnapBench: Benchmarking Snap-and-Ask Multimodal Retrieval for Mobile Interactions">
     <img src="{{ site.baseurl }}/images/snapbench.jpg" alt="SnapBench paper figure" loading="lazy">
