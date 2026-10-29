@@ -201,6 +201,7 @@ redirect_from:
     <div class="home-pub-links">
       <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.33024" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
       <a class="home-pub-link home-pub-link--project" href="https://zhihaoyang30.github.io/skill-adaptation/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
+      <a class="home-pub-link home-pub-link--code" href="https://github.com/zhihaoyang30/skill-adaptation-code" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
     </div>
     <p class="home-pub-desc">Adapting skills to model capabilities improves harness self-evolution without updating model parameters.</p>
   </div>
