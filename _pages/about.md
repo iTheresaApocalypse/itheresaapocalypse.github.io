@@ -256,8 +256,4 @@ redirect_from:
 {% include pub-filter-script.html %}
 {% include pub-video-script.html %}
 
-<script src="{{ "/assets/js/github-stars.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
-
-<script src="{{ "/assets/js/huggingface-downloads.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
-
 <script type="module" src="{{ '/assets/js/visitor-globe.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
