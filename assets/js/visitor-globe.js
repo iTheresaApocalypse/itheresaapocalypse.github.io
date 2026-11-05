@@ -107,7 +107,7 @@ if (root) {
     root.querySelector('[data-globe-countries]').textContent = markers.length.toLocaleString();
     const regions = new Intl.DisplayNames(['en'], { type: 'region' });
     places.replaceChildren();
-    markers.slice(0, 6).forEach(marker => {
+    markers.forEach(marker => {
       const item = document.createElement('li');
       const button = document.createElement('button');
       button.type = 'button';
