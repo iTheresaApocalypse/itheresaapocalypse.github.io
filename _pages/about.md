@@ -174,6 +174,21 @@ redirect_from:
     <p class="home-pub-desc">Instance-level optimization for label noise, without extra hyperparameters.</p>
   </div>
 </article>
+<article id="pivot" class="home-pub-card" data-selected="false" data-published="2026-10-29">
+  <a class="home-pub-figure" href="https://zhihaoyang30.github.io/PIVOT/" target="_blank" rel="noopener noreferrer" aria-label="PIVOT: Progressive Intervention via Online Teacher Correction">
+    <img src="https://zhihaoyang30.github.io/PIVOT/assets/overview.svg" alt="PIVOT framework: student attempts, teacher corrections, and student continuations with RLVR and token-level KL supervision" loading="lazy">
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2610.40576" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">PIVOT:</span><span class="paper-title-subtitle">Progressive Intervention via Online Teacher Correction</span></a></h3>
+    <p class="home-pub-authors"><span class="author-names-full">Zhihao Yang<sup>*</sup>, Boyuan Zheng<sup>*</sup>, Puhui Tan<sup>*</sup>, Yukun Chen, <strong>Kuan Zhang</strong>, Longze Chen, Jiaming Li, Renke Shan, Lu Wang<sup>†</sup>, Xianpei Han<sup>†</sup></span><span class="author-names-short">Z. Yang<sup>*</sup>, B. Zheng<sup>*</sup>, P. Tan<sup>*</sup>, Y. Chen, <strong>Kuan Zhang</strong>, L. Chen, J. Li, R. Shan, L. Wang<sup>†</sup>, X. Han<sup>†</sup></span></p>
+    <p class="home-pub-venue">arXiv 2026</p>
+    <div class="home-pub-links">
+      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.40576" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
+      <a class="home-pub-link home-pub-link--project" href="https://zhihaoyang30.github.io/PIVOT/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
+    </div>
+    <p class="home-pub-desc">Online teacher corrections and token-level supervision improve RLVR on hard logic games and mathematical reasoning.</p>
+  </div>
+</article>
 <article class="home-pub-card" data-selected="false" data-published="2026-10-15">
   <a class="home-pub-figure" href="https://selen-suyue.github.io/OneWMNet/" target="_blank" rel="noopener noreferrer" aria-label="OneWM: Can World and Action Modeling Benefit Each Other under Unified Causal Training?">
     <img src="{{ site.baseurl }}/images/onewm-method.webp" alt="OneWM architecture for unified causal world and action modeling" loading="lazy">
