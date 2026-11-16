@@ -70,7 +70,7 @@ redirect_from:
       <button type="button" class="pub-filter__btn" data-pub-filter="all" aria-pressed="false">All</button>
     </div>
     <div class="home-pub-list">
-<article id="scaling-in-games" class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-10-20">
+<article id="scaling-in-games" data-pin-order="1" class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-10-20">
   <a class="home-pub-figure home-pub-figure--grid" href="https://gamescaling.github.io/videos/promo/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Scaling in Games: Continued Pre-Training for Embodied Agents in Diverse Virtual Worlds">
     <img src="{{ site.baseurl }}/images/previews/gamescaling-grid-3x3.jpg" alt="Nine simultaneous GameScaling demos in a fixed 3 by 3 grid: two Minecraft, two ViZDoom, two OmniGameArena, and three GameWorld games" loading="lazy">
     <video class="home-pub-video" data-src="{{ site.baseurl }}/files/previews/gamescaling-grid-3x3.mp4" poster="{{ site.baseurl }}/images/previews/gamescaling-grid-3x3.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
@@ -87,6 +87,22 @@ redirect_from:
 <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Models {% include huggingface-download-count.html key="gamescaling" %}</a>
 <a class="home-pub-link" href="https://gamescaling.github.io/videos/promo/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
+  </div>
+</article>
+<article id="gamer" class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-11-13" data-pin-order="2">
+  <a class="home-pub-figure" href="https://mihoyo-gamer.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent">
+    <img src="https://mihoyo-gamer.github.io/assets/paper-library/figure-04.webp" alt="Gamer sparse reasoning and cross-context memory framework" loading="lazy">
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2611.18397" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Gamer:</span><span class="paper-title-subtitle">A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</span></a></h3>
+    <p class="home-pub-authors"><span class="author-names-full">Run Luo<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Qi Deng<sup>*</sup>, Yukun Chen<sup>*</sup>, …, Yinhe Zheng<sup>†</sup>, Xiaobo Xia<sup>†</sup>, Dawei Jiang<sup>†</sup>, Shaoqing Ren<sup>†</sup></span><span class="author-names-short">R. Luo<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Q. Deng<sup>*</sup>, Y. Chen<sup>*</sup>, …, Y. Zheng<sup>†</sup>, X. Xia<sup>†</sup>, D. Jiang<sup>†</sup>, S. Ren<sup>†</sup></span></p>
+    <p class="home-pub-venue">arXiv 2026 · * Core contributors</p>
+    <div class="home-pub-links">
+      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2611.18397" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
+      <a class="home-pub-link home-pub-link--project" href="https://mihoyo-gamer.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
+      <a class="home-pub-link home-pub-link--code" href="https://github.com/RainBowLuoCS/Gamer" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub</a>
+    </div>
+    <p class="home-pub-desc">A generalist game agent combining sparse reasoning, persistent memory, and online reinforcement learning for real-time play.</p>
   </div>
 </article>
 <article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-10-09">

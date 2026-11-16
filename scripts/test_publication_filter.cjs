@@ -6,12 +6,12 @@ const rootPath = path.join(__dirname, "..");
 const html = fs.readFileSync(path.join(rootPath, "_pages/about.md"), "utf8");
 const source = fs.readFileSync(path.join(rootPath, "_includes/pub-filter-script.html"), "utf8").replace(/<\/?script>/g, "");
 const articles = [...html.matchAll(/<article\b([^>]*)>([\s\S]*?)<\/article>/g)];
-const expectedSelected = ["scaling", "video", "survey", "gameverse", "eccv", "handling"];
-const expectedAll = ["pivot", "scaling", "onewm", "skill-adaptation", "video", "snapbench", "eccv", "survey", "gameverse", "handling", "harnessing"];
+const expectedSelected = ["scaling", "gamer", "video", "survey", "gameverse", "eccv", "handling"];
+const expectedAll = ["scaling", "gamer", "pivot", "onewm", "skill-adaptation", "video", "snapbench", "eccv", "survey", "gameverse", "handling", "harnessing"];
 const names = [...expectedSelected, "pivot", "onewm", "skill-adaptation", "snapbench", "harnessing"];
 const selectedArticles = articles.filter(m => m[1].includes('data-selected="true"'));
-assert.equal(selectedArticles.length, 6);
-assert(selectedArticles.every(m => m[2].includes('include github-star-count.html')), "every selected paper has stars");
+assert.equal(selectedArticles.length, 7);
+assert.equal(selectedArticles.filter(m => m[2].includes('include github-star-count.html')).length, 6, "existing selected papers keep their stars");
 assert.equal(selectedArticles.filter(m => m[2].includes('include huggingface-download-count.html')).length, 3, "three selected papers have Hugging Face downloads");
 
 function page() {
@@ -47,7 +47,7 @@ let p = page();
 assert.deepEqual(p.visible(), expectedSelected);
 for (let i = 0; i < 3; i++) {
   p.buttons[1].click();
-  assert.deepEqual(p.visible(), expectedAll, "All follows first-publication dates");
+  assert.deepEqual(p.visible(), expectedAll, "All keeps GameScaling and Gamer pinned before chronological papers");
   assert.equal(p.buttons[1].attributes["aria-pressed"], "true");
   p.buttons[0].click();
   assert.deepEqual(p.visible(), expectedSelected, "Selected restores the curated order");

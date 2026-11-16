@@ -2,7 +2,7 @@
 (function () {
   function initPubFilter(root) {
     var list = root.querySelector(".home-pub-list");
-    // Preserve the curated source order for Selected; All uses publication dates.
+    // Pins lead both views; remaining Selected items keep source order, All uses dates.
     var originalOrder = list ? Array.from(list.children) : [];
     var buttons = root.querySelectorAll("[data-pub-filter]");
     var items = root.querySelectorAll("[data-selected], [data-first-author]");
@@ -11,13 +11,17 @@
       root.classList.toggle("is-showing-all", mode === "all");
       if (list) {
         var ordered = originalOrder.slice();
-        if (mode === "all") {
-          ordered.sort(function (a, b) {
+        ordered.sort(function (a, b) {
+          var aPin = Number(a.getAttribute("data-pin-order")) || Infinity;
+          var bPin = Number(b.getAttribute("data-pin-order")) || Infinity;
+          if (aPin !== bPin) return aPin - bPin;
+          if (mode === "all") {
             var aDate = Date.parse(a.getAttribute("data-published")) || 0;
             var bDate = Date.parse(b.getAttribute("data-published")) || 0;
-            return bDate - aDate || originalOrder.indexOf(a) - originalOrder.indexOf(b);
-          });
-        }
+            if (aDate !== bDate) return bDate - aDate;
+          }
+          return originalOrder.indexOf(a) - originalOrder.indexOf(b);
+        });
         ordered.forEach(function (item) { list.appendChild(item); });
       }
       items.forEach(function (el) {
