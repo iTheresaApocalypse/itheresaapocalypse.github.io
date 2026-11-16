@@ -97,7 +97,7 @@ redirect_from:
     </picture>
   </a>
   <div class="home-pub-copy">
-    <p class="home-pub-flags"><a class="home-pub-highlight" href="https://huggingface.co/papers/2611.18397" target="_blank" rel="noopener noreferrer">{% include huggingface-icon.html %} Hugging Face Daily Paper #2</a></p>
+    <p class="home-pub-flags"><a class="home-pub-highlight" href="https://huggingface.co/papers/2611.18397" target="_blank" rel="noopener noreferrer">{% include huggingface-icon.html %} Hugging Face Daily Paper #3</a></p>
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2611.18397" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Gamer:</span><span class="paper-title-subtitle">A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</span></a></h3>
     <p class="home-pub-authors"><span class="author-names-full">Run Luo<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Qi Deng<sup>*</sup>, Yukun Chen<sup>*</sup>, …, Yinhe Zheng<sup>†</sup>, Xiaobo Xia<sup>†</sup>, Dawei Jiang<sup>†</sup>, Shaoqing Ren<sup>†</sup></span><span class="author-names-short">R. Luo<sup>*</sup>, <strong>Kuan Zhang</strong><sup>*</sup>, Q. Deng<sup>*</sup>, Y. Chen<sup>*</sup>, …, Y. Zheng<sup>†</sup>, X. Xia<sup>†</sup>, D. Jiang<sup>†</sup>, S. Ren<sup>†</sup></span></p>
     <p class="home-pub-venue">arXiv 2026 · * Core contributors</p>
