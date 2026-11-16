@@ -11,7 +11,7 @@ const expectedAll = ["scaling", "gamer", "pivot", "onewm", "skill-adaptation", "
 const names = [...expectedSelected, "pivot", "onewm", "skill-adaptation", "snapbench", "harnessing"];
 const selectedArticles = articles.filter(m => m[1].includes('data-selected="true"'));
 assert.equal(selectedArticles.length, 7);
-assert.equal(selectedArticles.filter(m => m[2].includes('include github-star-count.html')).length, 6, "existing selected papers keep their stars");
+assert.equal(selectedArticles.filter(m => m[2].includes('include github-star-count.html')).length, 7, "all selected papers have their stars");
 assert.equal(selectedArticles.filter(m => m[2].includes('include huggingface-download-count.html')).length, 3, "three selected papers have Hugging Face downloads");
 
 function page() {
