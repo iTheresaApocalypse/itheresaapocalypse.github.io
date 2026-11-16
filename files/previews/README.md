@@ -2,7 +2,20 @@
 
 These silent previews use public videos from the author's project pages. The
 full source frame is preserved with scaling and padding, never cropping.
-Encoding: H.264, 20 fps, with MP4 metadata at the start for playback.
+MP4 encoding: H.264, 20 fps, with metadata at the start for playback.
+
+## Gamer
+
+Project: https://mihoyo-gamer.github.io/
+
+Source: https://pub-8f40caf469454640ab053ec876fb1f49.r2.dev/videos/overview/gamer-film-2026-affiliations-v8-task-label.mp4?v=20261115-naturalreader-v4
+
+`images/previews/gamer-diversity.gif` uses 173.033–184.433s of the promotional
+film: a single game expands into a mosaic of many games, ending before the
+large DIVERSITY title appears. Original in-video narration captions remain.
+The full frame is preserved in a 480 × 270, 10 fps looping GIF.
+`images/previews/gamer-diversity.jpg`, extracted at 184s, is the static image
+shown when the viewer prefers reduced motion.
 
 ## GameScaling
 

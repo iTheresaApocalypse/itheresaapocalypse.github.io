@@ -91,7 +91,10 @@ redirect_from:
 </article>
 <article id="gamer" class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-11-13" data-pin-order="2">
   <a class="home-pub-figure" href="https://mihoyo-gamer.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent">
-    <img src="https://mihoyo-gamer.github.io/assets/paper-library/figure-04.webp" alt="Gamer sparse reasoning and cross-context memory framework" loading="lazy">
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset="{{ site.baseurl }}/images/previews/gamer-diversity.jpg">
+      <img src="{{ site.baseurl }}/images/previews/gamer-diversity.gif" alt="Gamer gameplay expanding from one game into a mosaic of many games" width="480" height="270" loading="lazy">
+    </picture>
   </a>
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2611.18397" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">Gamer:</span><span class="paper-title-subtitle">A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</span></a></h3>
