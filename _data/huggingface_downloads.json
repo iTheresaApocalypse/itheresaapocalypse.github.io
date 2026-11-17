@@ -12,23 +12,23 @@
       "THUSI-Lab/GameScaling-9B-S1",
       "THUSI-Lab/GameScaling-9B-S3"
     ],
-    "total": 4644,
-    "updated_at": "2026-11-16T08:51:33Z"
+    "total": 4718,
+    "updated_at": "2026-11-17T07:52:09Z"
   },
   "video_arena": {
     "kind": "datasets",
     "repositories": [
       "THUSI-Lab/Video-Arena"
     ],
-    "total": 2005,
-    "updated_at": "2026-11-16T08:51:33Z"
+    "total": 2015,
+    "updated_at": "2026-11-17T07:52:09Z"
   },
   "vsi_super_wild": {
     "kind": "datasets",
     "repositories": [
       "THUSI-Lab/VSI-Super-Wild"
     ],
-    "total": 4169,
-    "updated_at": "2026-11-16T08:51:33Z"
+    "total": 4171,
+    "updated_at": "2026-11-17T07:52:09Z"
   }
 }
