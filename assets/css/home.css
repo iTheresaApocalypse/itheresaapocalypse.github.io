@@ -153,6 +153,7 @@ h2 { margin: 0 0 16px; color: #111; font: 700 24px/1.3 var(--font-heading); }
   .visitor-globe-copy { max-width: 360px; margin-inline: auto; padding-block: 0; }
 }
 .footer-note { margin: 32px 0 0; color: var(--muted); text-align: center; font: 13px/1.5 var(--font-heading); }
+.footer-credit { display: block; margin-top: 4px; font-size: 12px; }
 
 @media (max-width: 760px) {
   .page-shell { width: calc(100% - 48px); padding-top: 18px; }

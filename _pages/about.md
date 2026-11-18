@@ -286,7 +286,10 @@ redirect_from:
 
 {% include visitor-globe.html %}
 
-<footer class="footer-note">Kuan Zhang · College of AI, Tsinghua University</footer>
+<footer class="footer-note">
+  Kuan Zhang · College of AI, Tsinghua University
+  <small class="footer-credit">Thanks to ouyangmingyu for the website template.</small>
+</footer>
 
 {% include pub-filter-script.html %}
 {% include pub-video-script.html %}
