@@ -288,7 +288,7 @@ redirect_from:
 
 <footer class="footer-note">
   Kuan Zhang · College of AI, Tsinghua University
-  <small class="footer-credit">Thanks to ouyangmingyu for the website template.</small>
+  <small class="footer-credit">Thanks to <a href="https://mingyuouyang.com/">ouyangmingyu</a> for the website template.</small>
 </footer>
 
 {% include pub-filter-script.html %}
