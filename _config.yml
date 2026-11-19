@@ -35,7 +35,7 @@ author:
   employer         : "College of AI, Tsinghua"
   uri              : # URL
   email            : "kuanzhang2004@163.com"
-  cv               : "/files/resume_eng.pdf?v=20261120-research-target" # sidebar CV link (PDF)
+  cv               : "/files/resume_eng.pdf?v=20261120-social-links" # sidebar CV link (PDF)
 
   # Academic websites
   academia         : # URL
@@ -68,7 +68,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "kuan-zhang-3091b1341"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -76,7 +76,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "kuanzhang2004"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username

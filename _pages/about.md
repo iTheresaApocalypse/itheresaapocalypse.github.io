@@ -22,6 +22,7 @@ redirect_from:
       <a href="https://github.com/iTheresaApocalypse" target="_blank" rel="noopener noreferrer">{% include github-icon.html %} GitHub</a>
     </nav>
     <nav class="profile-links" aria-label="Social links">
+      <a href="https://www.linkedin.com/in/kuan-zhang-3091b1341/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://www.xiaohongshu.com/user/profile/5f460ff5000000000100b792" target="_blank" rel="noopener noreferrer">小红书</a>
       <a href="https://www.zhihu.com/people/itheresaapocalypse" target="_blank" rel="noopener noreferrer">知乎</a>
       <a href="https://x.com/kuanzhang2004" target="_blank" rel="noopener noreferrer">X</a>
