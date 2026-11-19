@@ -186,7 +186,7 @@ redirect_from:
   </a>
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2505.00812" target="_blank" rel="noopener noreferrer">Handling Label Noise via Instance-Level Difficulty Modeling and Dynamic Optimization</a></h3>
-    <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong>, Chengliang Chai, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</span><span class="author-names-short"><strong>Kuan Zhang</strong>, C. Chai, J. Xu, C. Zhang, H. Han, Y. Yuan, G. Wang, L. Cao</span></p>
+    <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong>, Chengliang Chai<sup>†</sup>, Jingzhe Xu, Chi Zhang, Han Han, Ye Yuan, Guoren Wang, Lei Cao</span><span class="author-names-short"><strong>Kuan Zhang</strong>, C. Chai<sup>†</sup>, J. Xu, C. Zhang, H. Han, Y. Yuan, G. Wang, L. Cao</span></p>
     <p class="home-pub-venue home-pub-venue--accepted">NeurIPS 2025</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2505.00812" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
@@ -266,7 +266,7 @@ redirect_from:
   </a>
   <div class="home-pub-copy">
     <h3 class="home-pub-title"><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">Harnessing Diversity for Important Data Selection in Pretraining Large Language Models</a></h3>
-    <p class="home-pub-authors"><span class="author-names-full">Chi Zhang<sup>*</sup>, Huaping Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, Chengliang Chai, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He</span><span class="author-names-short">C. Zhang<sup>*</sup>, H. Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, C. Chai, R. Wang, X. Zhuang, T. Bai, Q. Jiantao, L. Cao, J. Fan, Y. Yuan, G. Wang, C. He</span></p>
+    <p class="home-pub-authors"><span class="author-names-full">Chi Zhang<sup>*</sup>, Huaping Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, Chengliang Chai<sup>†</sup>, Rui Wang, Xinlin Zhuang, Tianyi Bai, Qiu Jiantao, Lei Cao, Ju Fan, Ye Yuan, Guoren Wang, Conghui He<sup>†</sup></span><span class="author-names-short">C. Zhang<sup>*</sup>, H. Zhong<sup>*</sup>, <strong>Kuan Zhang</strong>, C. Chai<sup>†</sup>, R. Wang, X. Zhuang, T. Bai, Q. Jiantao, L. Cao, J. Fan, Y. Yuan, G. Wang, C. He<sup>†</sup></span></p>
     <p class="home-pub-venue home-pub-venue--accepted">ICLR 2025 Spotlight</p>
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b588d9b67932b459ea66ff6e2804c6b3-Abstract-Conference.html" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
