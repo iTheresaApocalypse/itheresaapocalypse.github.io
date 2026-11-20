@@ -105,8 +105,8 @@ redirect_from:
     <div class="home-pub-links">
       <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2611.18397" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
       <a class="home-pub-link home-pub-link--project" href="https://mihoyo-gamer.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-      <a class="home-pub-link" href="https://mihoyo-gamer.github.io/#overview-video" rel="noopener noreferrer" target="_blank">▶️ Demo</a>
       <a class="home-pub-link home-pub-link--code" href="https://github.com/RainBowLuoCS/Gamer" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="gamer" %}</a>
+      <a class="home-pub-link" href="https://mihoyo-gamer.github.io/#overview-video" rel="noopener noreferrer" target="_blank">▶️ Demo</a>
     </div>
     <p class="home-pub-desc">A generalist game agent combining sparse reasoning, persistent memory, and online reinforcement learning for real-time play.</p>
   </div>
@@ -141,8 +141,8 @@ redirect_from:
     <div class="home-pub-links">
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2605.09965" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://thusi-lab.github.io/Awesome-LFMs-Play-Games/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
-<a class="home-pub-link" href="https://thusi-lab.github.io/Awesome-LFMs-Play-Games/#film" rel="noopener noreferrer" target="_blank">▶️ Demo</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/Awesome-LFMs-Play-Games" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="survey" %}</a>
+<a class="home-pub-link" href="https://thusi-lab.github.io/Awesome-LFMs-Play-Games/#film" rel="noopener noreferrer" target="_blank">▶️ Demo</a>
 </div>
     <p class="home-pub-desc">A survey of foundation models as generalist game agents in virtual worlds, from data to benchmarks.</p>
   </div>
