@@ -1,20 +1,29 @@
 [
   {
-    "label": "网易",
-    "url": "https://www.163.com/dy/article/L9S368AN0511B8LM.html",
-    "title": "Scaling in Games 相关报道",
-    "date": null,
-    "attribution": "网易平台",
-    "verification": "user-provided; browser access blocked",
-    "language": "zh"
+    "label": "TechNode",
+    "url": "https://technode.com/2026/10/23/mihoyo-team-open-sources-gamescaling-models-that-control-games-through-keyboard-and-mouse-actions/",
+    "title": "MiHoYo team open-sources GameScaling models that control games through keyboard and mouse actions",
+    "date": "2026-10-23",
+    "attribution": "TechNode English",
+    "language": "en",
+    "verification": "page-read"
   },
   {
     "label": "机器之心",
-    "url": "https://weixin.qq.com/sph/A7V8KuhluJ",
-    "title": "Scaling in Games 相关视频",
+    "url": "https://mp.weixin.qq.com/s/T2LNcUGe5L4LR7duwVfNPg",
+    "title": "Scaling in Games 相关报道",
     "date": null,
-    "attribution": "机器之心视频号",
-    "verification": "user-provided; browser access blocked",
+    "attribution": "机器之心微信公众号",
+    "verification": "user-provided canonical WeChat article link",
+    "language": "zh"
+  },
+  {
+    "label": "游戏葡萄",
+    "url": "https://mp.weixin.qq.com/s/Nn0b0I205d_dwlD0xaUCVw",
+    "title": "米哈游项目组联手清北高材生，开源游戏操作AI模型：字节也做过",
+    "date": "2026-10-23",
+    "attribution": "游戏葡萄微信公众号",
+    "verification": "user-provided canonical WeChat article link; title and date previously verified from official TapTap publication",
     "language": "zh"
   },
   {
@@ -27,30 +36,21 @@
     "verification": "page-read"
   },
   {
+    "label": "网易",
+    "url": "https://www.163.com/dy/article/L9S368AN0511B8LM.html",
+    "title": "Scaling in Games 相关报道",
+    "date": null,
+    "attribution": "网易平台",
+    "verification": "user-provided; browser access blocked",
+    "language": "zh"
+  },
+  {
     "label": "搜狐",
     "url": "https://timeline.sohu.com/news/DnwMGOYUqg",
     "title": "米哈游联合清华北大等高校发布开源GameScaling游戏模型，覆盖0.8B至27B参数规模",
     "date": "2026-10-22",
     "attribution": "搜狐时间线，转载 IT之家",
     "language": "zh",
-    "verification": "page-read"
-  },
-  {
-    "label": "游戏葡萄",
-    "url": "https://mp.weixin.qq.com/s/Nn0b0I205d_dwlD0xaUCVw",
-    "title": "米哈游项目组联手清北高材生，开源游戏操作AI模型：字节也做过",
-    "date": "2026-10-23",
-    "attribution": "游戏葡萄微信公众号",
-    "verification": "user-provided canonical WeChat article link; title and date previously verified from official TapTap publication",
-    "language": "zh"
-  },
-  {
-    "label": "TechNode",
-    "url": "https://technode.com/2026/10/23/mihoyo-team-open-sources-gamescaling-models-that-control-games-through-keyboard-and-mouse-actions/",
-    "title": "MiHoYo team open-sources GameScaling models that control games through keyboard and mouse actions",
-    "date": "2026-10-23",
-    "attribution": "TechNode English",
-    "language": "en",
     "verification": "page-read"
   }
 ]
