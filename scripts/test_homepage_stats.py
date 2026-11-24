@@ -43,6 +43,7 @@ class HomepageStatsTests(unittest.TestCase):
             for name in ("github_stars.json", "huggingface_downloads.json"):
                 original[name] = json.loads((stats.ROOT / "_data" / name).read_text())
                 (root / "_data" / name).write_text(json.dumps(original[name]))
+            metric_count = sum(len(metrics) for metrics in original.values())
             def fetch(url):
                 if "api.github.com" in url:
                     repo = url.split("/repos/")[1]
@@ -55,7 +56,7 @@ class HomepageStatsTests(unittest.TestCase):
                 return {"id": url.split("/datasets/")[1].split("?")[0], "downloadsAllTime": 17}
             now = dt.datetime(2026, 11, 5, 0, 17, tzinfo=dt.timezone.utc)
             succeeded, failed = stats.refresh(root, fetch, now)
-            self.assertEqual((len(succeeded), len(failed)), (9, 1))
+            self.assertEqual((len(succeeded), len(failed)), (metric_count - 1, 1))
             stars = json.loads((root / "_data/github_stars.json").read_text())
             downloads = json.loads((root / "_data/huggingface_downloads.json").read_text())
             self.assertEqual(stars["gamescaling"], original["github_stars.json"]["gamescaling"])
@@ -66,7 +67,7 @@ class HomepageStatsTests(unittest.TestCase):
             def offline(url):
                 raise OSError("offline")
             succeeded, failed = stats.refresh(root, offline, now)
-            self.assertEqual((len(succeeded), len(failed)), (0, 10))
+            self.assertEqual((len(succeeded), len(failed)), (0, metric_count))
             self.assertEqual(before, {p.name: p.read_text() for p in (root / "_data").iterdir()})
 
     def test_github_token_is_not_sent_to_hugging_face(self):
