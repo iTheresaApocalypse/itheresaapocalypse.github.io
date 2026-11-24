@@ -111,6 +111,28 @@ redirect_from:
     <p class="home-pub-desc">A generalist game agent combining sparse reasoning, persistent memory, and online reinforcement learning for real-time play.</p>
   </div>
 </article>
+<article id="gamedojo" class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-11-23">
+  <a class="home-pub-figure" href="https://gamedojo-benchmark.github.io/#bosses" target="_blank" rel="noopener noreferrer" aria-label="Watch GameDojo boss encounter demos">
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset="{{ site.baseurl }}/images/previews/gamedojo-showcase-genichiro.jpg">
+      <img src="{{ site.baseurl }}/images/previews/gamedojo-showcase-genichiro.gif" alt="GameDojo gameplay: a sword fight against Genichiro in a reconstructed Sekiro boss encounter" width="720" height="405" loading="lazy">
+    </picture>
+  </a>
+  <div class="home-pub-copy">
+    <h3 class="home-pub-title"><a href="https://arxiv.org/abs/2611.30771" target="_blank" rel="noopener noreferrer"><span class="paper-title-name">GameDojo:</span><span class="paper-title-subtitle">Benchmarking Real-Time Interactive Agents in Video Games</span></a></h3>
+    <p class="home-pub-authors"><span class="author-names-full"><strong>Kuan Zhang</strong><sup>*</sup>, Zhihao Yang<sup>*</sup>, Yukun Chen<sup>*</sup>, Xingyiliang Yin, …, Run Luo, Zirong Chen, Lu Wang<sup>†</sup>, Yiming Li<sup>†</sup></span><span class="author-names-short"><strong>Kuan Zhang</strong><sup>*</sup>, Z. Yang<sup>*</sup>, Y. Chen<sup>*</sup>, X. Yin, …, R. Luo, Z. Chen, L. Wang<sup>†</sup>, Y. Li<sup>†</sup></span></p>
+    <p class="home-pub-venue">arXiv 2026</p>
+    <div class="home-pub-links">
+      <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2611.30771" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
+      <a class="home-pub-link home-pub-link--project" href="https://gamedojo-benchmark.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
+      <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameDojo" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="gamedojo" %}</a>
+      <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/GameDojo" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Benchmark &amp; Dataset</a>
+      <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameDojo-4B" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Model</a>
+      <a class="home-pub-link" href="https://gamedojo-benchmark.github.io/#bosses" rel="noopener noreferrer" target="_blank">▶️ Demo</a>
+    </div>
+    <p class="home-pub-desc">A controllable benchmark of 120 boss encounters across 20 games for evaluating interactive agents, learning algorithms, and agent harnesses.</p>
+  </div>
+</article>
 <article class="home-pub-card home-pub-card--first-author" data-selected="true" data-published="2026-10-09">
   <a class="home-pub-figure" href="https://videoarena-bench.github.io/videos/promo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch full demo: Video-Arena: A Scalable Agentic Video Benchmark for Spatiotemporal Capability">
     <img src="{{ site.baseurl }}/images/previews/video-arena.jpg" alt="Video-Arena project overview" loading="lazy">
