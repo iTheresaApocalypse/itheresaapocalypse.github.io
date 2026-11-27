@@ -42,11 +42,8 @@ no personal token or extra service is needed. The existing branch-based
 Jekyll publishing setup remains in use.
 
 All counters and their last successful update times are rendered into the
-page HTML, including accessible labels and tooltip timestamps. A visible ⓘ
-button next to each download count opens the scope and last successful update
-time on desktop and mobile. It is separate from the Hugging Face link; pressing
-Escape, clicking outside, or using the close button dismisses the native HTML
-popover. Visitors do
+page HTML, including accessible labels and tooltip timestamps. Hover over a
+download number to see its scope and last successful update time. Visitors do
 not make GitHub/Hugging Face API calls or cache these counters in localStorage.
 Failed metrics retain their last count and timestamp; successful metrics are
 still published and the job reports the failures. The updater retries network
