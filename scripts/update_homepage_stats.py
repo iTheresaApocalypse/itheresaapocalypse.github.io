@@ -8,6 +8,7 @@ from pathlib import Path
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -49,10 +50,12 @@ def downloads(metric, fetch):
     repositories = metric["repositories"] + metric.get("community_repositories", [])
     if len(set(repositories)) != len(repositories) or not repositories:
         raise ValueError("Invalid repository list")
-    if metric["kind"] == "models":
-        payload = fetch("https://huggingface.co/api/models?search=GameScaling&limit=1000&expand%5B%5D=downloadsAllTime")
-    elif metric["kind"] == "datasets" and len(repositories) == 1:
-        payload = [fetch("https://huggingface.co/api/datasets/" + repositories[0] + "?expand%5B%5D=downloadsAllTime")]
+    kind = metric["kind"]
+    if kind in ("models", "datasets") and len(repositories) == 1:
+        payload = [fetch("https://huggingface.co/api/" + kind + "/" + repositories[0] + "?expand%5B%5D=downloadsAllTime")]
+    elif kind == "models" and metric.get("search"):
+        query = urllib.parse.urlencode({"search": metric["search"], "limit": 1000, "expand[]": "downloadsAllTime"})
+        payload = fetch("https://huggingface.co/api/models?" + query)
     else:
         raise ValueError("Unexpected Hugging Face metric")
     if not isinstance(payload, list):

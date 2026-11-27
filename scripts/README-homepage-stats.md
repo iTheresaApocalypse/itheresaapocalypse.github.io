@@ -1,6 +1,6 @@
 # Homepage publication statistics
 
-All six Selected papers show stars from their linked GitHub repository.
+Selected papers show stars from their linked GitHub repository.
 `.github/workflows/update-homepage-stats.yml` runs daily at 08:17 Asia/Shanghai
 (00:17 UTC), on updater changes, or through Actions' Run workflow button.
 GitHub may delay scheduled jobs when its runners are busy.
@@ -17,6 +17,10 @@ creation: https://huggingface.co/docs/huggingface_hub/package_reference/hf_api
   weight repositories. The community list includes mradermacher's eight GGUF
   conversions (0.8B, 2B, 9B and 27B; S1 and S3) and CBA-Research's four FP8
   conversions (9B and 27B; S1 and S3). See the provenance notes below.
+- GameDojo Benchmark & Dataset: lifetime downloads of `THUSI-Lab/GameDojo`
+  (one dataset repository shared by the benchmark and dataset).
+- GameDojo Model: lifetime downloads of `THUSI-Lab/GameDojo-4B` plus the reviewed
+  community conversion `mradermacher/GameDojo-4B-GGUF` (two repositories total).
 - Video-Arena: lifetime downloads of `THUSI-Lab/Video-Arena` (dataset).
 - Towards Spatial Supersensing in the Wild: lifetime downloads of
   `THUSI-Lab/VSI-Super-Wild` (dataset).
@@ -38,13 +42,19 @@ no personal token or extra service is needed. The existing branch-based
 Jekyll publishing setup remains in use.
 
 All counters and their last successful update times are rendered into the
-page HTML, including accessible labels and tooltip timestamps. Visitors do
+page HTML, including accessible labels and tooltip timestamps. A visible ⓘ
+button next to each download count opens the scope and last successful update
+time on desktop and mobile. It is separate from the Hugging Face link; pressing
+Escape, clicking outside, or using the close button dismisses the native HTML
+popover. Visitors do
 not make GitHub/Hugging Face API calls or cache these counters in localStorage.
 Failed metrics retain their last count and timestamp; successful metrics are
 still published and the job reports the failures. The updater retries network
 errors and rejects missing models, duplicate records, invalid counts and
 30-day download fields. Missing counts for any configured official or community
-repository retain the previous complete GameScaling total and timestamp.
+repository retain that metric's previous complete total and timestamp. Single
+repositories use the matching model or dataset API; model families use their
+configured `search` term before filtering by the exact reviewed repository IDs.
 
 ## GameScaling community provenance
 
@@ -58,6 +68,16 @@ The community list was reviewed on 2026-11-28:
   Their configs use `compressed-tensors` float quantization with 8-bit weights.
   Their inherited base-model tags refer to Qwen, so a lineage-tag-only search
   would miss these conversions.
+
+## GameDojo community provenance
+
+Reviewed on 2026-11-28: [mradermacher/GameDojo-4B-GGUF](https://huggingface.co/mradermacher/GameDojo-4B-GGUF)
+declares `base_model:quantized:THUSI-Lab/GameDojo-4B`, links the official source
+in its model card, and contains GGUF quantized weights. Both the name search and
+the official model's declared base-model relationship search returned this one
+community conversion.
+
+## Inclusion and update policy
 
 Only exact IDs in `repositories` and `community_repositories` are included;
 unrelated name matches are ignored and duplicate IDs across the two lists are

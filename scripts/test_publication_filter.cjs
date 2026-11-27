@@ -6,13 +6,13 @@ const rootPath = path.join(__dirname, "..");
 const html = fs.readFileSync(path.join(rootPath, "_pages/about.md"), "utf8");
 const source = fs.readFileSync(path.join(rootPath, "_includes/pub-filter-script.html"), "utf8").replace(/<\/?script>/g, "");
 const articles = [...html.matchAll(/<article\b([^>]*)>([\s\S]*?)<\/article>/g)];
-const expectedSelected = ["scaling", "gamer", "video", "survey", "gameverse", "eccv", "handling"];
-const expectedAll = ["scaling", "gamer", "pivot", "onewm", "skill-adaptation", "video", "snapbench", "eccv", "survey", "gameverse", "handling", "harnessing"];
+const expectedSelected = ["scaling", "gamer", "gamedojo", "video", "survey", "gameverse", "eccv", "handling"];
+const expectedAll = ["scaling", "gamer", "gamedojo", "pivot", "onewm", "skill-adaptation", "video", "snapbench", "eccv", "survey", "gameverse", "handling", "harnessing"];
 const names = [...expectedSelected, "pivot", "onewm", "skill-adaptation", "snapbench", "harnessing"];
 const selectedArticles = articles.filter(m => m[1].includes('data-selected="true"'));
-assert.equal(selectedArticles.length, 7);
-assert.equal(selectedArticles.filter(m => m[2].includes('include github-star-count.html')).length, 7, "all selected papers have their stars");
-assert.equal(selectedArticles.filter(m => m[2].includes('include huggingface-download-count.html')).length, 3, "three selected papers have Hugging Face downloads");
+assert.equal(selectedArticles.length, 8);
+assert.equal(selectedArticles.filter(m => m[2].includes('include github-star-count.html')).length, 8, "all selected papers have their stars");
+assert.equal(selectedArticles.filter(m => m[2].includes('include huggingface-resource-link.html')).length, 4, "four selected papers have Hugging Face downloads");
 
 function page() {
   const items = articles.map((m, index) => {

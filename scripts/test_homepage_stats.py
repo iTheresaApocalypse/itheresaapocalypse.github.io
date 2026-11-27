@@ -55,6 +55,29 @@ class HomepageStatsTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 stats.downloads(metric, lambda url: self.fail("Invalid configuration must not be fetched"))
 
+    def test_single_model_and_dataset_use_exact_repository_lifetime_counts(self):
+        for kind, repository in (("models", "THUSI-Lab/GameDojo-4B"), ("datasets", "THUSI-Lab/GameDojo")):
+            metric = {"kind": kind, "repositories": [repository]}
+            def fetch(url):
+                self.assertEqual(url, "https://huggingface.co/api/" + kind + "/" + repository + "?expand%5B%5D=downloadsAllTime")
+                return {"id": repository, "downloadsAllTime": 123, "downloads": 9}
+            self.assertEqual(stats.downloads(metric, fetch), 123)
+            for payload in ({"id": "other/model", "downloadsAllTime": 999},
+                            {"id": repository, "downloads": 123},
+                            {"id": repository, "downloadsAllTime": True}):
+                with self.assertRaises(ValueError):
+                    stats.downloads(metric, lambda url: payload)
+
+    def test_gamedojo_includes_community_without_querying_gamescaling(self):
+        metric = json.loads((stats.ROOT / "_data/huggingface_downloads.json").read_text())["gamedojo_model"]
+        def fetch(url):
+            from urllib.parse import urlparse, parse_qs
+            self.assertEqual(parse_qs(urlparse(url).query)["search"], ["GameDojo"])
+            return [{"id": repository, "downloadsAllTime": 10, "downloads": 999}
+                    for repository in metric["repositories"] + metric["community_repositories"]] + [
+                        {"id": "unverified/GameDojo-clone", "downloadsAllTime": 1000}]
+        self.assertEqual(stats.downloads(metric, fetch), 10 * (len(metric["repositories"]) + len(metric["community_repositories"])))
+
     def test_partial_failure_keeps_old_count_and_time(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -71,10 +94,13 @@ class HomepageStatsTests(unittest.TestCase):
                         raise OSError("offline")
                     return {"full_name": repo, "stargazers_count": 0}
                 if "/api/models?" in url:
-                    models = original["huggingface_downloads.json"]["gamescaling"]
+                    from urllib.parse import urlparse, parse_qs
+                    query = parse_qs(urlparse(url).query)
+                    models = next(m for m in original["huggingface_downloads.json"].values()
+                                  if m.get("search") == query["search"][0])
                     return [{"id": repo, "downloadsAllTime": 5}
                             for repo in models["repositories"] + models.get("community_repositories", [])]
-                return {"id": url.split("/datasets/")[1].split("?")[0], "downloadsAllTime": 17}
+                return {"id": url.split("/api/")[1].split("/", 1)[1].split("?")[0], "downloadsAllTime": 17}
             now = dt.datetime(2026, 11, 5, 0, 17, tzinfo=dt.timezone.utc)
             succeeded, failed = stats.refresh(root, fetch, now)
             self.assertEqual((len(succeeded), len(failed)), (metric_count - 1, 1))
@@ -86,12 +112,15 @@ class HomepageStatsTests(unittest.TestCase):
             model = downloads["gamescaling"]
             self.assertEqual(model["total"], 5 * (len(model["repositories"]) + len(model["community_repositories"])))
             complete_model = model.copy()
+            complete_gamedojo = downloads["gamedojo_model"].copy()
             def missing_community(url):
                 payload = fetch(url)
                 return payload[:-1] if "/api/models?" in url else payload
             stats.refresh(root, missing_community, now + dt.timedelta(days=1))
             retained = json.loads((root / "_data/huggingface_downloads.json").read_text())
             self.assertEqual(retained["gamescaling"], complete_model)
+            self.assertEqual(retained["gamedojo_model"], complete_gamedojo)
+            self.assertEqual(retained["gamedojo_dataset"]["updated_at"], "2026-11-06T00:17:00Z")
             self.assertEqual(retained["video_arena"]["updated_at"], "2026-11-06T00:17:00Z")
             before = {p.name: p.read_text() for p in (root / "_data").iterdir()}
             def offline(url):

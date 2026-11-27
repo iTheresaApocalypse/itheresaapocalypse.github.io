@@ -186,6 +186,15 @@ h2 { margin: 0 0 16px; color: #111; font: 700 24px/1.3 var(--font-heading); }
 .home-pub-media-link:hover, .home-pub-media-link:focus-visible { border-color: #235c8b; background: #e8f1fa; text-decoration: underline; }
 .github-star-count { margin-left: 4px; color: #765515; font: 700 13px/1.4 var(--font-heading); font-variant-numeric: tabular-nums; }
 .hf-download-count { margin-left: 4px; color: #765515; font: 700 13px/1.4 var(--font-heading); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.hf-resource { display: inline-flex; align-items: baseline; gap: 4px; }
+.hf-download-info { border: 0; border-radius: 50%; padding: 0; min-width: 24px; min-height: 24px; color: #235c8b; background: transparent; font: 700 16px/1 var(--font-heading); cursor: pointer; }
+.hf-download-info:hover, .hf-download-info:focus-visible { background: #e8f1fa; outline: 1px solid #235c8b; }
+.hf-download-popover { box-sizing: border-box; width: min(400px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); overflow: auto; margin: auto; padding: 20px; border: 1px solid #c9d7e6; border-radius: 10px; background: #fff; color: #222; box-shadow: 0 12px 48px #0003; font: 16px/1.5 var(--font-heading); white-space: normal; overflow-wrap: anywhere; }
+.hf-download-popover p { margin: 10px 0; }
+.hf-download-popover > strong { display: block; padding-right: 25px; }
+.hf-download-meta { color: var(--muted); font-size: 14px; }
+.hf-download-close { position: absolute; top: 8px; right: 8px; border: 0; border-radius: 4px; width: 32px; height: 32px; color: #555; background: transparent; font: 24px/1 var(--font-heading); cursor: pointer; }
+.hf-download-close:hover, .hf-download-close:focus-visible { background: #e8f1fa; }
 
 /* Brand marks stay sharp and consistent across operating systems. */
 .brand-icon { display: inline-block; width: 1em; height: 1em; vertical-align: -0.125em; }

@@ -1,0 +1,16 @@
+{%- assign download_stats = site.data.huggingface_downloads[include.key] -%}
+{%- assign official_count = download_stats.repositories | size -%}
+{%- assign community_count = download_stats.community_repositories | size -%}
+{%- capture download_scope -%}{% if download_stats.kind == 'models' %}{{ official_count }} official model {% if official_count == 1 %}repository{% else %}repositories{% endif %}{% if community_count > 0 %} + {{ community_count }} community quantization {% if community_count == 1 %}repository{% else %}repositories{% endif %}{% endif %}{% else %}Dataset{% endif %}{%- endcapture -%}
+<div class="home-pub-link home-pub-link--dataset hf-resource">
+  <a href="{{ include.href }}" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} {{ include.label | escape }} {% include huggingface-download-count.html key=include.key stats=download_stats scope=download_scope %}</a>
+  <button class="hf-download-info" type="button" popovertarget="hf-info-{{ include.key }}" aria-label="Download details for {{ include.name | escape }}" title="Click for download details">ⓘ</button>
+  <div class="hf-download-popover" id="hf-info-{{ include.key }}" popover aria-labelledby="hf-info-title-{{ include.key }}">
+    <button class="hf-download-close" type="button" popovertarget="hf-info-{{ include.key }}" popovertargetaction="hide" aria-label="Close download details">×</button>
+    <strong id="hf-info-title-{{ include.key }}">{{ include.name | escape }}</strong>
+    <p><b>{{ download_stats.total }}</b> cumulative Hugging Face downloads.</p>
+    <p>{{ download_scope }}{% if official_count == 1 and community_count == 0 %}: {{ download_stats.repositories.first }}{% endif %}.</p>
+    <p class="hf-download-meta">Updated {{ download_stats.updated_at | date: '%Y-%m-%d %H:%M UTC' }}. Refreshed daily. Download events, not unique users.</p>
+    <a href="https://huggingface.co/docs/hub/{{ download_stats.kind }}-download-stats" target="_blank" rel="noopener noreferrer">How Hugging Face counts downloads ↗</a>
+  </div>
+</div>

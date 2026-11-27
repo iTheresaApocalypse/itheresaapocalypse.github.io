@@ -85,7 +85,7 @@ redirect_from:
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.28698" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://gamescaling.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="gamescaling" %}</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameScaling" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Models {% include huggingface-download-count.html key="gamescaling" %}</a>
+{% include huggingface-resource-link.html key="gamescaling" name="GameScaling models" label="Models" href="https://huggingface.co/THUSI-Lab/GameScaling" %}
 <a class="home-pub-link" href="https://gamescaling.github.io/videos/promo/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">How gameplay data, world diversity, and model size scale continued pre-training for embodied agents.</p>
   </div>
@@ -126,8 +126,8 @@ redirect_from:
       <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2611.30771" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
       <a class="home-pub-link home-pub-link--project" href="https://gamedojo-benchmark.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
       <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/GameDojo" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="gamedojo" %}</a>
-      <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/GameDojo" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Benchmark &amp; Dataset</a>
-      <a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/THUSI-Lab/GameDojo-4B" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Model</a>
+      {% include huggingface-resource-link.html key="gamedojo_dataset" name="GameDojo benchmark & dataset" label="Benchmark & Dataset" href="https://huggingface.co/datasets/THUSI-Lab/GameDojo" %}
+      {% include huggingface-resource-link.html key="gamedojo_model" name="GameDojo-4B model" label="Model" href="https://huggingface.co/THUSI-Lab/GameDojo-4B" %}
       <a class="home-pub-link" href="https://gamedojo-benchmark.github.io/#bosses" rel="noopener noreferrer" target="_blank">▶️ Demo</a>
     </div>
     <p class="home-pub-desc">A controllable benchmark of 120 boss encounters across 20 games for evaluating interactive agents, learning algorithms, and agent harnesses.</p>
@@ -146,7 +146,7 @@ redirect_from:
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2610.14158" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://videoarena-bench.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VideoArena" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="video_arena" %}</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset {% include huggingface-download-count.html key="video_arena" %}</a>
+{% include huggingface-resource-link.html key="video_arena" name="Video-Arena dataset" label="Dataset" href="https://huggingface.co/datasets/THUSI-Lab/Video-Arena" %}
 <a class="home-pub-link" href="https://videoarena-bench.github.io/videos/promo.mp4" rel="noopener noreferrer" target="_blank">▶️ Demo</a></div>
     <p class="home-pub-desc">A video benchmark for perceiving events, reading state updates, and tracking an evolving world.</p>
   </div>
@@ -199,7 +199,7 @@ redirect_from:
 <a class="home-pub-link home-pub-link--pdf" href="https://arxiv.org/abs/2607.13681" rel="noopener noreferrer" target="_blank">{% include arxiv-icon.html %} Paper</a>
 <a class="home-pub-link home-pub-link--project" href="https://vsi-super-wild.github.io/" rel="noopener noreferrer" target="_blank">🌐 Project Page</a>
 <a class="home-pub-link home-pub-link--code" href="https://github.com/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include github-icon.html %} GitHub {% include github-star-count.html key="vsi_super_wild" %}</a>
-<a class="home-pub-link home-pub-link--dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" rel="noopener noreferrer" target="_blank">{% include huggingface-icon.html %} Dataset {% include huggingface-download-count.html key="vsi_super_wild" %}</a>
+{% include huggingface-resource-link.html key="vsi_super_wild" name="VSI-Super-Wild dataset" label="Dataset" href="https://huggingface.co/datasets/THUSI-Lab/VSI-Super-Wild" %}
 </div>
     <p class="home-pub-desc">A spatial supersensing benchmark where strong models still fail to track world state.</p>
   </div>

@@ -1,6 +1,7 @@
 {
   "gamescaling": {
     "kind": "models",
+    "search": "GameScaling",
     "repositories": [
       "THUSI-Lab/GameScaling",
       "THUSI-Lab/GameScaling-0.8B-S1",
@@ -28,6 +29,26 @@
     ],
     "total": 47273,
     "updated_at": "2026-11-27T16:38:33Z"
+  },
+  "gamedojo_dataset": {
+    "kind": "datasets",
+    "repositories": [
+      "THUSI-Lab/GameDojo"
+    ],
+    "total": 867,
+    "updated_at": "2026-11-27T16:56:25Z"
+  },
+  "gamedojo_model": {
+    "kind": "models",
+    "search": "GameDojo",
+    "repositories": [
+      "THUSI-Lab/GameDojo-4B"
+    ],
+    "community_repositories": [
+      "mradermacher/GameDojo-4B-GGUF"
+    ],
+    "total": 901,
+    "updated_at": "2026-11-27T16:56:25Z"
   },
   "video_arena": {
     "kind": "datasets",
