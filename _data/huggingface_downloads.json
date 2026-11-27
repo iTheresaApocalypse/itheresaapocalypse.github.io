@@ -27,22 +27,22 @@
       "CBA-Research/GameScaling-27B-S3-FP8"
     ],
     "total": 47273,
-    "updated_at": "2026-11-27T16:37:29Z"
+    "updated_at": "2026-11-27T16:38:33Z"
   },
   "video_arena": {
     "kind": "datasets",
     "repositories": [
       "THUSI-Lab/Video-Arena"
     ],
-    "total": 2364,
-    "updated_at": "2026-11-27T08:25:40Z"
+    "total": 2397,
+    "updated_at": "2026-11-27T16:38:33Z"
   },
   "vsi_super_wild": {
     "kind": "datasets",
     "repositories": [
       "THUSI-Lab/VSI-Super-Wild"
     ],
-    "total": 4353,
-    "updated_at": "2026-11-27T08:25:40Z"
+    "total": 4389,
+    "updated_at": "2026-11-27T16:38:33Z"
   }
 }
