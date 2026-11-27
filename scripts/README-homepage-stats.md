@@ -11,10 +11,12 @@ and Hugging Face's official
 The official API documentation defines this as downloads since repository
 creation: https://huggingface.co/docs/huggingface_hub/package_reference/hf_api
 
-- Scaling in Games: sum of the main repository and eight checkpoint repositories listed in
-  `_data/huggingface_downloads.json`, as linked by the official model card.
-  This includes `THUSI-Lab/GameScaling` (client and index) as well as the eight
-  weight repositories, for nine repositories in total.
+- Scaling in Games: sum of nine official repositories and twelve reviewed community
+  quantization repositories in `_data/huggingface_downloads.json` (21 total).
+  The official list includes `THUSI-Lab/GameScaling` (client and index) and eight
+  weight repositories. The community list includes mradermacher's eight GGUF
+  conversions (0.8B, 2B, 9B and 27B; S1 and S3) and CBA-Research's four FP8
+  conversions (9B and 27B; S1 and S3). See the provenance notes below.
 - Video-Arena: lifetime downloads of `THUSI-Lab/Video-Arena` (dataset).
 - Towards Spatial Supersensing in the Wild: lifetime downloads of
   `THUSI-Lab/VSI-Super-Wild` (dataset).
@@ -41,7 +43,31 @@ not make GitHub/Hugging Face API calls or cache these counters in localStorage.
 Failed metrics retain their last count and timestamp; successful metrics are
 still published and the job reports the failures. The updater retries network
 errors and rejects missing models, duplicate records, invalid counts and
-30-day download fields. New checkpoint repositories must be added to the JSON.
+30-day download fields. Missing counts for any configured official or community
+repository retain the previous complete GameScaling total and timestamp.
+
+## GameScaling community provenance
+
+The community list was reviewed on 2026-11-28:
+
+- [mradermacher's GGUF conversions](https://huggingface.co/models?author=mradermacher&search=GameScaling)
+  declare the corresponding official checkpoint in `base_model:quantized:` tags
+  and link their original model in the model card.
+- [CBA-Research's FP8 conversions](https://huggingface.co/models?author=CBA-Research&search=GameScaling)
+  describe themselves as FP8 reuploads and link their official GameScaling source.
+  Their configs use `compressed-tensors` float quantization with 8-bit weights.
+  Their inherited base-model tags refer to Qwen, so a lineage-tag-only search
+  would miss these conversions.
+
+Only exact IDs in `repositories` and `community_repositories` are included;
+unrelated name matches are ignored and duplicate IDs across the two lists are
+rejected. Downloads of different quantization files within one repository are
+not summed separately: each repository's Hugging Face lifetime count is used
+once. The API search spans all authors, and every configured ID must be present
+before a new total can be published. New official checkpoints or community
+conversions must be reviewed and added to the appropriate JSON list. The daily
+job automatically refreshes counts for all listed repositories; it does not
+automatically include unreviewed models.
 
 There is no Codex task or browser dependency. Daily snapshots are retained in
 Git history. Days without visitors do not cause missing lifetime downloads:

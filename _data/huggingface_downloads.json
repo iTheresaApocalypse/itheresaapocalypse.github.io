@@ -12,8 +12,22 @@
       "THUSI-Lab/GameScaling-9B-S1",
       "THUSI-Lab/GameScaling-9B-S3"
     ],
-    "total": 8609,
-    "updated_at": "2026-11-27T08:25:40Z"
+    "community_repositories": [
+      "mradermacher/GameScaling-0.8B-S1-GGUF",
+      "mradermacher/GameScaling-0.8B-S3-GGUF",
+      "mradermacher/GameScaling-2B-S1-GGUF",
+      "mradermacher/GameScaling-2B-S3-GGUF",
+      "mradermacher/GameScaling-9B-S1-GGUF",
+      "mradermacher/GameScaling-9B-S3-GGUF",
+      "mradermacher/GameScaling-27B-S1-GGUF",
+      "mradermacher/GameScaling-27B-S3-GGUF",
+      "CBA-Research/GameScaling-9B-S1-FP8",
+      "CBA-Research/GameScaling-9B-S3-FP8",
+      "CBA-Research/GameScaling-27B-S1-FP8",
+      "CBA-Research/GameScaling-27B-S3-FP8"
+    ],
+    "total": 47273,
+    "updated_at": "2026-11-27T16:37:29Z"
   },
   "video_arena": {
     "kind": "datasets",

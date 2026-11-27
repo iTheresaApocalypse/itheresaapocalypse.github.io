@@ -44,11 +44,13 @@ def stars(metric, fetch):
 
 
 def downloads(metric, fetch):
-    repositories = metric["repositories"]
+    # Community conversions are reviewed explicitly; a name match alone does
+    # not establish provenance. Count every repository at most once.
+    repositories = metric["repositories"] + metric.get("community_repositories", [])
     if len(set(repositories)) != len(repositories) or not repositories:
         raise ValueError("Invalid repository list")
     if metric["kind"] == "models":
-        payload = fetch("https://huggingface.co/api/models?author=THUSI-Lab&search=GameScaling&limit=100&expand%5B%5D=downloadsAllTime")
+        payload = fetch("https://huggingface.co/api/models?search=GameScaling&limit=1000&expand%5B%5D=downloadsAllTime")
     elif metric["kind"] == "datasets" and len(repositories) == 1:
         payload = [fetch("https://huggingface.co/api/datasets/" + repositories[0] + "?expand%5B%5D=downloadsAllTime")]
     else:
