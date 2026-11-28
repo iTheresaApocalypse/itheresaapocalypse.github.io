@@ -28,7 +28,7 @@
       "CBA-Research/GameScaling-27B-S3-FP8"
     ],
     "total": 47273,
-    "updated_at": "2026-11-27T16:59:23Z"
+    "updated_at": "2026-11-28T07:44:05Z"
   },
   "gamedojo_dataset": {
     "kind": "datasets",
@@ -36,7 +36,7 @@
       "THUSI-Lab/GameDojo"
     ],
     "total": 867,
-    "updated_at": "2026-11-27T16:59:23Z"
+    "updated_at": "2026-11-28T07:44:05Z"
   },
   "gamedojo_model": {
     "kind": "models",
@@ -48,7 +48,7 @@
       "mradermacher/GameDojo-4B-GGUF"
     ],
     "total": 901,
-    "updated_at": "2026-11-27T16:59:23Z"
+    "updated_at": "2026-11-28T07:44:05Z"
   },
   "video_arena": {
     "kind": "datasets",
@@ -56,7 +56,7 @@
       "THUSI-Lab/Video-Arena"
     ],
     "total": 2397,
-    "updated_at": "2026-11-27T16:59:23Z"
+    "updated_at": "2026-11-28T07:44:05Z"
   },
   "vsi_super_wild": {
     "kind": "datasets",
@@ -64,6 +64,6 @@
       "THUSI-Lab/VSI-Super-Wild"
     ],
     "total": 4389,
-    "updated_at": "2026-11-27T16:59:23Z"
+    "updated_at": "2026-11-28T07:44:05Z"
   }
 }
